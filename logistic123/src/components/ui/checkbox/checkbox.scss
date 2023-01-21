@@ -1,0 +1,95 @@
+@import '../../../assets/css//utilities/variable.scss';
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  user-select: none;
+
+  .label {
+    color: $gray_3;
+    font-weight: 500;
+    font-size: px-to-rem(14);
+  }
+
+  .checkmark {
+    margin-bottom: auto;
+    margin-right: 0.75rem;
+    height: 16px;
+    min-width: 16px;
+    border-radius: $checkbox-radius;
+    transition: all 0.2s ease-in-out;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $gray_7;
+
+    &:after {
+      content: '';
+      margin-top: -2px;
+      transform: rotate(0deg) scale(0);
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transform-origin: center center;
+      background-color: transparent;
+    }
+  }
+  .error-message {
+    border-color: $red_3;
+  }
+  input {
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+
+    &:checked ~ .checkmark {
+      background-color: $blue_3;
+      border-color: $blue_3;
+
+      &:hover {
+        background-color: $blue_4;
+        border-color: $blue_4;
+      }
+    }
+
+    &:checked ~ .checkmark:after {
+      display: block;
+      transform: rotate(45deg) scale(1);
+      opacity: 1;
+      left: 0px;
+      top: 0px;
+      width: 6px;
+      height: 12px;
+      border: solid $white;
+      border-width: 0 2px 2px 0;
+      border-radius: 0;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+
+    input ~ .checkmark {
+      background-color: $gray_11;
+      opacity: 1 !important;
+    }
+
+    input:checked ~ .checkmark {
+      background-color: $blue_7;
+      border-color: $blue_7;
+    }
+  }
+}
+
+.ant-radio-checked.ant-radio-disabled .ant-radio-inner {
+  border-color: $blue_7 !important;
+
+  &:after {
+    background-color: $blue_7 !important;
+  }
+}

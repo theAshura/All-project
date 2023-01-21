@@ -1,0 +1,6 @@
+@import 'assets/css/utilities/variable.scss';
+
+.ant-input[disabled] {
+  color: rgba(0, 0, 0, 0.76);
+  background-color: $gray_11;
+}

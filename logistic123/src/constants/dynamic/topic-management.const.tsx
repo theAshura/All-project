@@ -1,0 +1,37 @@
+export const TOPIC_MANAGEMENT_FIELDS_LIST = {
+  Action: 'Action',
+  'Topic code': 'Topic code',
+  'Topic name': 'Topic name',
+  Description: 'Description',
+  Status: 'Status',
+  Active: 'Active',
+  Inactive: 'Inactive',
+  'Created date': 'Created date',
+  'Created by user': 'Created by user',
+  'Updated date': 'Updated date',
+  'Updated by user': 'Updated by user',
+  'Created by company': 'Created by company',
+  'Topic information': 'Topic information',
+  'Create New': 'Create New',
+  Cancel: 'Cancel',
+  Delete: 'Delete',
+  Topic: 'Topic',
+  'Delete?': 'Delete?',
+  'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.':
+    'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.',
+};
+
+export const TOPIC_MANAGEMENT_FIELDS_DETAILS = {
+  'Topic code': 'Topic code',
+  'Topic name': 'Topic name',
+  Description: 'Description',
+  Status: 'Status',
+  Active: 'Active',
+  Inactive: 'Inactive',
+  Topic: 'Topic',
+  'Enter topic name': 'Enter topic name',
+  'Enter topic code': 'Enter topic code',
+  'Enter description': 'Enter description',
+  'This field is required': 'This field is required',
+  'Topic information': 'Topic information',
+};

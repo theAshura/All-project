@@ -1,0 +1,34 @@
+{
+  "labels": {
+    "txratingDate": "GHG rating date",
+    "txrating": "GHG rating",
+    "txevdi": "Evdi",
+    "txplus": "Plus",
+    "txverified": "Verified",
+    "txsafetyScore": "Safety score",
+    "txsafetyScoreDate": "Safety score date",
+    "txindicativeScore": "Indicative score",
+    "txdocSafetyScore": "Doc Safety Score",
+    "txinspectionRequired": "Inspection Required",
+    "txlastInspectionOutcome": "Last inspection outcome",
+    "txlastInspectionValidity": "Last inspection validity",
+    "txinspectionAdditionalData": "Inspection additional data",
+    "txtechnicalManagerName": "Technical manager name",
+    "txtechnicalManagerCode": "Technical manager code",
+    "txplaftformLink": "Plaftform link"
+  },
+  "placeholders": {
+    "rating": "Enter GHG rating",
+    "evdi": "Enter evdi",
+    "plus": "Please select",
+    "safetyScore": "Enter safety score",
+    "safetyScoreDate": "Please select",
+    "docSafetyScore": "Enter Doc safety score",
+    "lastInspectionOutcome": "Enter last inspection outcome",
+    "lastInspectionValidity": "Please select",
+    "inspectionAdditionalData": "Enter inspection additional data",
+    "technicalManagerName": "Enter technical manager name",
+    "technicalManagerCode": "Enter technical manager code",
+    "plaftformLink": "Enter URL platform"
+  }
+}

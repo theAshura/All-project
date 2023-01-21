@@ -1,0 +1,118 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  background: $white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+  .header {
+    // margin-bottom: 12px;
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: $title_font_size;
+
+      line-height: 150%;
+      color: $gray_3;
+    }
+    .btnAdd {
+      min-width: 120px;
+      .addIc {
+        margin-left: 9px;
+      }
+    }
+  }
+  .wrapperList {
+    padding: 0 25px;
+    .wrapperEx {
+      position: relative;
+      padding-left: 20px;
+      &:last-child {
+        border-left: none;
+        .stick {
+          display: none;
+        }
+      }
+      .wrapContent {
+        border-bottom: 1px solid $gray_11;
+        padding-bottom: 8px;
+        padding-top: 16px;
+        .action {
+          background: transparent;
+          &:hover {
+            background: transparent;
+          }
+        }
+        .title {
+          font-weight: 600;
+          font-size: $title_font_size;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+          color: $black;
+          margin: 0;
+        }
+        .description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+
+          letter-spacing: 0.4px;
+          margin: 0;
+
+          color: $black;
+          span {
+            color: $gray_7;
+          }
+        }
+        .date {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.4px;
+          margin: 0;
+          color: $gray_7;
+        }
+      }
+
+      .circle {
+        width: 12px;
+        height: 12px;
+        background-color: $blue_3;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: -6px;
+        z-index: 2;
+      }
+      .stick {
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        background: $gray_11;
+        top: 30px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+.wrapModal {
+  margin-top: 20vh;
+  max-width: 800px;
+}
+.content {
+  .label {
+    font-size: 14px !important;
+    color: $gray_3_1;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  .labelCheckbox {
+    font-size: 14px !important;
+  }
+}
+
+iframe {
+  z-index: 0 !important;
+  display: none;
+}

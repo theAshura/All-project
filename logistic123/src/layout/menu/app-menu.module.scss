@@ -1,0 +1,294 @@
+@import '../../assets/css/utilities/variable.scss';
+.appMenu {
+  width: 262px;
+  border-right: 2px solid $gray_11;
+  height: calc(100vh - 56px);
+  position: relative;
+
+  .contentContainer {
+    height: calc(100vh - 56px - 80px);
+    overflow-y: auto;
+    padding-bottom: 10px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 0px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+
+  .collapsed {
+    align-items: center;
+    justify-content: center !important;
+    position: fixed;
+    top: 56px;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    border: 1px solid $blue_3;
+    z-index: 999;
+  }
+  .collapsed:hover {
+    background-color: $blue_10;
+  }
+
+  .iconCollapsed {
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  .footerLogo {
+    background-color: $white;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    height: 80px;
+
+    a {
+      cursor: pointer;
+    }
+
+    img {
+      height: 47px;
+      margin-top: 17px;
+      padding-left: 10px;
+      object-fit: fill;
+    }
+  }
+}
+.fixMarginTop {
+  margin-top: 2.5px;
+}
+.showSidebar {
+  width: 258px;
+}
+
+.sidebar {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .groupHeader {
+    padding: 8px 12px;
+    line-height: 22px;
+    font-size: px-to-rem(14);
+    color: $gray_3;
+    font-weight: 700;
+  }
+  .inputSearch {
+    padding: 15px 5px;
+
+    div {
+      width: 100%;
+    }
+  }
+
+  .titleGroupItem {
+    padding: 20px 0 0;
+    font-size: px-to-rem(14);
+    color: $gray_5;
+    font-weight: 600;
+  }
+
+  .deliver {
+    border-bottom: 1px solid $gray_10;
+  }
+  .menu {
+    border: none;
+
+    .subMenu {
+      position: relative;
+      margin: -4px 0 -4px -12px;
+      svg {
+        margin-right: -28px;
+      }
+      &.subActive {
+        .subTitle {
+          color: $blue_3;
+        }
+        svg {
+          fill: $blue_3;
+        }
+      }
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 245px;
+        height: 1px;
+        background-color: $gray_11;
+        content: '';
+      }
+      .iconExpand {
+        width: 10px;
+        height: 10px;
+      }
+
+      &:hover {
+        i {
+          color: $gray_3;
+        }
+      }
+      ul {
+        background-color: $white;
+      }
+
+      .subMenuQuality {
+        position: relative;
+        margin: 0px 0 0px 0px;
+        svg {
+          margin-right: -28px;
+        }
+
+        &::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 245px;
+          height: 1px;
+          background-color: $gray_11;
+          content: '';
+        }
+        .iconExpand {
+          width: 10px;
+          height: 10px;
+        }
+
+        &:hover {
+          i {
+            color: $gray_3;
+          }
+        }
+        ul {
+          background-color: $white;
+        }
+      }
+    }
+    .MenuItemSearchBar {
+      height: 40px !important;
+      padding: 0 !important;
+      &::after {
+        display: none !important;
+      }
+      .menuItem {
+        padding: 5px 12px !important;
+      }
+    }
+
+    .MenuItemAntd {
+      padding: 0;
+      padding-left: 16px !important;
+      margin: 0 !important;
+      height: auto !important;
+      min-height: 34px !important;
+      background-color: $white !important;
+      &::after {
+        display: none !important;
+      }
+    }
+    .MenuItemQuality {
+      padding: 0 !important;
+      margin: 0 !important;
+      height: auto !important;
+      min-height: 34px !important;
+      background-color: $white !important;
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .MenuItemSearchBarCollapsed {
+      padding: 0;
+      padding-left: 15px !important;
+      margin: 4px 0 !important;
+      margin-bottom: 8px !important;
+      height: 28px !important;
+      min-height: 28px !important;
+      background-color: $white !important;
+      color: $white;
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .MenuItemDashBoardExpand {
+      padding-left: 12px !important;
+    }
+    .MenuItemDashBoardCollapse {
+      padding-left: 26px !important;
+    }
+    .MenuItemDashBoard {
+      background-color: $white !important;
+      &::after {
+        display: none !important;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    img {
+      width: 18px;
+    }
+    .iconSmall {
+      width: 16px;
+    }
+
+    .MenuContainerMasterDashBoard {
+      ul {
+        display: none;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: $white !important;
+}
+
+.none {
+  display: none;
+}
+
+.fontSize20px {
+  font-size: 14px !important;
+}
+
+.margin0 {
+  margin: 0 !important;
+}
+
+.svgQA {
+  a {
+    margin-left: 8px !important;
+    padding-left: 10px !important;
+    span {
+      font-weight: 500 !important;
+    }
+  }
+}
+
+.disableToggleArrow {
+  svg:last-child {
+    display: none;
+  }
+}

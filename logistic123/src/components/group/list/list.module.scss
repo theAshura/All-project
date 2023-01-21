@@ -1,0 +1,182 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.roleAndPermission {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  .headers {
+    .title {
+      color: $gray_3;
+      font-size: px-to-rem(20);
+      line-height: 30px;
+    }
+
+    .button {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+    }
+  }
+
+  .wrapperFilter {
+    background: $gray_12;
+    border-radius: 4px;
+    padding: 15px 30px;
+    height: 96px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+
+    .labelFilter {
+      font-size: 1rem;
+      color: $gray_3_1;
+      font-weight: normal;
+    }
+
+    .inputSearch {
+      width: 630px;
+      height: 40px;
+      background: $white;
+      border: 1px solid $gray_9;
+      box-sizing: border-box;
+      border-radius: 8px;
+      margin-right: 30px;
+    }
+    .buttonFilter {
+      margin-right: 20px;
+      width: 125px !important;
+      min-width: 125px !important;
+      height: 40px;
+      font-size: px-to-rem(14);
+      font-weight: 500;
+      white-space: nowrap;
+      img {
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .icButton {
+    padding-left: 9px;
+  }
+
+  .loading {
+    margin-top: 17%;
+    height: 60px;
+    width: 60px;
+  }
+  .noData {
+    margin-top: 17%;
+    height: 150px;
+    width: 150px;
+  }
+
+  .wrapTable {
+    min-height: calc(100vh - 350px);
+
+    .table {
+      overflow: hidden;
+      .rowTitle {
+        height: 48px !important;
+      }
+      .thread {
+        background-color: $bg-color1;
+
+        .title {
+          text-transform: uppercase;
+
+          .titleSort {
+            color: #2faae3;
+            cursor: pointer;
+          }
+
+          .icSortTable {
+            height: 20px;
+            width: 20px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+          }
+
+          th {
+            font-weight: bold;
+            font-size: px-to-rem(14);
+            line-height: 22px;
+            margin: 0px 12px;
+            color: $gray_3;
+            border-style: none;
+          }
+        }
+      }
+
+      tbody {
+        tr:last-child {
+          border-bottom: 1px solid #dee2e6;
+        }
+        tr {
+          cursor: pointer;
+          td {
+            padding: 10px 16px;
+            vertical-align: middle;
+
+            span {
+              color: $gray_5;
+              font-size: px-to-rem(14);
+              font-weight: 500;
+              line-height: 20px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              word-break: break-word;
+              white-space: normal;
+            }
+          }
+        }
+      }
+
+      .subAction {
+        .icAction {
+          .icEdit {
+            width: 18px;
+            height: 18px;
+          }
+
+          .icRemove {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+
+      .subTitle {
+        padding: 17px 16px;
+      }
+    }
+  }
+
+  .pagination {
+    padding: 0px 30px 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .roleAndPermission {
+    .wrapperFilter {
+      div:first-child {
+        flex-grow: 1;
+      }
+      .inputSearch {
+        width: auto;
+        height: 40px;
+      }
+      .wrapSelect {
+        .inputSelect {
+          height: 40px;
+        }
+      }
+      .buttonFilter {
+        height: 40px;
+      }
+    }
+  }
+}

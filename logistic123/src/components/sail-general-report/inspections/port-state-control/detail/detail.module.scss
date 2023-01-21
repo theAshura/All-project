@@ -1,0 +1,41 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .headers {
+    padding: 10px 20px;
+    background-color: $white;
+
+    .title {
+      color: $gray_3;
+      font-size: px-to-rem(20);
+      line-height: 30px;
+      padding-top: 8px;
+    }
+    .refDetail {
+      text-align: right;
+      color: $gray_5;
+      font-size: 14px;
+      line-height: 22px;
+      span {
+        color: $gray_3;
+      }
+    }
+  }
+  .wrapperForm {
+    height: calc(100vh - 150px);
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}

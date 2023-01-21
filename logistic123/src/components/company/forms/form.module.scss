@@ -1,0 +1,99 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.containerForm {
+  padding-bottom: 24px;
+  .inputSelect {
+    margin-right: 20px;
+    background: $white;
+    box-sizing: border-box;
+    border-radius: $input-radius;
+  }
+  .ant-select-selection-placeholder {
+    padding: 7px;
+  }
+  .labelSelect {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+}
+.card {
+  .avatar {
+    width: 104px;
+    height: 104px;
+    object-fit: fill;
+    border-radius: 100%;
+  }
+  .inputFile {
+    overflow: visible;
+    display: none;
+  }
+  .titleUploadFile {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+    color: $gray_3;
+    margin: 0 0 8px 0;
+  }
+}
+.titleForm {
+  font-style: normal;
+  font-weight: 600;
+  font-size: $title_font_size;
+  line-height: 150%;
+  color: $gray_3;
+}
+
+.titleText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray_3;
+}
+.disabledSelect {
+  div {
+    background: $white !important;
+  }
+}
+.disabledInput {
+  color: $gray_3 !important;
+  background-color: $gray_11 !important;
+}
+.msgRequired {
+  color: $red_3;
+  margin: 7px 0 0 0;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+.GroupButton {
+  padding-right: 20px;
+}

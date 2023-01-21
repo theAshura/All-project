@@ -1,0 +1,41 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 10vh;
+  max-width: 1150px;
+  @media (max-width: 1400px) {
+    max-width: 800px;
+  }
+}
+
+.contentClassName {
+  position: relative;
+  width: 1150px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+  @media (max-width: 1400px) {
+    width: 800px;
+  }
+  .header {
+    background: $blue_3;
+    padding: 8px 20px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 12px 20px;
+  }
+}

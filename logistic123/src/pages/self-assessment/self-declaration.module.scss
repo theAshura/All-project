@@ -1,0 +1,119 @@
+@import 'assets/css/utilities/variable.scss';
+
+@media (max-width: 1400px) {
+}
+
+.wrapperContainer {
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 156px);
+
+  .labelSelect {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+  .titleForm {
+    font-size: $title_font_size;
+    line-height: 24px;
+  }
+
+  .styleLabel {
+    font-size: 14px;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+
+  .wrapLabel {
+    padding-left: 0px;
+    .label {
+      font-size: px-to-rem(16);
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+    .dotRequired {
+      color: $red_2;
+    }
+  }
+
+  .btnAdd {
+    padding: 5px 30px !important;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.wrapHeader {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+}
+
+.headers {
+  width: 100%;
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    line-height: 30px;
+  }
+
+  .refIDAndStatus {
+    color: $gray_5;
+
+    .refId {
+      color: $gray_3;
+      padding-right: 10px;
+      border-right: 1px solid $gray_7;
+      margin-right: 10px;
+    }
+
+    .status {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    button {
+      font-weight: 700;
+    }
+    .Approved {
+      color: $green_1;
+    }
+    .Pending {
+      color: $yellow_2;
+    }
+
+    .Submitted {
+      color: $blue_3;
+    }
+
+    .Reassigned {
+      color: $red_6;
+    }
+  }
+  .historySteps {
+    width: 562px;
+  }
+  .lineStep {
+    width: 532px;
+  }
+}
+
+.part {
+  background-color: $white;
+  padding: 8px 26px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.resetSizing {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.groupButtons {
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}

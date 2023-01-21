@@ -1,0 +1,205 @@
+@import 'assets/css/utilities/variable.scss';
+
+.tabContainer {
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 180px);
+  padding: 5px 20px 15px 20px;
+  color: $gray_3;
+  .customExportBtn {
+    margin-top: 7px;
+    margin-bottom: 12px;
+  }
+  .wrap {
+    background-color: $white;
+    padding: 10px 20px;
+    .title {
+      margin-bottom: 8px;
+      font-size: $title_font_size;
+      color: $gray_3;
+    }
+    .subTitle {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: $gray_3;
+    }
+    .wrapBadge {
+      margin-bottom: 8px;
+      .badge {
+        font-size: 14px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        .dot {
+          width: 6px;
+          border-radius: 50%;
+          height: 6px;
+          background: $red_11;
+          margin-right: 4px;
+        }
+      }
+    }
+    .lineInfo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      .label {
+        font-size: 14px;
+        min-width: 250px;
+        @media (max-width: 1400px) {
+          min-width: 200px;
+        }
+      }
+      .value {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .wrapCalculator {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .percent {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+      .name {
+        margin-bottom: 8px;
+      }
+      .wrapArt {
+        .art {
+          margin: 8px 0px;
+        }
+        .status {
+          padding: 0px 20px;
+          white-space: nowrap;
+        }
+      }
+      .chart {
+        width: 120px;
+        margin: 0 auto;
+        position: relative;
+        height: 65px;
+        top: -20px;
+        overflow: hidden;
+        .icNeedle {
+          position: absolute;
+          top: 55px;
+          right: 36px;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-57deg);
+        }
+      }
+      .wrapStatues {
+        margin-bottom: 8px;
+      }
+      .customContainerInspection {
+        height: 137px;
+      }
+    }
+  }
+  .wrapInspection {
+    min-height: 423px;
+  }
+  .customTable {
+    margin-bottom: 50px;
+  }
+  .wrapTableSticky {
+    width: 100%;
+    overflow: auto;
+    height: 175px;
+    margin-bottom: 10px;
+    @media (max-width: 1400px) {
+      height: 192px;
+    }
+    thead {
+      position: sticky;
+      top: 0px;
+      margin: 0 0 0 0;
+    }
+  }
+  .table {
+    font-size: 12px;
+    .icAdd {
+      margin-left: 5px;
+    }
+    thead {
+      background: $bg-color1;
+      tr {
+        th {
+          border: none;
+          font-size: 12px;
+          vertical-align: baseline;
+        }
+      }
+    }
+    tbody {
+      .deleteIcon {
+        width: 20px;
+        height: 20px;
+        background: $orange_main;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+  .customInput {
+    width: 82px;
+    border: 1px solid $gray_10;
+    border-radius: 4px;
+  }
+  .customWrapChart {
+    height: 58px;
+  }
+  .riskValue {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+  }
+  .titleRisk {
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+  }
+  .wrapBtn {
+    margin-bottom: 5px;
+  }
+  .icAdd {
+    cursor: pointer;
+  }
+  .orange {
+    color: $orange_16;
+    font-weight: 600;
+  }
+  .yellow {
+    color: $orange_17;
+    font-weight: 600;
+  }
+  .green {
+    color: $green_16;
+    font-weight: 600;
+  }
+  .red {
+    color: $red_11;
+    font-weight: 600;
+  }
+  .orangeBg {
+    background: $orange_16 !important;
+  }
+  .yellowBg {
+    background: $orange_17 !important;
+  }
+  .greenBg {
+    background: $green_16 !important;
+  }
+  .redBg {
+    background: $red_11 !important;
+  }
+}

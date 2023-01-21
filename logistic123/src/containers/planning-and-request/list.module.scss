@@ -1,0 +1,70 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  position: relative;
+
+  .btnCreate {
+    margin-right: 10px;
+  }
+
+  .tableTabTitle {
+    color: $gray_7;
+    line-height: px-to-rem(24);
+    font-size: px-to-rem(16);
+  }
+  .activeTab {
+    color: $blue_3;
+  }
+  .wrapContent {
+    background-color: $bg-color-container;
+    min-height: calc(100vh - 152px);
+  }
+
+  .wrapInfoHeader {
+    font-size: 14px;
+    color: $gray_5;
+    .refTitle {
+      color: $gray_5;
+      font-weight: 600;
+    }
+    .refValue {
+      color: $gray_3;
+      margin-right: 10px;
+    }
+    .status {
+      padding-left: 10px;
+      border-left: 1px solid $gray_7;
+      display: flex;
+      align-items: center;
+      .value {
+        .btnToggle {
+          background-color: transparent;
+          outline: none !important;
+          color: $blue_3;
+          text-decoration: underline;
+          border: none;
+          font-size: 14px;
+          box-shadow: none;
+          font-weight: 700;
+          padding: 0px 0px 0px 5px;
+        }
+        .menuWrapper {
+          box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.08);
+          border-radius: 8px;
+          padding: 20px;
+          min-width: 950px;
+          .headMenu {
+            padding-bottom: 17px;
+            color: $gray_3;
+            font-size: 14px;
+            font-weight: bold;
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

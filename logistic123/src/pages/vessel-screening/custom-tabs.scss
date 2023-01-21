@@ -1,0 +1,32 @@
+@import 'assets/css/utilities/variable.scss';
+
+.vessel-screening_wrapper {
+  .ant-tabs-tab {
+    padding: 5px 0;
+  }
+}
+
+.card-container {
+  padding: 8px 0 0 0;
+  background: $bg-color-container;
+  height: calc(100vh - 141px);
+  overflow: auto;
+  .ant-tabs-tab {
+    padding: 5px 16px;
+  }
+}
+.card-container .ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before {
+  display: none;
+}
+.card-container .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar,
+.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar {
+  display: none;
+}
+.card-container .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 4px;
+  background: $blue_9_2;
+}
+.card-container .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 26px;
+}

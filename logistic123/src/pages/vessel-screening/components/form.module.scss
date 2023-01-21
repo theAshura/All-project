@@ -1,0 +1,196 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 26px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  .containerForm {
+    .btnAdd {
+      padding: 10.5px 20px !important;
+    }
+    .icButton {
+      margin-left: 10px;
+    }
+
+    .tableWrapper {
+      // border: 1px solid $gray_11;
+      .checkboxWrapper {
+        display: flex;
+        justify-content: center;
+        margin-left: 8px;
+      }
+      th {
+        height: 36px;
+        padding: 0 20px;
+        background-color: $gray_12;
+        border-bottom: 1px solid $gray_10;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 22px;
+        margin: 0px 12px;
+        color: $gray_3;
+        border-style: none;
+        text-transform: capitalize;
+        &::before {
+          display: none;
+        }
+      }
+      .rowWrapper {
+        height: 27px !important;
+        td {
+          padding: 0 20px;
+          border-bottom: 1px solid $gray_10;
+        }
+        .actionContent {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          .imageWrapper {
+            background-color: $blue_2;
+            border-radius: 4px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+      .ant-table-body {
+        margin-bottom: 16px;
+      }
+      div {
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 7px;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $blue_3;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb:active {
+          background: $blue_2;
+        }
+      }
+    }
+    .table {
+      td {
+        color: $gray_5;
+        font-weight: 500;
+      }
+    }
+  }
+  .flagItem {
+    cursor: pointer;
+    padding-right: 12px;
+  }
+
+  .labelRisk {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 18px */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+
+    background: $gray_12;
+    border: 1px solid $gray_10;
+    color: $gray_10;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .negligible {
+    background-color: $blue_10;
+    border: 1px solid $blue_3;
+    color: $blue_3;
+  }
+  .low {
+    background-color: $green_12 !important;
+    border: 1px solid $green_1 !important;
+    color: $green_1 !important;
+  }
+  .medium {
+    background-color: $yellow_12 !important;
+    border: 1px solid $yellow_13 !important;
+    color: $yellow_13 !important;
+  }
+  .high {
+    background-color: $orange_13 !important;
+    border: 1px solid $orange_3 !important;
+    color: $orange_3 !important;
+  }
+  .labelHeader {
+    color: $gray_3;
+    font-weight: 700;
+    font-size: $title_font_size;
+    line-height: 24px;
+  }
+  .titleForm {
+    color: $gray_3;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .contentForm {
+    color: $gray_3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .labelForm {
+    color: $gray_3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    .required {
+      color: $red_3;
+      font-size: 13px;
+    }
+  }
+  .radioLabel {
+    padding-bottom: 0 !important;
+  }
+}
+
+.dataWrapperEmpty {
+  min-height: 180px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    top: 50% !important;
+    width: 110px;
+    height: 110px;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.requiredMessage {
+  padding: 0 14px 14 0;
+  font-size: 14px;
+  margin-top: 8px;
+  color: $red_2;
+}

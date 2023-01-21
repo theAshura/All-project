@@ -1,0 +1,51 @@
+@import '../../assets/css/utilities/variable.scss';
+
+.inspection-mapping {
+  .wrap-input {
+    .input {
+      height: 30px;
+    }
+  }
+  .modal__list-form {
+    .dropdown {
+      button {
+        height: 30px !important;
+      }
+    }
+
+    .btnSmall {
+      height: 28px !important;
+    }
+  }
+  .modal {
+    .button {
+      height: 30px !important;
+    }
+  }
+  .select-ui {
+    .ant-select-selector {
+      height: 30px;
+      padding: 0 16px;
+      min-width: 110px !important;
+
+      @media (max-width: 1400px) {
+        height: 30px !important;
+      }
+    }
+  }
+}
+
+.wrap__Form {
+  .button {
+    height: 30px;
+    width: max-content;
+  }
+  .wrap-input {
+    .input {
+      height: 30px !important;
+      @media (max-width: 1400px) {
+        height: 30px !important;
+      }
+    }
+  }
+}

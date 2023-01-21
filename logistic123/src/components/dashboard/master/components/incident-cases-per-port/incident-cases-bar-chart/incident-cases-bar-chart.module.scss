@@ -1,0 +1,42 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  background: $white;
+  height: 400px;
+  .barChartWrapper {
+    height: 295px;
+    @media (min-width: 1200px) {
+      height: 370px;
+    }
+
+    .labelSection {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+
+      .contentWrapper {
+        display: flex;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        color: $gray_5;
+        font-weight: 600;
+      }
+
+      .colorBox {
+        width: 12px;
+        min-width: 12px;
+        height: 12px;
+        margin-right: 7px;
+      }
+    }
+  }
+  .noData {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

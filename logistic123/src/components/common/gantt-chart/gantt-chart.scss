@@ -1,0 +1,147 @@
+@import 'assets/css/utilities/variable.scss';
+@import '~@bryntum/scheduler/scheduler.material.css';
+
+.b-container {
+  max-height: calc(100vh - 350px) !important;
+  font-size: 13px;
+
+  .b-grid-vertical-scroller {
+    min-height: auto !important;
+  }
+}
+.b-widget {
+}
+
+.striped {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(230, 230, 230, 0.3),
+    rgba(230, 230, 230, 0.3) 10px,
+    rgba(240, 240, 240, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 20px
+  );
+}
+
+.selected-event {
+  margin-right: 1em;
+  label {
+    opacity: 0.7;
+  }
+  span {
+    font-weight: 400;
+  }
+}
+
+.b-theme-stockholm {
+  .selected-event {
+    text-transform: uppercase;
+  }
+}
+
+// fixes styling bug
+.b-theme-stockholm .b-has-label label {
+  color: #4f5964;
+}
+
+.b-theme-classic .b-has-label label {
+  color: #e6e6e6;
+}
+
+.b-theme-classic-light .b-has-label label {
+  color: #616161;
+}
+
+.b-theme-classic-dark .b-has-label label {
+  color: #c0c1c2;
+}
+
+.b-theme-classic-material .b-has-label label {
+  color: #616161;
+}
+.b-sch-event {
+  border-radius: 40px;
+  height: 24px;
+  font-size: 13px !important;
+  min-width: 55px;
+}
+.wrap-statuses-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 23px;
+  .status-wrap {
+    margin-left: 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    .status-badge {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+  }
+}
+.time-control-wrap {
+  display: flex;
+  align-items: flex-end;
+  .time-control {
+    color: $blue_3;
+    cursor: pointer;
+  }
+  .time {
+    font-size: 12px;
+    color: $black;
+    font-weight: bold;
+    padding: 0px 8px;
+    letter-spacing: 0.5px;
+    border-left: 1px solid $gray_10;
+    border-right: 1px solid $gray_10;
+    margin: 0px 8px;
+    min-width: 68px;
+  }
+}
+.b-grid-header .b-sch-timerange {
+  background-color: transparent !important;
+}
+.b-sch-header-timeaxis-cell {
+  .b-sch-header-text {
+    text-transform: uppercase;
+  }
+}
+.loading-icon {
+  height: 60px;
+  width: 60px;
+}
+.b-sch-header-text {
+  color: $gray_3;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+}
+.b-grid-header-text-content {
+  color: $gray_3;
+  font-weight: 600;
+  font-size: 12px !important;
+  line-height: 150%;
+}
+
+.b-grid-cell {
+  color: $gray_5;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+}
+.b-sch-event-content {
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+}
+.collapse-icon-custom {
+  height: 20px;
+  width: 20px;
+  background-image: url('../../../assets/images/collapse-icon.svg');
+}
+.collapsed-icon-custom {
+  height: 20px;
+  width: 20px;
+  background-image: url('../../../assets/images/collapsed-icon.svg');
+}

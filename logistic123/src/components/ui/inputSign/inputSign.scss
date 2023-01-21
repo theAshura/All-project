@@ -1,0 +1,63 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.inputSign {
+  border: none;
+  border-radius: 0%;
+  line-height: 0.5;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 0.375rem 0rem;
+  width: 100%;
+  font-size: $title_font_size;
+  &::placeholder {
+    color: $gray_7;
+  }
+}
+.hideError {
+  display: none !important;
+}
+.inputSignError {
+  box-shadow: 0 0.125rem $red_2 !important;
+}
+.inputSignAllow {
+  box-shadow: 0 0.125rem $gray_7 !important;
+}
+.input--info {
+  color: $blue_3;
+  display: inline-block;
+}
+
+.rowInput input:focus,
+.rowInput .inputSign:focus + .iconHide {
+  outline: none !important;
+  box-shadow: 0 0.125rem $blue_3 !important;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.rowInput {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  height: 70px;
+}
+.labelInput {
+  color: $gray_7;
+  font-size: $title_font_size;
+}
+.errorInput {
+  display: inline-block;
+  font-size: 12px;
+}
+.iconHide {
+  border: none;
+  border-color: white;
+  background-color: white;
+  box-shadow: 0 0.125rem $gray_7;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.iconHideError {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0.125rem $red_2;
+}
+.imageValid {
+  margin-bottom: 5px;
+}

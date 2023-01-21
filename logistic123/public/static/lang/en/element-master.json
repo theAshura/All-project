@@ -1,0 +1,62 @@
+{
+  "ElementMaster": "Element Master",
+  "ElementMasterTitle": "Element Master",
+  "edit": "Edit",
+  "action": "Action",
+  "standardCode": "Standard Code",
+  "standardName": "Standard Name",
+  "lastUpdatedBy": "Last Updated By",
+  "lastUpdatedOn": "Last Updated On",
+  "status": "Status",
+  "standard": "Standard",
+  "elementCode": "Element Code",
+  "elementName": "Element Name",
+  "elementNumber": "Element Number",
+  "stage": "Stage",
+  "questionNumber": "Question Number",
+  "keyPerformanceIndicator": "Key Performance Indicator",
+  "bestPracticeGuidance": "Best Practice Guidance",
+  "selfAssessmentElementMaster": "Self assessment element master",
+  "companyCode": "Company Code",
+  "companyName": "Company Name",
+  "buttons": {
+    "createNew": "Create New",
+    "importExcel": "Import excel",
+    "add": "Add",
+    "chooseStandard": "Choose standard",
+    "txExportTemplate": "Export template"
+  },
+  "form": {
+    "stage": "Stage",
+    "code": "Element code",
+    "name": "Element name",
+    "number": "Element number",
+    "questionNumber": "Question number",
+    "elementStageQ": "Element stage-Q",
+    "keyPerformanceIndicator": "Key performance indicator",
+    "bestPracticeGuidance": "Best practice guidance"
+  },
+  "placeholder": {
+    "select": "Please select",
+    "code": "Enter element code",
+    "name": "Enter element name",
+    "number": "Enter element number",
+    "questionNumber": "Enter question number",
+    "keyPerformanceIndicator": "Enter key performance indicator",
+    "bestPracticeGuidance": "Enter best practice guidance"
+  },
+  "validation": {
+    "uniqueElementStageQ": "Element stage-Q must be unique.",
+    "code": "Element code is invalid.",
+    "name": "Element name is invalid.",
+    "number": "Element number is invalid.",
+    "stage": "Stage is invalid.",
+    "questionNumber": "Question number is invalid."
+  },
+  "createElement": "Create element",
+  "editElement": "Edit element",
+  "txImportExcel": "Import Excel",
+  "txDataField": "Data field",
+  "txSelectSheet": "Select sheet",
+  "noDataExcel": "No records found."
+}

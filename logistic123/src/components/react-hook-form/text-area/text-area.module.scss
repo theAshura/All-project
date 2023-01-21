@@ -1,0 +1,68 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.detectLink {
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #bbbabf;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  min-height: 32px;
+}
+
+.TextAreaWrapper {
+  position: relative;
+  padding: 0;
+  .textAreaForm {
+    border: 1px solid #bbbabf;
+    border-radius: 8px;
+    font-size: 14px;
+
+    &:focus {
+      border-color: $blue_14;
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-size: 14px !important;
+      color: $gray_7;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+  .extraBtn {
+    @include reset-button;
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.message {
+  padding: 0 14px;
+  margin-top: 8px;
+  color: $red_2;
+  font-weight: 400 !important;
+  font-size: 12.25px;
+}

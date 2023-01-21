@@ -1,0 +1,32 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.rowCheckBoxLabel {
+  background-color: $bg-color1;
+  height: 36px;
+}
+
+.borderRowCheckBox {
+  border-right: 1px solid $gray_9;
+}
+
+.infoIcon {
+  margin-left: 2px;
+}
+
+.rowCheckBox {
+  background-color: $gray_12;
+  height: 36px;
+}
+
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}
+
+.footer {
+  padding: 20px;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.08);
+}

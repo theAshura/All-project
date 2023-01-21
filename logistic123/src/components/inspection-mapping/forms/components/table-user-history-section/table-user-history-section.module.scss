@@ -1,0 +1,27 @@
+.tableAuditChecklist {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  .wrapTable {
+    margin-left: 80px !important;
+    th {
+      &:first-child {
+        min-width: 80px !important;
+      }
+    }
+  }
+  th {
+    div {
+      text-transform: capitalize;
+    }
+  }
+  .dataWrapperEmpty {
+    min-height: 300px !important;
+    img {
+      top: 50% !important;
+    }
+    img {
+      padding: 0;
+      margin: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.disabledInput
+  .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: $gray_11;
+  cursor: not-allowed;
+}
+
+.modal-schedule
+  .ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-radius: 0px !important;
+  height: 32px !important;
+  padding: 0px 15px !important;
+}
+
+.modal-schedule .ant-radio-button-wrapper {
+  &:last-child {
+    display: none;
+  }
+}
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}
+.have-data .ant-picker-content td {
+  background-color: #e6f7ff !important;
+}
+.ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-selected {
+  background-color: $blue_3;
+  border-radius: 0px;
+}
+
+.ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+  margin: 0 2px;
+}
+
+.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-calendar-date-content
+  .have-data {
+  background-color: #e6f7ff;
+}

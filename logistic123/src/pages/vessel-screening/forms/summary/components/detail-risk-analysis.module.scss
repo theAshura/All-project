@@ -1,0 +1,72 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  background-color: $white;
+
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 6px 0px;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .textContent {
+    color: $gray_5;
+  }
+  .tableWrapper {
+    th {
+      height: 32px;
+      padding: 0 20px;
+      background-color: $bg-color1;
+      border-bottom: 1px solid $gray_10;
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 22px;
+      margin: 0px 12px;
+      color: $gray_3;
+      border-style: none;
+      text-transform: capitalize;
+      &::before {
+        display: none;
+      }
+    }
+    .rowWrapper {
+      height: 32px !important;
+      td {
+        padding: 0 20px;
+        border-bottom: 1px solid $gray_11;
+        font-weight: 500 !important;
+        font-size: px-to-rem(14) !important;
+      }
+    }
+  }
+
+  .noData {
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 40%;
+  }
+  .wrapBadge {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: $green_1;
+    .badge {
+      height: 26px;
+      padding: 0px 8px;
+      padding: 4px 8px;
+      font-size: 12px;
+      border: 1px solid $green_13;
+      border-radius: 4px;
+      background: $green_12;
+      margin-left: 7px;
+    }
+  }
+  .wrapBadge {
+    display: flex;
+  }
+}

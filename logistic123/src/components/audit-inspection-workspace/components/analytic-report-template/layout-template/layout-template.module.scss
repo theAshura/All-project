@@ -1,0 +1,39 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  background: $white;
+  padding: 30px 20px 12px 20px;
+  width: 100%;
+  .header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray_11;
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .logo {
+      width: 300px;
+    }
+    .company {
+      font-size: $title_font_size;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      border-left: 2px solid $gray_11;
+      height: 37px;
+      display: flex;
+      align-items: center;
+      color: $red_11;
+      font-weight: 800;
+    }
+  }
+  .content {
+  }
+  .footer {
+    font-weight: 400;
+    // font-size: 6px;
+    letter-spacing: 0.15px;
+    color: $gray_3;
+    line-height: 150%;
+  }
+}

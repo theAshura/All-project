@@ -1,0 +1,26 @@
+@import '../../../../assets/css/utilities/variable.scss';
+
+.title {
+  font-weight: 700;
+  font-size: $title_font_size;
+  color: $gray_3;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.bodyContent {
+  height: 450px;
+}
+
+.titleBold {
+  font-weight: bold !important;
+}
+
+.listOpenTaskContainer {
+  overflow: auto;
+}
+
+.openTaskCardContainer {
+  // width: 510px;
+  margin-bottom: 21px;
+}

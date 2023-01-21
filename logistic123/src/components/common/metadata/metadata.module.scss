@@ -1,0 +1,46 @@
+@import 'assets/css/utilities/variable.scss';
+
+.vesselInfo {
+  margin: 0px 20px 1px 20px;
+
+  .textInfo {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: $gray_5;
+    padding: 3px 10px;
+
+    &:first-of-type {
+      padding-left: 0px;
+    }
+
+    &:not(:last-of-type):after {
+      content: '';
+      width: 1px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      background-color: $gray_7;
+      right: 0;
+      top: 7px;
+      &:last-child {
+        display: none;
+      }
+    }
+
+    span {
+      color: $gray_3;
+    }
+  }
+}
+
+.requestNo {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: $gray_3;
+  padding: 3px 0px;
+}

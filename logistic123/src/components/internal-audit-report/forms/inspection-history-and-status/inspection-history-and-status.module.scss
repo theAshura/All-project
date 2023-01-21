@@ -1,0 +1,98 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 10vh;
+  max-width: 770px;
+  // position: fixed;
+  // right: 10px;
+  // bottom: 0px;
+}
+
+.contentClassName {
+  position: relative;
+  width: 770px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+
+  .header {
+    background: $blue_3;
+    padding: 8px 20px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 12px 20px;
+    background-color: $white;
+    max-height: 552px;
+    overflow: auto;
+    .rowWrap {
+      margin-bottom: 12px;
+      .label {
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        // height: 100%;
+        .infoIcon {
+          margin-left: 4px;
+        }
+      }
+      .customInput {
+        width: 100%;
+      }
+    }
+
+    .separateLine {
+      background: $gray_11;
+      height: 2px;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .label {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: $gray_3;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: $white;
+    .saveDraft {
+      margin-left: 20px;
+    }
+    .send {
+      margin-left: 20px;
+    }
+  }
+  .btnSelect {
+    font-size: 14px;
+    width: 100%;
+  }
+  .title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .dotRequired {
+    color: $red_2;
+  }
+}

@@ -1,0 +1,27 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  background-color: $white;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  height: 78px;
+  padding: 5px;
+  .title {
+    color: $gray_3;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  .content {
+    color: $blue_3;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}
+
+.border {
+  border: 1px solid $gray_19;
+  border-radius: 0.5rem;
+}

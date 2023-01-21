@@ -1,0 +1,25 @@
+@import '../../../../assets/css/utilities/variable.scss';
+
+.results-button {
+  width: fit-content;
+  background: $blue_3;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+
+  .hidden-image {
+    cursor: unset;
+  }
+
+  button {
+    background: $blue_3;
+    border: none;
+  }
+  span {
+    color: $white;
+    font-size: px-to-rem(13);
+    font-weight: 500;
+  }
+}

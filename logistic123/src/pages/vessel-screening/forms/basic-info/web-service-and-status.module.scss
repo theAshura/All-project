@@ -1,0 +1,47 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 26px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  height: 100%;
+  .labelHeader {
+    color: $gray_3;
+    font-weight: 700;
+    font-size: $title_font_size;
+    line-height: 24px;
+    margin-bottom: 0px;
+    .imgRequired {
+      margin-top: -17px;
+      margin-left: 2px;
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $gray_10;
+    margin: 20px 0;
+  }
+  .radioRequestWrapper {
+    margin-top: 35px;
+    margin-bottom: 70px;
+    .radioStyle {
+      display: block;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  .radioReviewWrapper {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    .radioStyle {
+      display: block;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  .wrapWebService {
+    padding: 0px;
+  }
+}

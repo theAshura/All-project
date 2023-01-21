@@ -1,0 +1,37 @@
+@import 'assets/css/utilities/variable.scss';
+
+.icButton {
+  padding-left: 9px;
+}
+
+.wrapper {
+  font-size: px-to-rem(14);
+  position: relative;
+  font-weight: 600;
+  padding: 7px 20px 0px 20px;
+  background-color: $bg-color-container;
+  .container {
+    background-color: $white;
+    padding: 0px 20px 40px;
+  }
+  .icButton {
+    padding-left: 9px;
+  }
+  .titleForm {
+    font-size: $title_font_size;
+  }
+  .labelForm {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 15px;
+      line-height: 26px;
+      color: $gray_3;
+      font-weight: 500;
+    }
+    .buttonAdd {
+      font-size: 14px;
+    }
+  }
+}

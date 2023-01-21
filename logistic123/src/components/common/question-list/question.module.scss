@@ -1,0 +1,28 @@
+.questionList {
+  width: 219px;
+  border-top: 1px solid $gray_10;
+  border-left: 1px solid $gray_10;
+  border-right: 1px solid $gray_10;
+
+  hr {
+    margin: 0 !important;
+  }
+
+  .title {
+    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+
+    .textTitle {
+      align-self: center;
+    }
+    .wrapButton {
+      align-self: center;
+      padding-right: 4px;
+    }
+  }
+}
+
+.listItems {
+}

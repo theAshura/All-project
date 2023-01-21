@@ -1,0 +1,18 @@
+input[type='text'] {
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  outline: none;
+}
+
+input[type='radio'] {
+  //background: $white;
+  // /* Option 1/Neutral 1/01 */
+
+  // border: 1px solid #555555;
+  // box-sizing: border-box;
+  // border-radius: 100px;
+
+  width: 20px;
+  height: 20px;
+}

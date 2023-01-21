@@ -1,0 +1,25 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  background: $gray_24;
+  padding: 20px;
+  .containerForm {
+    padding: 20px;
+    background: #fff;
+    .titleForm {
+      font-size: $title_font_size;
+    }
+  }
+  .caroList {
+    background: $white;
+    margin-top: 20px;
+    padding: 20px;
+    .titleForm {
+      font-size: $title_font_size;
+    }
+    thead th {
+      background: $gray_24;
+      border: none;
+    }
+  }
+}

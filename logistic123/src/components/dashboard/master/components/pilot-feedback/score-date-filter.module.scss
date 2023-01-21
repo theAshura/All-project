@@ -1,0 +1,58 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  display: flex;
+  width: 100%;
+  padding-block: 18px;
+  padding-inline: 7px;
+  flex-direction: row;
+  background-color: $white;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid $gray_19;
+}
+
+.imgContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    border-radius: 50%;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 5px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-bottom: 0 !important;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color: $gray_5;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.selectContainer {
+  margin-right: 15px;
+}

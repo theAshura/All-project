@@ -1,0 +1,27 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.inspectionMappingCreateWrapper {
+  // font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  // padding-bottom: 30px;
+  position: relative;
+  .headers {
+    padding-bottom: 8px;
+    .title {
+      color: $gray_3;
+      font-size: 1.1rem;
+      line-height: 28px;
+      // padding-top: 8px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}

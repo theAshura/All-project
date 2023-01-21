@@ -1,0 +1,17 @@
+{
+  "title": "Notification",
+  "all": "All",
+  "unread": "Unread",
+  "viewAll": "View all notifications",
+  "record": "Record",
+  "markAsRead": "Mark as read",
+  "markAllRead": "Mark all as read",
+  "delete": "Delete",
+  "buttons": {
+    "view": "View",
+    "edit": "Edit",
+    "markAllAsRead": "Mark all as read",
+    "markAsRead": "Mark as read",
+    "delete": "Delete"
+  }
+}

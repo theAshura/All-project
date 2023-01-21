@@ -1,0 +1,237 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapper {
+  background-color: $gray_16;
+  height: 100%;
+  .customModal {
+    display: flex;
+    align-items: center;
+    margin-top: -80px;
+    margin-bottom: 0;
+  }
+  .content {
+    width: 100%;
+    border: none;
+    box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $white;
+    width: 400px;
+    .header {
+      border-radius: 16px 16px 0px 0px;
+      height: 52px;
+      background-color: $blue_3;
+      padding-left: 20px;
+      padding-right: 20px;
+      span {
+        font-size: 1rem;
+        line-height: 150%;
+        color: #ffffff;
+      }
+      .icClose {
+        cursor: pointer;
+      }
+    }
+
+    .container {
+      padding: 16px 0px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 4px;
+      max-width: 450px;
+
+      .title {
+        font-weight: bold;
+        font-size: $title_font_size;
+        line-height: 26px;
+        color: $gray_3;
+      }
+
+      .countryFlag {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+      }
+
+      .country {
+        padding-left: 10px;
+        padding-bottom: 15px;
+
+        color: $gray_3;
+        p {
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 20px;
+        }
+        .cities {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .driver {
+        border-bottom: 1px solid $gray_11;
+        margin-bottom: 12px;
+      }
+
+      .titleResults {
+        font-weight: bold;
+        font-size: px-to-rem(14);
+        line-height: 22px;
+        color: $gray_3;
+      }
+
+      .btnClearAll {
+        border: unset;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        color: #f42829;
+      }
+      .btnCancel {
+        margin-right: 10px;
+      }
+      .btnDelete {
+        margin-left: 10px;
+      }
+
+      .btnResultsPlus {
+        border-radius: 9999999px;
+        padding: 8px;
+        background-color: $blue_3;
+        color: white;
+      }
+    }
+    .listResult {
+      max-height: 200px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $blue_3;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: $blue_2;
+      }
+    }
+  }
+}
+
+.wrapModal {
+  margin-top: 20vh;
+  max-width: 908px;
+}
+
+.contentClassName {
+  position: relative;
+  width: 908px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+  .header {
+    background: $blue_3;
+    padding: 9px 16px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 12px 16px;
+    .wrapInfo {
+      margin-bottom: 12px;
+      .label {
+        margin-bottom: 2px;
+        color: $gray_5;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .value {
+        font-weight: 600;
+        color: $gray_3;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+  .roleAndPermission {
+    margin-top: 20px;
+    font-size: px-to-rem(14);
+    .required {
+      font-size: 1rem;
+      color: $red_2;
+      padding-left: 14px;
+    }
+    .selectedRole {
+      padding: 0px 10px;
+      border: 3px dashed $gray_14;
+      line-height: 22px;
+      color: $gray_5;
+      .titleSelectRole {
+        padding: 10px;
+        width: 120px;
+        min-width: 120px;
+        font-weight: 500;
+        font-size: px-to-rem(14);
+        line-height: 22px;
+        color: $gray_5;
+      }
+      .btnClearAll {
+        width: 80px;
+        min-width: 80px;
+        img {
+          padding-left: 4px;
+        }
+      }
+      .icXResult {
+        margin-left: 5px;
+      }
+    }
+    .wrapRole {
+      // margin-top: 25px;
+      .titleRole {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $gray_5;
+        width: 135px;
+        min-width: 135px;
+      }
+      .icRequired {
+        right: 10px;
+        top: 4px;
+      }
+    }
+  }
+  .saveBtn {
+    margin-left: 20px;
+  }
+  .errorLine {
+    color: $red_2;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,310 @@
+@import '../../../../assets/css/utilities/variable.scss';
+
+.headerCollapse {
+  height: auto !important;
+  padding: 4px 20px !important;
+  margin-top: 21px;
+
+  p {
+    font-size: $title_font_size;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
+
+.wrapFocusRequest {
+  padding: 10px 20px;
+  max-height: 450px;
+  .focusRequestItem {
+    padding-bottom: 14px;
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.mb_16 {
+  margin-bottom: 16px !important;
+}
+
+.wrapperContainer {
+  background-color: $white;
+  border-radius: 5px;
+  padding: 20px;
+  .containerForm {
+    .buttonSchedule {
+      padding-top: 19px;
+    }
+
+    .disabledInput {
+      .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+        .ant-select-selector {
+        color: rgba(0, 0, 0, 0.25);
+        background-color: $gray_11;
+        cursor: not-allowed;
+      }
+    }
+
+    .buttonPort {
+      width: '100%';
+    }
+
+    .titleContainer {
+      color: $gray_3;
+      font-size: $title_font_size;
+      font-weight: 700;
+    }
+
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+
+    .button {
+      font-weight: 500;
+      font-size: 1rem;
+
+      .icButton {
+        padding-left: 9px;
+      }
+    }
+
+    .wrapTitle {
+      margin-top: 1rem;
+
+      .title {
+        font-weight: bold;
+        font-size: $title_font_size;
+      }
+    }
+  }
+
+  .inputFile {
+    overflow: visible;
+    display: none;
+  }
+
+  .titleForm {
+    margin-bottom: unset;
+    font-size: 18px;
+  }
+
+  ::placeholder {
+    font-size: 1rem !important;
+  }
+}
+
+.disable {
+  background-color: $gray_11 !important;
+}
+
+.table {
+  overflow: hidden;
+
+  .rowTitle {
+    height: 37px !important;
+  }
+
+  .thread {
+    background-color: $bg-color1;
+
+    .headCol {
+      position: absolute;
+      left: 0;
+      min-width: 120px;
+      padding: 6px 30px;
+      top: auto;
+      background-color: $bg-color1;
+      margin-left: 0px !important;
+      height: 36px;
+    }
+
+    .title {
+      /*text-transform:capitalize;*/
+
+      .titleSort {
+        white-space: nowrap;
+      }
+
+      .icSortTable {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+      }
+
+      th {
+        min-width: 150px;
+        max-width: 240px;
+        font-weight: bold;
+        font-size: px-to-rem(14);
+        line-height: 22px;
+        margin: 0px 12px;
+        color: $gray_3;
+        border-style: none;
+        white-space: nowrap;
+      }
+
+      .headCol {
+        position: absolute;
+        left: 0;
+        min-width: 140px;
+        padding: 6px 30px;
+        top: auto;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+.textTitle {
+  font-weight: 700;
+  font-size: $title_font_size;
+}
+
+.modalSchedule {
+  height: 800px;
+}
+
+.modalShowMore {
+  height: 200px;
+}
+
+.modalShowMore::-webkit-scrollbar,
+.modalSchedule::-webkit-scrollbar {
+  display: none;
+}
+
+.icButtonSend {
+  margin-left: 9px;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.date {
+  font-size: px-to-rem(24);
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+}
+
+.date .month {
+  display: flex;
+
+  align-items: flex-end;
+  font-size: px-to-rem(16);
+  font-weight: 400;
+  padding-bottom: 24px;
+}
+
+.itemSeeMore {
+  cursor: pointer;
+}
+
+.itemSeeMore:hover {
+  background-color: $blue_9;
+}
+
+.calendarItem:hover {
+  background-color: $blue_8;
+}
+
+.wrapSection {
+  background-color: $white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 33px;
+
+  img {
+    height: 106px;
+    width: 103px;
+  }
+}
+
+.wrapMemo {
+  .memoForm {
+    height: 30px;
+    margin-top: 3px;
+  }
+}
+
+.tablePlaning {
+  td {
+    min-height: 27px;
+    height: 27px;
+  }
+}
+
+.wrapWorkingType {
+  color: $gray_3_1;
+  font-weight: 400;
+
+  .label {
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+
+  .value {
+    font-size: 14px;
+    margin-left: 14px;
+  }
+}
+
+.disabledDatePicker {
+  color: $gray_3 !important;
+  background-color: $gray_11 !important;
+}
+
+.disabledSelect {
+  .ant-select-selector {
+    color: $gray_3 !important;
+    background-color: $gray_11 !important;
+  }
+}

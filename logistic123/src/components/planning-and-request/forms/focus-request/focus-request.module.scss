@@ -1,0 +1,17 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapAnswer {
+  min-width: fit-content;
+}
+
+.radioInput {
+  height: auto;
+}
+
+.labelMemo {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  color: $gray_3_1;
+}

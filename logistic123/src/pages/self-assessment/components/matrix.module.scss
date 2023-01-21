@@ -1,0 +1,100 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  overflow-x: auto;
+}
+
+.headRow {
+  height: 64px;
+  background-color: $bg-color1;
+  font-weight: 700;
+  flex-wrap: nowrap;
+  min-width: max-content;
+}
+
+.maxHeight {
+  height: 100%;
+}
+
+.pinkCell {
+  background-color: $red_10;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 100px;
+  height: 100%;
+  padding: 0px 16px !important;
+  color: $gray_5;
+}
+
+.stageBox,
+.totalBox,
+.scoreBox {
+  min-width: 150px;
+}
+
+.mergedBox {
+  position: relative;
+}
+
+.ellipsisBox {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.hiddendBox {
+  visibility: hidden;
+}
+
+.headWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.headBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+}
+
+.row {
+  border-bottom: 1px solid $gray_11;
+  height: 32px;
+  flex-wrap: nowrap;
+  min-width: max-content;
+}
+
+.labelBox {
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.label1 {
+  display: flex;
+  margin-right: 20px;
+}
+
+.initial {
+  background-color: $yellow_11;
+}
+
+.noQuestion {
+  background-color: $gray_7;
+}
+
+.scoreText {
+  height: 14px;
+  line-height: 14px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}

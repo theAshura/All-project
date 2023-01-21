@@ -1,0 +1,127 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  background: $white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  .header {
+    margin-bottom: 12px;
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: $title_font_size;
+      line-height: 150%;
+      color: $gray_3;
+    }
+    .btnAdd {
+      min-width: 120px;
+      .addIc {
+        margin-left: 9px;
+      }
+    }
+  }
+}
+
+.wrapModal {
+  margin-top: 20vh;
+  max-width: 1150px;
+  @media (max-width: 1400px) {
+    max-width: 800px;
+  }
+}
+
+.contentClassName {
+  position: relative;
+  width: 1150px;
+  @media (max-width: 1400px) {
+    width: 800px;
+  }
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+
+  .header {
+    background: $blue_3;
+    padding: 8px 20px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 12px 20px;
+    .wrapForm {
+      margin-bottom: 12px;
+    }
+  }
+
+  .filterWrapper {
+    padding-bottom: 20px;
+    width: 232px;
+    margin-left: auto;
+    .wrapperInput {
+      flex: 1;
+    }
+
+    .wrapperInputType {
+      margin-left: 20px;
+      min-width: 180px;
+    }
+
+    .inputSearch {
+      padding: 0.5rem 1rem;
+    }
+
+    .datePickerWrapper {
+      margin-left: 20px;
+    }
+    .buttonFilter {
+      margin-left: 12px;
+
+      white-space: nowrap;
+    }
+  }
+  .btnCancel {
+    margin-right: 20px;
+  }
+  .customSelectAll {
+    position: absolute;
+    bottom: 32px;
+    left: -25px;
+  }
+  .verifiedBy {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: $blue_3;
+  }
+}
+
+.label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  min-height: 22px;
+}
+.dotRequired {
+  color: $red_2;
+}
+.footer {
+  padding: 20px;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.08);
+}
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}

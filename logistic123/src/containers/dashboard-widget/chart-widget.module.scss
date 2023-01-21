@@ -1,0 +1,57 @@
+@import 'assets/css/utilities/';
+
+.chartWidget {
+  margin-top: 20px;
+  padding: 0 20px;
+  .dropdown {
+    button {
+      background-color: unset;
+      border-color: unset;
+      box-shadow: unset;
+      border: none;
+      color: $black;
+      font-size: 14px;
+      &:active {
+        box-shadow: unset;
+      }
+      &:hover {
+        background: gainsboro;
+      }
+    }
+    .dropdownMenu {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          button {
+            width: 100%;
+            img {
+              max-width: 30px;
+              width: 100%;
+              &.analysis {
+                max-width: 20px;
+              }
+            }
+            span {
+              font-size: 12px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .chartWidgetContainer {
+    margin-top: 30px;
+    .chartWidgetItem {
+      border: 1px solid $blue_15;
+      padding: 10px;
+      overflow: hidden;
+      button {
+        margin: 0 0 0 auto;
+        @include reset-button;
+      }
+    }
+  }
+}

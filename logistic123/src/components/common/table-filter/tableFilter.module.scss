@@ -1,0 +1,129 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperFilter {
+  border-radius: 4px;
+  padding: 0 20px 10px;
+  display: flex;
+  align-items: flex-end;
+
+  .mr10 {
+    margin-right: 10px;
+  }
+
+  .startDateWrapper {
+    min-width: 140px;
+  }
+  .typeTimeOff {
+    min-width: 160px;
+  }
+
+  .labelFilter {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: 500;
+
+    .datePickerWrapper {
+      width: calc(50% - 180px);
+      margin-right: 20px;
+    }
+  }
+
+  .inputSearch {
+    width: 350px;
+    height: 30px;
+    background: $white;
+    border: 1px solid $gray_9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 10px;
+    img {
+      margin-top: -4px;
+      height: 13px;
+    }
+  }
+  .inputSearchType {
+    padding: 0.5rem 1rem;
+  }
+  .buttonFilter {
+    margin-right: 10px;
+    width: max-content;
+    height: 30px;
+    font-size: px-to-rem(14);
+    white-space: nowrap;
+    img {
+      margin-bottom: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  .wrapSelectCompany {
+    .selectCompany {
+      width: 140px;
+      margin-right: 10px;
+    }
+  }
+  .wrapSelect {
+    .inputSelect {
+      margin-right: 10px;
+      width: max-content;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+
+    .inputVetting {
+      margin-right: 10px;
+      min-width: 200px;
+    }
+
+    .selectSmall {
+      min-width: 140px;
+      margin-right: 10px;
+    }
+    .resizePortType {
+      @media (max-width: 1024px) {
+        min-width: 125px;
+      }
+    }
+
+    .selectMedium {
+      min-width: 200px;
+      margin-right: 10px;
+    }
+
+    .selectLarge {
+      min-width: 250px;
+      margin-right: 10px;
+    }
+    .resizeCountry {
+      @media (max-width: 1024px) {
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+.wrapperFilterNormal {
+  height: 65px;
+}
+
+.wrapperFilterDate {
+  height: 50px;
+  .dateTimeRangePicker {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapperFilter {
+    .inputSearchCustom {
+      width: 200px;
+    }
+  }
+  .wrapFilter1024 {
+    flex-wrap: wrap;
+    height: 140px;
+  }
+}
+.wrapperFilterWhite {
+  background: $white;
+}

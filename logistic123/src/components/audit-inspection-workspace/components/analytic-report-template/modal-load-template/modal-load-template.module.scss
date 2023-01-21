@@ -1,0 +1,30 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  max-width: 1600px;
+  height: 100vh;
+  margin: 0px auto;
+}
+
+.contentClassName {
+  position: relative;
+  max-width: 1600px;
+  height: 100vh;
+  margin: 0px;
+  background: $white;
+  border: none;
+}
+.wrapContent {
+  background: $white;
+  position: relative;
+  .closeBtn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .btnCancel {
+    margin-right: 1rem;
+  }
+}

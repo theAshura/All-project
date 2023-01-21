@@ -1,0 +1,23 @@
+{
+  "txShoreRank": "Shore Rank Management",
+  "txShoreRankInfo": "Shore rank information",
+  "txShoreRankCode": "Shore Rank Code",
+  "txShoreRankCodeForm": "Shore rank code",
+  "txShoreRankName": "Shore Rank Name",
+  "txShoreRankNameForm": "Shore rank name",
+  "txDescription": "Description",
+  "txCreatedDate": "Created Date",
+  "txCreatedUser": "Created by User",
+  "txUpdatedDate": "Updated Date",
+  "txUpdatedUser": "Updated by User",
+  "txStatus": "Status",
+  "placeHolder": {
+    "txShoreRankCode": "Enter shore rank code",
+    "txShoreRankName": "Enter shore rank name",
+    "txDescription": "Enter description"
+  },
+  "txShoreRankCodeExist": "The shore rank code is existed",
+  "txShoreRankNameExist": "The shore rank name is existed",
+  "txShoreDepartmentForm": "Shore department",
+  "txShoreDepartment": "Shore Department Management"
+}

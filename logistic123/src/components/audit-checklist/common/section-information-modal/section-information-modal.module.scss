@@ -1,0 +1,45 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/functions.scss';
+
+.contentWrapper {
+  .title {
+    font-weight: bold;
+    margin: 0 0 20px 0;
+  }
+  .table {
+    .rowWrapper {
+      height: 32px !important;
+      td {
+        padding: 0 16px !important;
+        border-bottom: 1px solid $gray_10 !important;
+      }
+    }
+    thead {
+      tr {
+        th {
+          font-weight: bold;
+          border: none;
+          padding: 7px 16px;
+          background: $gray_12;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  img {
+    top: 50% !important;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}

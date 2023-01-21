@@ -1,0 +1,115 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  .containerForm {
+    .btnAdd {
+      padding: 10.5px 20px !important;
+    }
+    .icButton {
+      margin-left: 10px;
+    }
+  }
+  .titleForm {
+    font-size: $title_font_size;
+    line-height: 24px;
+  }
+  .colorColumn {
+    width: 80px;
+    height: 20px;
+  }
+
+  .tableWrapper {
+    // border: 1px solid $gray_11;
+    .checkboxWrapper {
+      display: flex;
+      justify-content: center;
+      margin-left: 8px;
+    }
+    th {
+      height: 36px;
+      padding: 0 20px;
+      background-color: $gray_12;
+      border-bottom: 1px solid $gray_10;
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 22px;
+      margin: 0px 12px;
+      color: $gray_3;
+      border-style: none;
+      text-transform: capitalize;
+      &::before {
+        display: none;
+      }
+    }
+    .rowWrapper {
+      height: 27px !important;
+      td {
+        padding: 0 20px;
+        border-bottom: 1px solid $gray_10;
+      }
+      .actionContent {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        .imageWrapper {
+          background-color: $blue_2;
+          border-radius: 4px;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          img {
+            width: 15px;
+          }
+        }
+      }
+    }
+    .ant-table-body {
+      margin-bottom: 16px;
+    }
+    div {
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $blue_3;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:active {
+        background: $blue_2;
+      }
+    }
+  }
+  .table {
+    td {
+      color: $gray_5;
+      font-weight: 500;
+    }
+  }
+}
+
+.dataWrapperEmpty {
+  min-height: 180px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    top: 50% !important;
+    width: 110px;
+    height: 110px;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}

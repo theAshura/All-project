@@ -1,0 +1,30 @@
+@import 'assets/css/utilities/variable.scss';
+@import '../../../../../../common/select-result/item//itemSelect.module.scss';
+
+.refItemSelect {
+  // border-radius: 8px;
+  // border: 1px solid $gray_10;
+  // display: flex;
+  // align-items: center;
+  // color: $gray_5;
+  // // margin-right: 10px;
+  // // margin-bottom: 5px;
+  // height: 30px;
+  // .itemContent {
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   text-overflow: ellipsis;
+  //   line-height: 13px;
+  // }
+  // .btnSmall {
+  //   height: 8px;
+  //   padding: 2px 10px;
+  //   img {
+  //     padding: 0;
+  //   }
+  // }
+  // .disable {
+  //   cursor: not-allowed;
+  // }
+  @extend .itemSelect;
+}

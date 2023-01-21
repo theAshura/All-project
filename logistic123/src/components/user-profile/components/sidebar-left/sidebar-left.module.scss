@@ -1,0 +1,27 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapSidebarLeft {
+  width: 220px;
+  min-width: 220px;
+  padding-top: 9px;
+  padding-left: 40px;
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: bold;
+  }
+  .steps {
+    button {
+      border: none;
+      background-color: $white;
+      margin-top: 20px;
+      padding-left: 0px;
+      display: block;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    min-width: 180px;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/vmo-rental-webapp/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "vmo-rental-webapp:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vmo-rental-webapp:build:development"
+        },
+        "production": {
+          "buildTarget": "vmo-rental-webapp:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/vmo-rental-webapp",
+        "index": "apps/vmo-rental-webapp/src/index.html",
+        "baseHref": "/",
+        "main": "apps/vmo-rental-webapp/src/main.tsx",
+        "polyfills": "apps/vmo-rental-webapp/src/polyfills.ts",
+        "tsConfig": "apps/vmo-rental-webapp/tsconfig.app.json",
+        "assets": [
+          "apps/vmo-rental-webapp/src/favicon.ico",
+          "apps/vmo-rental-webapp/src/assets"
+        ],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "apps/vmo-rental-webapp/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "libs/environments/src/lib/environment.ts",
+              "with": "libs/environments/src/lib/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        },
+        "staging": {
+          "fileReplacements": [
+            {
+              "replace": "libs/environments/src/lib/environment.ts",
+              "with": "libs/environments/src/lib/environment.staging.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/vmo-rental-webapp/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/vmo-rental-webapp"],
+      "options": {
+        "jestConfig": "apps/vmo-rental-webapp/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

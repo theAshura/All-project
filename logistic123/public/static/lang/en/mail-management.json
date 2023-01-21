@@ -1,0 +1,20 @@
+{
+  "mailManagement": "Mail Management",
+  "generalInformation": "General information",
+  "entity": "Entity",
+  "vesselType": "Vessel type",
+  "status": "Status",
+  "module": "Module",
+  "workingType": "Working type",
+  "mailType": "Mail type",
+  "mailTemplateCode": "Mail template code",
+  "enterMailTemplateCode": "Enter mail template code",
+  "subject": "Subject",
+  "enterSubject": "Enter subject",
+  "mailTemplateName": "Mail template name",
+  "enterMailTemplateName": "Enter mail template name",
+  "mailTemplateDescription": "Mail template description",
+  "enterMailTemplateDescription": "Enter mail template description",
+  "createNew": "Create New",
+  "txMailCodeExist": "The mail template code is existed"
+}

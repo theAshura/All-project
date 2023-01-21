@@ -1,0 +1,113 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.tableWrapper {
+  th {
+    height: 36px;
+    padding: 0 20px !important;
+    background-color: $bg-color1 !important;
+    border-bottom: 1px solid $gray_10;
+    font-weight: 600 !important;
+    font-size: px-to-rem(14) !important;
+    line-height: 22px !important;
+    margin: 0px 12px;
+    color: $gray_3;
+    border-style: none;
+    text-transform: capitalize;
+    &::before {
+      display: none;
+    }
+  }
+  .rowWrapper {
+    height: 26.5px !important;
+    td {
+      padding: 0 20px;
+      border-bottom: 1px solid $gray_10;
+      font-weight: 500 !important;
+      font-size: px-to-rem(14) !important;
+    }
+    .actionContent {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      .imageWrapper {
+        background-color: $blue_2;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 15px;
+        }
+      }
+    }
+  }
+  div {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $gray_11;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+  .blue_3 {
+    color: $blue_3 !important;
+  }
+
+  .red_3 {
+    color: $red_3 !important;
+  }
+
+  .orange_3 {
+    color: $orange_3 !important;
+  }
+
+  .red_6 {
+    color: $red_6 !important;
+  }
+
+  .green_1 {
+    color: $green_1 !important;
+  }
+
+  .green_2 {
+    color: $green_2 !important;
+  }
+
+  .yellow_2 {
+    color: $yellow_2 !important;
+  }
+}
+.table {
+  td {
+    color: $gray_5;
+    font-weight: 500;
+  }
+}
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  img {
+    top: 50% !important;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,11 @@
+@import 'assets/css/utilities/variable.scss';
+
+.calendar-homepage {
+  .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-selected {
+    background-color: $green_15;
+    border-radius: 0;
+  }
+  .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-today {
+    border-color: $green_15;
+  }
+}

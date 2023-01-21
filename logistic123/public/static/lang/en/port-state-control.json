@@ -1,0 +1,98 @@
+{
+  "sailGeneralReport": "SAIL General Report",
+  "generalInformation": "General information",
+  "findingInformation": "Finding Information",
+  "externalInspectionType": "External Inspection Type",
+  "place": "Place",
+  "inspectionReport": "Inspection report",
+
+  "addVessel": "Add Vessel",
+  "externalInspectionReport": "External inspection report",
+
+  "choosePort": "Choose Port",
+  "chooseTerminal": "Choose Terminal",
+  "companyName": "Company Name",
+  "refId": "Ref.Id",
+  "refID": "Ref.ID",
+  "portStateControl": "Port State Control",
+
+  "chooseVessel": "Choose vessel",
+  "choosePscDeficiency": "Choose Deficiency",
+  "choosePscAction": "Choose Action",
+  "vesselName": "Vessel name",
+  "txVesselName": "Vessel Name",
+
+  "vesselCode": "Vessel code",
+  "portName": "Port name",
+  "portCode": "Port code",
+  "countryName": "Country name",
+
+  "terminalName": "Terminal name",
+  "terminalCode": "Terminal code",
+  "vesselType": "Vessel type",
+  "txVesselType": "Vessel Type",
+  "fleetName": "Fleet name",
+  "txFleetName": "Fleet Name",
+  "country": "Country name",
+  "authority": "Authority",
+  "addNew": "Add New",
+  "addFindings": "Add Findings",
+  "sNo": "S.no",
+  "sNoTx": "S.No",
+  "auditorPlaceHolder": "Enter Auditor/Inspector Name",
+  "dateOfInspection": "Date of inspection",
+  "inspectionDate": "Inspection Date",
+  "lastUpdatedDate": "Last Updated Date",
+
+  "noFindings": "No findings",
+  "totalNoOfFindings": "Total no of findings",
+  "comment": "Comment (description of the inspection)",
+  "auditorInspectorName": "Auditor/Inspector name",
+  "inspectionPort": "Inspection Port",
+  "inspectionCountry": "Inspection Country",
+  "detention": "Detention",
+  "totalFindings": "Total Findings",
+  "openFindings": "Open Findings",
+
+  "eventTypeTx": "Event type",
+
+  "pscDeficiencyCode": "PSC deficiency code",
+  "pscDeficiencyName": "PSC deficiency name",
+  "pscActionCode": "PSC action code",
+  "pscActionName": "PSC action name",
+  "finding": "Finding",
+  "viqCategory": "VIQ category",
+
+  "estimatedCompletion": "Estimated Completion",
+  "actualCompletion": "Actual Completion",
+  "status": "Status",
+
+  "table": {
+    "pscActionCode": "PSC Action Code",
+    "pscActionName": "PSC Action Name",
+    "viqCategory": "VIQ Category",
+    "estimatedCompletion": "Estimated Completion",
+    "actualCompletion": "Actual Completion"
+  },
+
+  "placeholder": {
+    "eventType": "Enter event type",
+    "comment": "Enter comment (description of the inspection)",
+    "finding": "Enter finding"
+  },
+
+  "action": "Action",
+
+  "no": "No",
+  "eventType": "Event Type",
+
+  "ThisFieldIsRequired": "This field is required",
+  "requiredActualCompletion": "Actual Completion is required for closed findings",
+
+  "cancelTitle": "Cancel?",
+  "cancelMessage": "Are you sure you want to proceed with this action?",
+  "deleteTitle": "Delete? ",
+  "deleteMessage": "Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.",
+  "imoNumber": "IMO number",
+  "txIMONumber": "IMO Number"
+}

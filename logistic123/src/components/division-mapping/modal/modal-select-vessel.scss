@@ -1,0 +1,11 @@
+.modalSelectVessel {
+  max-width: 750px;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative !important;
+  min-width: 60%;
+  .ag-grid-table .dropdown-menu-action {
+    margin-left: -370px !important;
+  }
+}

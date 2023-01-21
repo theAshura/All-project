@@ -1,0 +1,76 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.workFlow {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+
+  .activeTab {
+    color: $blue_3;
+  }
+
+  .wrapperFilter {
+    background: $gray_12;
+    border-radius: 4px;
+    padding: 15px 30px;
+    height: 96px;
+    display: flex;
+    align-items: flex-end;
+    // width: 100%;
+    .wrapAction {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .icButton {
+    padding-left: 9px;
+  }
+
+  .loading {
+    height: 60px;
+    width: 60px;
+  }
+
+  .noData {
+    margin-top: 10%;
+    height: 170px;
+    width: 136px;
+  }
+
+  .table {
+    .subAction {
+      .icAction {
+        .icEdit {
+          width: 20px;
+          height: 20px;
+        }
+
+        .icRemove {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .subTitle {
+      padding: 6px 16px;
+      height: 36px;
+    }
+  }
+
+  .loadingWrapper {
+    min-height: calc(100vh - 380px);
+    position: relative;
+    .loading {
+      height: 60px;
+      width: 60px;
+      top: calc(50% - 30px);
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.wrapTabPane {
+  height: calc(100vh - 153px);
+}

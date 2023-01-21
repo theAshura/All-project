@@ -1,0 +1,15 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  background: $white;
+}
+
+.lineChartContainer {
+  height: 400px;
+  .noData {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

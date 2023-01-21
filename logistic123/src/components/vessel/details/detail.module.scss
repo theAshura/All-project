@@ -1,0 +1,24 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.vesselTypeCreate {
+  padding-bottom: 30px;
+  font-size: px-to-rem(14);
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .buttonFilter {
+    width: 100px;
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+}
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}

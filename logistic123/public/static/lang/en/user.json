@@ -1,0 +1,54 @@
+{
+  "errorToPage": "To page must be greater than from page.",
+  "errorOverPage": "This page is not existed.",
+  "Role": "Role",
+  "experience": {
+    "title": "Experience",
+    "position": "Position",
+    "companyName": "Company name",
+    "country": "Company location (country)",
+    "present": "Present",
+    "startDate": "Start date",
+    "tillDate": "Till date",
+    "endDate": "End date"
+  },
+  "title": {
+    "action": "Action",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "dob": "Date of Birth",
+    "phoneNumber": "Phone",
+    "jobTitle": "Job Title",
+    "gender": "Gender",
+    "nationality": "Nationality",
+    "country": "Country",
+    "stateOrProvince": "State/Province",
+    "townOrCity": "Town/City",
+    "address": "Address",
+    "postCode": "Post Code",
+    "status": "Status"
+  },
+  "licensesCertification": {
+    "title": "Licenses Certification",
+    "type": "Type",
+    "licenseName": "License name",
+    "certificationName": "Certification name",
+    "issuedBy": "Issued by",
+    "issueCountry": "Issue country",
+    "issuedDate": "Issued date",
+    "expiryDate": "Expiry date",
+    "attachments": "Attachments",
+    "Verified": "Verified"
+  },
+  "placeholder": {
+    "position": "Enter position",
+    "companyName": "Enter company name",
+    "country": "Enter company location (country)",
+    "startDate": "Enter start date",
+    "endDate": "Enter end date",
+    "licenseName": "Enter license/certification name",
+    "certificationName": "Enter license/certification name",
+    "issuedBy": "Enter issued by"
+  }
+}

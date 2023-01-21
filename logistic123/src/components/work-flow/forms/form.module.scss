@@ -1,0 +1,48 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+@media (min-width: 1600px) {
+  .rowWrapper {
+    .colItem {
+      flex: 1 0;
+      width: auto;
+    }
+  }
+}
+
+.rowWrapper {
+  margin: 0 -14px;
+  .colItem {
+    padding: 0 14px;
+  }
+}
+
+.labelType {
+  font-size: 14px !important;
+}
+.footer {
+  padding: 0 10.5px;
+}
+.container {
+  padding-bottom: 24px !important;
+}
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.wrapWorkflowDescription {
+  background: $blue_10;
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: $blue_2;
+  display: flex;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 24px;
+  .icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}

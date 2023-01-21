@@ -1,0 +1,16 @@
+{
+  "timeOfRepeating": "Time of repeating",
+  "placeholderTimeOfRepeating": "Enter time of repeating",
+  "description": "Description",
+  "placeholderDescription": "Enter description",
+  "coEfficient": "Co-efficient",
+  "placeholderCoEfficient": "Enter co-efficient when count repeated findings",
+  "status": "Status",
+  "createNew": "Create New",
+  "ThisFieldIsRequired": "This field is required",
+  "timeOfRepeatingIsExisted": "Time of repeating is existed",
+  "createDate": "Create Date",
+  "createUser": "Create by User",
+  "updateAt": "Update Date",
+  "updateUser": "Update by User"
+}

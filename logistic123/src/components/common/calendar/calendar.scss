@@ -1,0 +1,184 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.calendar-ui {
+  .fc-button-group {
+    .fc-dayGridMonth-button,
+    .fc-timeGridWeek-button,
+    .fc-timeGridDay-button {
+      background-color: $white !important;
+      border-radius: 0px 2px 2px 0px;
+      min-width: 60px;
+      min-height: 32px;
+      color: $gray_3 !important;
+      border: solid 1px rgba(0, 0, 0, 0.25) !important;
+      outline: none !important;
+      box-shadow: none !important;
+      margin: 0px 10px;
+    }
+    .fc-button-active {
+      color: #1890ff !important;
+      border: solid 1px #1890ff !important;
+    }
+  }
+  .fc-dayGridMonth-view {
+    .fc-scroller {
+      overflow: auto !important;
+    }
+    .fc-scrollgrid {
+      border: none !important;
+    }
+    .fc-scrollgrid-section {
+      td {
+        border: none;
+      }
+    }
+    .fc-scrollgrid-section {
+      th {
+        border-right: none;
+      }
+    }
+    .fc-col-header-cell {
+      border: none;
+      padding: 0px 5px;
+      .fc-scrollgrid-sync-inner {
+        border: none;
+        text-align: right;
+        padding: 15px 0px;
+        a {
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 14px;
+        }
+      }
+    }
+    .fc-daygrid-day {
+      min-height: 130px;
+      height: 130px;
+      border: none;
+      border: none;
+      padding: 0px 5px;
+      .fc-daygrid-day-frame {
+        max-height: 50px;
+        border-top: solid 2px #f0f0f0;
+        .fc-daygrid-day-number {
+          color: $black;
+        }
+      }
+      .event-line {
+        &:hover {
+          background-color: $blue_8;
+        }
+        .event-item {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          line-height: 22px;
+          font-style: normal;
+          font-weight: bold;
+
+          .event-dot {
+            display: block;
+            background: $primary_6;
+            border-radius: 10px;
+            width: 6px;
+            height: 6px;
+            margin-right: 8px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .fc-day-today {
+      background: transparent !important;
+      .fc-daygrid-day-frame {
+        border-top: solid 2px $primary_6 !important;
+        background-color: #e6f7ff !important;
+        .fc-daygrid-day-number {
+          color: $primary_6;
+        }
+      }
+    }
+  }
+  .fc-dayGridMonth-view {
+    .fc-daygrid-day {
+      min-height: 130px;
+      height: 130px;
+    }
+  }
+
+  .fc-daygrid-day-frame {
+    max-height: 50px;
+  }
+
+  .fc-button-primary {
+    background-color: $blue_3 !important;
+    border: unset !important;
+  }
+  .fc-button-active {
+    &:focus {
+      box-shadow: #2880d980 !important;
+    }
+  }
+
+  .fc-h-event {
+    border: unset;
+  }
+  .fc-popover {
+    z-index: 1000 !important;
+    .fc-popover-body {
+      max-height: 120px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $blue_3;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: $blue_2;
+      }
+    }
+  }
+
+  .event-item {
+    color: $black;
+    border-radius: 3px;
+    width: 100%;
+  }
+  .event {
+    font-weight: 400;
+    color: $black;
+
+    &::before {
+      content: '';
+      height: 8px;
+      width: 8px;
+      margin-left: 5px;
+      background-image: url('../../../assets/images/icon/icDotBlue.svg');
+    }
+  }
+
+  .due-today {
+    background-color: $red_3;
+    &:hover {
+      background-color: $red_3;
+    }
+  }
+  .up-coming {
+    background-color: $yellow_3;
+    &:hover {
+      background-color: $yellow_3;
+    }
+  }
+}
+
+.calendar-ui .fc-dayGridMonth-view .fc-scroller {
+  overflow: hidden !important;
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "environments": "libs/environments",
+    "services": "libs/services",
+    "themes": "libs/themes",
+    "ui": "libs/ui",
+    "utils": "libs/utils",
+    "vmo-rental-mobile": "apps/vmo-rental-mobile",
+    "vmo-rental-webapp": "apps/vmo-rental-webapp"
+  }
+}

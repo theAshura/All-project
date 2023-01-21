@@ -1,0 +1,73 @@
+@import 'assets/css/utilities/variable.scss';
+
+.homepageContainer {
+  .container {
+    background-color: $bg-color-container;
+    padding: 15px 20px;
+    min-height: 100vh;
+    .welcomeText {
+      font-size: 18px;
+      .username {
+        color: $gray_3;
+        font-weight: 800;
+        line-height: 26px;
+      }
+    }
+    .agingOpenRecordContainer {
+      padding: 20px;
+      background-color: $white;
+      border: 1px solid $gray_19;
+      border-radius: 4px;
+      .agingOpenRecordsTitle {
+        color: $gray_3;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .activityContainer {
+    max-height: 614px;
+    min-height: 614px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    outline: none;
+    background-color: $white;
+    border-radius: 4px;
+    border: 1px solid $gray_19;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $gray_11;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+  .myActivityTitle {
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    padding: 20px 20px 10px;
+    color: $gray_3;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .noData {
+    margin-top: 210px;
+  }
+}

@@ -1,0 +1,69 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  margin-top: 1rem;
+  border-radius: 5px;
+  .wrapTable {
+    padding: 10px 20px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 100%;
+  }
+  .btnAttachment {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    &:hover {
+      background: none;
+      color: $blue_3;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.objectReview {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
+.pendingContainer {
+  background-color: $red_10;
+  border: 1px solid $red_3;
+  border-radius: 5px;
+  padding: 0px 10px;
+  font-weight: 700;
+
+  .labelPending {
+    color: $gray_3;
+    font-size: 14px;
+  }
+  .valuePending {
+    color: red;
+    font-size: 18px;
+    margin-left: 8px;
+  }
+}
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.pendingInfoOverlay {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.infoText {
+  color: $blue_2;
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+}

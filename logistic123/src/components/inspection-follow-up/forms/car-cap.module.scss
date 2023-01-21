@@ -1,0 +1,22 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrap {
+  background-color: $white;
+  padding: 8px 26px;
+  border-radius: 5px;
+  margin: 15px 0 0 0;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 10px;
+    .icButton {
+      margin-left: 10px;
+    }
+  }
+}

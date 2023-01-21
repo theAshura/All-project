@@ -1,0 +1,35 @@
+export const NATURE_OF_FINDINGS_DYNAMIC_LIST_FIELDS = {
+  Action: 'Action',
+  'Nature of findings code': 'Nature of findings code',
+  'Nature of findings name': 'Nature of findings name',
+  Description: 'Description',
+  'Created date': 'Created date',
+  'Created by user': 'Created by user',
+  'Updated date': 'Updated date',
+  'Updated by user': 'Updated by user',
+  Status: 'Status',
+  'Created by company': 'Created by company',
+  'Nature Of findings': 'Nature Of findings',
+  'Delete?': 'Delete?',
+  'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.':
+    'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.',
+  Cancel: 'Cancel',
+  Delete: 'Delete',
+  'Create New': 'Create New',
+};
+
+export const NATURE_OF_FINDINGS_DYNAMIC_DETAIL_FIELDS = {
+  'Nature of findings information': 'Nature of findings information',
+  'Nature of findings code': 'Nature of findings code',
+  'Nature of findings name': 'Nature of findings name',
+  Description: 'Description',
+  Status: 'Status',
+  Active: 'Active',
+  Inactive: 'Inactive',
+  'Enter nature of findings code': 'Enter nature of findings code',
+  'Enter nature of findings name': 'Enter nature of findings name',
+  'Enter description': 'Enter description',
+  Save: 'Save',
+  'Save & New': 'Save & New',
+  Cancel: 'Cancel',
+};

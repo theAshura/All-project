@@ -1,0 +1,19 @@
+{
+  "txPSC": "PSC Deficiency",
+  "txPSCInformation": "PSC Deficiency information",
+  "txPSCCode": "PSC Deficiency Code",
+  "txPSCName": "PSC Deficiency Name",
+  "txDescription": "Description",
+  "txCreatedDate": "Created Date",
+  "txCreatedBy": "Created by User",
+  "txUpdatedDate": "Updated Date",
+  "txUpdatedBy": "Updated by User",
+  "txStatus": "Status",
+  "placeHolder": {
+    "txPSCCode": "Enter PSC Deficiency Code",
+    "txPSCName": "Enter PSC Deficiency Name",
+    "txDescription": "Enter Description"
+  },
+  "pscDeficiencyCodeIsExisted": "The psc deficiency code is existed",
+  "pscDeficiencyNameIsExisted": "The psc deficiency code is existed"
+}

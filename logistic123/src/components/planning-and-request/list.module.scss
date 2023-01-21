@@ -1,0 +1,30 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  position: relative;
+  min-height: calc(100vh - 152px);
+
+  .btnCreate {
+    margin-right: 10px;
+  }
+
+  .subAction {
+    margin-top: 2px;
+  }
+
+  .icButton {
+    padding-left: 9px;
+  }
+
+  .boxShadowAction {
+    box-shadow: 0 0 5px $gray_3 !important;
+    clip-path: inset(0px -5px 0px 0px) !important;
+    z-index: 2;
+  }
+
+  .pagination {
+    padding: 40px 30px;
+    padding-top: 20px;
+  }
+}

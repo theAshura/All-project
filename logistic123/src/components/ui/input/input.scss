@@ -1,0 +1,189 @@
+@import 'assets/css//utilities/variable.scss';
+
+.wrap-input {
+  .label {
+    font-size: 14px;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+
+  .input {
+    height: 30px;
+    border-radius: $input-radius;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 14px;
+    position: relative;
+    &.focusInput {
+      border: 1px solid $blue_3 !important;
+      color: $gray_3 !important;
+      background-color: $white !important;
+    }
+
+    &.cssDisabled {
+      background-color: $gray_11 !important;
+      color: $gray_7 !important;
+    }
+
+    &.focusInputLine {
+      border-bottom: 1px solid $blue_3 !important;
+      color: $gray_3 !important;
+      background-color: $white !important;
+    }
+
+    &.normal {
+      color: $gray_3;
+      border: 1px solid $gray_9;
+      background-color: $white;
+    }
+
+    &.line {
+      border-radius: unset;
+      padding: 0;
+      height: 30px;
+      color: $gray_3;
+      border-bottom: 1px solid $gray_9;
+      background-color: $white;
+
+      input {
+        height: 30px;
+      }
+    }
+
+    &.disabled {
+      color: $gray_7;
+      border: 1px solid $gray_9;
+      background-color: $gray_11;
+
+      :hover {
+        cursor: not-allowed;
+      }
+    }
+
+    &.warning {
+      color: $gray_4;
+      border: 1px solid $orange_3;
+      background-color: $orange_13;
+    }
+
+    &.info {
+      color: $gray_4;
+      border: 1px solid $blue_3;
+      background-color: $blue_10;
+    }
+
+    &.error {
+      color: $gray_4;
+      border: 1px solid $red_3;
+      background-color: $red_10;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    input {
+      display: inline-flex;
+      border: none;
+      background: transparent;
+
+      width: 100%;
+      color: $gray_3;
+
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: $gray_7;
+        font-style: normal;
+        line-height: 24px;
+      }
+    }
+
+    .renderPrefix {
+      margin-right: px-to-rem(5);
+      display: inline-flex;
+      height: 100%;
+    }
+
+    .renderSuffix {
+      margin-left: 10px;
+      display: inline-flex;
+    }
+
+    @media (max-width: 1400px) {
+      height: 30px;
+    }
+
+    ::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  .message {
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: px-to-rem(13);
+
+    svg {
+      margin-right: 0.35rem;
+    }
+
+    &.normal {
+      color: $gray_18;
+      background-color: $gray_11;
+      fill: $gray_3;
+    }
+
+    &.disabled {
+      color: $gray_3;
+      background-color: $gray_11;
+      fill: $gray_3;
+    }
+
+    &.warning {
+      color: $orange_14;
+      background-color: $orange_13;
+      fill: $orange_3;
+    }
+
+    &.info {
+      color: $blue_2;
+      background-color: $blue_10;
+      fill: $blue_3;
+    }
+
+    &.error {
+      fill: $red_3;
+      color: $red_3;
+      background-color: $red_10;
+    }
+  }
+
+  .message-required {
+    color: $red_2;
+    padding-left: 14px;
+    font-size: 12.25px;
+    font-weight: 400 !important;
+  }
+  .value-couting {
+    position: absolute;
+    bottom: -17px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    color: $gray_7;
+    font-size: 9px;
+    letter-spacing: 0.4px;
+    z-index: 9;
+  }
+}

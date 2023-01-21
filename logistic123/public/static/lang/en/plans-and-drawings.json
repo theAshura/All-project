@@ -1,0 +1,28 @@
+{
+  "plansAndDrawing": "Plans and Drawings",
+  "plansAndDrawingInformation": "Plans and Drawings Information",
+  "nameOfPlanning": "Name of plan",
+  "no": "No",
+  "attachment": "Attachment",
+  "attach": "Attach",
+  "action": "Action",
+  "createdUser": "Created by User",
+  "createdDate": "Created Date",
+  "updatedUser": "Updated by User",
+  "updatedDate": "Updated Date",
+  "create": "Create",
+  "placeholder": {
+    "comment": "Enter comment",
+    "nameOfDrawing": "Enter name of drawing",
+    "pleaseSelect": "Please select"
+  },
+  "table": {
+    "nameOfPlanning": "Name of Plan",
+    "noteByReviewer": "Notes by Reviewers"
+  },
+  "ThisFieldIsRequired": "This field is required",
+  "vesselName": "Vessel Name",
+  "imoNumber": "IMO Number",
+  "vesselNameAndIMONumber": "Vessel name - IMO number",
+  "comment": "Comment"
+}

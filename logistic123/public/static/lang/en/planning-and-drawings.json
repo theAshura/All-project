@@ -1,0 +1,44 @@
+{
+  "causeSection": "Cause section",
+  "typeOfLossTx": "Type of Loss",
+  "typeOfLoss": "Type of loss",
+  "comment": "Comment",
+  "noteByReviewer": "Note by reviewer",
+  "nameOfPlan": "Name of plan",
+  "placeholder": {
+    "no": "NO",
+    "comment": "Enter comment",
+    "pleaseSelect": "Please select",
+    "noteByReviewer": "Enter note by reviewer"
+  },
+  "ThisFieldIsRequired": "This field is required",
+  "table": {
+    "action": "Action",
+    "authority": "Authority",
+    "no": "No",
+    "status": "Status",
+    "eventType": "Event Type",
+    "issueDate": "Issue Date",
+    "expiryDate": "Expiry Date",
+    "remarks": "Remarks",
+    "closureRemarks": "Closure Remarks",
+    "closeDate": "Close Date",
+    "attachments": "Attachment",
+    "riskFactor": "Risk Factor",
+    "vesselAcceptable": "Vessel Acceptable",
+    "incidentStatus": "Incident Status",
+    "upload": "Upload",
+    "updatedAt": "Last Updated Date",
+    "vesselName": "Vessel Name",
+    "imoNumber": "IMO Number",
+    "openFindings": "Open Findings",
+    "totalFindings": "Total Findings"
+  },
+  "cancelTitle": "Cancel?",
+  "cancelMessage": "Are you sure you want to proceed with this action?",
+  "deleteTitle": "Delete? ",
+  "deleteMessage": "Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.",
+  "button": {
+    "createNew": "Create New"
+  }
+}

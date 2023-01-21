@@ -1,0 +1,62 @@
+@import 'assets/css/utilities/variable.scss';
+
+.header {
+  padding: 0px 0px 10px 0px !important;
+}
+.btnCreate {
+  font-weight: 500;
+  font-size: 12.25px !important;
+}
+
+.labelRisk {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 0px 8px;
+
+  background: $gray_12;
+  border: 1px solid $gray_10;
+  color: $gray_10;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.negligible {
+  background-color: $blue_10 !important;
+  border: 1px solid $blue_3 !important;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12 !important;
+  border: 1px solid $green_1 !important;
+  color: $green_1;
+}
+.medium {
+  background-color: $yellow_12 !important;
+  border: 1px solid $yellow_13 !important;
+  color: $yellow_13;
+}
+.high {
+  background-color: $red_12 !important;
+  border: 1px solid $red_3 !important;
+  color: $red_3;
+}
+.iconDown {
+  width: 10px;
+  height: 10px;
+}
+
+.riskScore {
+  text-align: center;
+  line-height: 20px;
+  width: 32px;
+  height: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid $gray_10;
+  background-color: $gray_12;
+}

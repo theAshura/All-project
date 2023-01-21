@@ -1,0 +1,14 @@
+{
+  "txMobileConfigInformation": "Mobile config information",
+  "txMobileConfig": "Mobile Config",
+  "txShoreURL(IP)": "Shore URL (IP)",
+  "txShoreURL(Actual)": "Shore URL (Actual)",
+  "txCompanyCode": "Company Code",
+  "txCompanyName": "Company Name",
+  "placeHolder": {
+    "txShoreURL(IP)": "Enter Shore URL (IP)",
+    "txShoreURL(Actual)": "Enter Shore URL (Actual)",
+    "txCompanyCode": "Enter Company Code",
+    "txCompanyName": "Enter Company Name"
+  }
+}

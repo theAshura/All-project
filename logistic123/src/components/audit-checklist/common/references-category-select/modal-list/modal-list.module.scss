@@ -1,0 +1,221 @@
+@import 'assets/css/utilities/';
+
+.labelSelect {
+  font-size: px-to-rem(16);
+  color: $gray_3_1;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+
+  .imgRequired {
+    margin-top: -13px;
+  }
+}
+
+.dropdown {
+  width: auto;
+
+  .dropdownToggle {
+    height: 30px;
+    padding: 12px 16px;
+    width: 100%;
+    font-size: px-to-rem(16);
+    color: $gray_7;
+    background-color: $white !important;
+    border: 1px solid $gray_9 !important;
+    box-shadow: unset;
+    border-radius: $input-radius;
+
+    &:focus {
+      border: 1px solid $blue_3 !important;
+    }
+
+    &::after {
+      content: url('../../../../../assets/images/icon/icArrowDown.svg');
+      height: 20px;
+    }
+
+    &:active {
+      box-shadow: unset;
+    }
+
+    &:focus {
+      color: $gray_3;
+      box-shadow: unset !important;
+    }
+  }
+
+  .dropdownToggleDisable {
+    cursor: not-allowed;
+    background-color: $gray_11 !important;
+  }
+}
+
+.result {
+  padding: 10px 0;
+
+  img,
+  span {
+    padding: 4px 0;
+    padding-bottom: 8px;
+  }
+}
+
+.wrapper {
+  background-color: $gray_16;
+
+  .content {
+    border: none;
+    box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    background-color: $white;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .container {
+      border-radius: 4px;
+      overflow: hidden;
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          font-weight: bold;
+          font-size: $title_font_size;
+          line-height: 26px;
+          color: $gray_3;
+        }
+
+        .search {
+          display: flex;
+
+          .btnSearch {
+            margin-left: 20px;
+            font-size: px-to-rem(16);
+            font-weight: 500;
+          }
+
+          .searchInput {
+            background-color: $gray_12 !important;
+
+            img {
+              width: 14px;
+              height: 14px;
+              margin-top: -4px;
+            }
+          }
+        }
+      }
+
+      .multiSelect {
+        padding: 10px 0;
+
+        img,
+        span {
+          padding: 4px 0;
+        }
+      }
+
+      .wrapperTable {
+        .tableHeader {
+          thead {
+            background: $bg-color1;
+            height: 36px;
+
+            th {
+              height: 36px;
+            }
+          }
+
+          th:first-child {
+            padding: 0 20px;
+          }
+        }
+
+        .tableScroll {
+          max-height: 282px;
+          overflow: auto;
+          border: 1px solid $gray_11;
+          border-top: none;
+
+          border .table {
+            width: 100%;
+            border-bottom: 1px solid $gray_11;
+          }
+
+          td:first-child {
+            padding: 0 20px;
+          }
+
+          tbody {
+            tr {
+              height: 28px;
+              border-bottom: 1px solid $gray_11;
+
+              &:first-child {
+                height: 0;
+                border: none;
+              }
+
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 7px;
+          }
+
+          &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: $blue_3;
+            border-radius: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb:active {
+            background: $blue_2;
+          }
+        }
+      }
+
+      .footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0;
+        padding-bottom: 0;
+
+        .btn {
+          &:last-child {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+
+  img {
+    top: 50% !important;
+  }
+
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}

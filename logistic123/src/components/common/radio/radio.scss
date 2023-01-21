@@ -1,0 +1,33 @@
+@import '../../../assets/css//utilities/variable.scss';
+
+.label {
+  font-size: px-to-rem(16);
+  color: $gray_3_1;
+  font-weight: 400;
+  width: auto;
+}
+
+.message-required {
+  color: $red_2;
+  padding-left: 14px;
+  font-size: 12.25px;
+  font-weight: 400 !important;
+}
+
+.input-radio-label {
+  font-weight: 400;
+  font-size: px-to-rem(16);
+  color: $gray_3;
+}
+
+.radio {
+  grid-gap: 8px;
+  gap: 8px;
+  height: 40px;
+  font-weight: 400;
+  font-size: px-to-rem(16);
+}
+
+.ant-radio-disabled + span {
+  color: $gray_3;
+}

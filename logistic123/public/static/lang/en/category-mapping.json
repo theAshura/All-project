@@ -1,0 +1,35 @@
+{
+  "settingUp": "Setting Up",
+  "categoryMapping": "Category Mapping",
+  "categoryMappingTitle": "Category Mapping",
+  "search": "Search",
+  "clearAll": "Clear All",
+  "createNew": "Create New",
+
+  "action": "Action",
+  "createdUser": "Created by User",
+  "createdDate": "Created Date",
+  "updatedUser": "Updated by User",
+  "updatedDate": "Updated Date",
+
+  "create": "Create",
+  "categoryMappingInformation": "Category Mapping information",
+  "ThisFieldIsRequired": "This field is required",
+  "txCategoryMappingCodeExist": "The category mapping code is existed",
+  "txCategoryMappingNameExist": "The category mapping name is existed",
+  "secondCategoryName": "Second Category Name",
+  "secondCategoryCode": "Second Category Code",
+  "mainCategory": "Main Category",
+  "secondCategory": "Second Category",
+
+  "mainCategoryTx": "Main category",
+  "secondCategoryTx": "Second category",
+
+  "save": "Save",
+  "status": "Status",
+  "cancel": "Cancel",
+  "cancelTitle": "Cancel?",
+  "cancelMessage": "Are you sure you want to proceed with this action?",
+  "deleteTitle": "Delete? ",
+  "deleteMessage": "Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data."
+}

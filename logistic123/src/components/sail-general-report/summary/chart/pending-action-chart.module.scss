@@ -1,0 +1,16 @@
+@import 'assets/css/utilities/variable.scss';
+.wrapperContainer {
+  background-color: $white;
+  padding: 0px 10px 5px;
+  border: 1px solid $gray_19;
+  border-radius: 5px;
+  height: 100%;
+  .btnChart {
+    margin: 10px 5px;
+    border: none !important;
+    font-size: 12px !important;
+    height: 24px;
+    width: 40px;
+    border-radius: 4px !important;
+  }
+}

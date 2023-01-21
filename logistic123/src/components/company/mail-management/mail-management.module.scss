@@ -1,0 +1,49 @@
+@import 'assets/css/utilities/variable.scss';
+
+.titleForm {
+  color: $gray_3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $title_font_size;
+  line-height: 150%;
+}
+.subLabel {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.badgeMail {
+  align-items: center;
+  padding: 4px 12px;
+  background: $blue_10;
+  border-radius: 8px;
+  color: $blue_2;
+  margin-right: 8px;
+  img {
+    margin-right: 4px;
+  }
+}
+
+.wrapInputTag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .label {
+    min-width: 95px;
+  }
+  .btnSelect {
+    margin-left: 12px;
+    width: 100px;
+  }
+}
+
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}
+
+.dotRequired {
+  color: $red_2;
+  padding-left: 3px;
+}

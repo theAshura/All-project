@@ -1,0 +1,95 @@
+{
+  "incidents": "Incidents",
+  "vesselNameAndIMONumber": "Vessel Name - IMO Number",
+  "thisFieldIsRequired": "This field is required",
+  "txTitleAddComment": "Add comment",
+  "txTitleViewComment": "View comment",
+  "txComment": "Comment",
+  "title": {
+    "numberIncidents": "Number of incidents",
+    "incidentPlace": "Incident place",
+    "reviewStatus": "Review status",
+    "riskDetails": "Risk details",
+    "typeOfIncidents": "Types of incidents"
+  },
+  "buttons": {
+    "createNew": "Create New",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit"
+  },
+  "metadata": {
+    "vessel": "Vessel",
+    "imo": "IMO",
+    "vesselType": "Vessel type",
+    "cimo": "CIMO",
+    "company": "Company"
+  },
+  "table": {
+    "action": "Action",
+    "refId": "Ref Id",
+    "incidentTitle": "Incident Title",
+    "incidentDate": "Incident Date",
+    "typeOfIncident": "Type Of Incident",
+    "company": "Company",
+    "reviewStatus": "Review Status",
+    "vessel": "Vessel",
+    "cimo": "CIMO",
+    "remark": "Remark",
+    "description": "Description",
+    "vesselCode": "Vessel Code",
+    "vesselName": "Vessel Name",
+    "fleetName": "Fleet Name",
+    "ownerName": "Owner Name",
+
+    "imoNumber": "IMO Number",
+    "status": "Status",
+    "cargoType": "Cargo Type",
+    "cargoId": "Cargo ID",
+    "createdDate": "Created Date",
+    "updatedDate": "Updated Date",
+    "sNo": "S.No",
+    "comment": "Comment",
+    "updatedByUser": "Updated by User",
+    "createdByUser": "Created by User"
+  },
+  "labels": {
+    "remarks": "Remarks",
+    "score": "Score",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "risk": "Risk",
+    "potentialRisk": "Potential risk",
+    "observedRisk": "Observed risk",
+    "timeLoss": "Time loss",
+    "comment": "Comment"
+  },
+  "placeholders": {
+    "pleaseSelect": "Please select",
+    "portRemarks": "Enter remarks",
+    "comment": "Enter comment"
+  },
+  "tableHeaders": {
+    "eventType": "Event Type",
+    "inspectionDateFrom": "Inspection Date (from)",
+    "inspectionDateTo": "Inspection Date (to)",
+    "inspectionPort": "Inspection Port",
+    "inspectionCountry": "Inspection Country",
+    "status": "Status",
+    "nextInspectionDue": "Next Inspection Due",
+    "attachment": "Attachment",
+    "updatedAt": "Last Updated Date",
+    "attachments": "Attachments",
+    "vesselName": "Vessel Name",
+    "imoNumber": "IMO Number",
+    "openFindings": "Open Findings",
+    "totalFindings": "Total Findings",
+    "inspectionDate": "Inspection Date",
+    "refId": "Ref ID",
+    "action": "Action"
+  },
+  "Yes": "Yes",
+  "No": "No",
+  "refID": "Ref.ID"
+}

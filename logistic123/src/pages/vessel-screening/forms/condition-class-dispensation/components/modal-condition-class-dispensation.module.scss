@@ -1,0 +1,33 @@
+@import 'assets/css/utilities/variable.scss';
+
+.datePickerWrapper {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.contentClassName {
+  margin-top: 15vh !important;
+}
+
+.formWrapper {
+  max-height: 600px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $gray_11;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}

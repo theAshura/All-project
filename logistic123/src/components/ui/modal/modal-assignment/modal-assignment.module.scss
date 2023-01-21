@@ -1,0 +1,59 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 20vh;
+}
+
+.contentClassName {
+  position: relative;
+  width: 591px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  border: none;
+  .header {
+    background: $blue_3;
+    padding: 8px 20px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .buttonCancel {
+    margin-right: 20px;
+  }
+  .wrapContent {
+    .content {
+      padding: 24px;
+      padding-bottom: 0px;
+    }
+    .footer {
+      padding-right: 24px;
+      padding-bottom: 24px;
+    }
+    .wrapInput {
+      margin-bottom: 16px;
+      .label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray_3;
+      }
+      .inputClassName {
+      }
+    }
+    .company {
+      color: $blue_3;
+    }
+  }
+}

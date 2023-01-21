@@ -1,0 +1,41 @@
+@import 'assets/css/utilities/variable.scss';
+
+.labelRisk {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 0px 8px;
+
+  background: $gray_12;
+  border: 1px solid $gray_10;
+  color: $gray_10;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.negligible {
+  background-color: $blue_10;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12;
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+
+.medium {
+  background-color: $yellow_12;
+  border: 1px solid $yellow_13;
+  color: $yellow_13;
+}
+
+.high {
+  background-color: $orange_13;
+  border: 1px solid $orange_3;
+  color: $orange_3;
+}

@@ -1,0 +1,29 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.container-web {
+  padding: 15px 20px 0px 20px;
+  // margin: 0 20px;
+  // background-color: $white;
+  // padding: 8px 26px;
+  // border-radius: 5px;
+  .container__subtitle {
+    font-size: $title_font_size;
+    font-weight: bold;
+  }
+}
+
+.container__page {
+  margin: 10px 20px;
+  background-color: $white;
+  padding: 8px 26px;
+  border-radius: 5px;
+  .container__subtitle {
+    font-size: $title_font_size;
+    font-weight: bold;
+  }
+
+  .container__divider {
+    height: 1px;
+    background: $gray_10;
+  }
+}

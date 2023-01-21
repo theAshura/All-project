@@ -1,0 +1,18 @@
+@import 'assets/css/utilities/variable.scss';
+
+.header-page {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+  .headers {
+    .title {
+      color: $gray_3;
+      font-size: $title_font_size;
+      line-height: 28px;
+    }
+    .button_create {
+      height: 30px;
+      font-weight: 500;
+      font-size: px-to-rem(14);
+    }
+  }
+}

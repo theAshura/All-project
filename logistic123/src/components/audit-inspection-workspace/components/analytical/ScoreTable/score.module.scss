@@ -1,0 +1,124 @@
+@import 'assets/css/utilities/variable.scss';
+
+.scoreWrap {
+  margin-top: 12px;
+  background-color: $white;
+  padding: 10px 20px;
+  .tableContainer {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .add-scroll {
+    overflow-y: scroll;
+    height: 100px;
+  }
+  //   .tableContainer {
+  //
+  //   }
+  .titleHeader {
+    font-style: normal;
+    font-weight: 600;
+    font-size: $title_font_size;
+    color: $gray_3;
+  }
+  .subTitle {
+    color: $gray_6;
+  }
+  .table {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: separate;
+    font-size: 12px;
+    color: $gray_5;
+    .refId {
+      min-width: 160px;
+    }
+    .suggestedValue {
+      min-width: 140px;
+    }
+    thead {
+      background: $bg-color1;
+      tr {
+        th {
+          border: none;
+          font-size: 12px;
+          top: 0;
+          left: 0;
+          z-index: 5;
+          position: sticky;
+          background: $bg-color1;
+          color: $gray_3;
+        }
+      }
+    }
+    tbody {
+      td {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        p {
+          margin: 0;
+          color: $gray_5;
+        }
+      }
+      .inputNo {
+        width: 5.3%;
+      }
+      .inputQuestion {
+        width: 10%;
+      }
+      .inputItem {
+        width: 46%;
+      }
+      .inputValue {
+        width: 10.5%;
+      }
+      .inputButton {
+        width: 16%;
+      }
+      .highLight {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        color: #242325;
+      }
+      .wrapButton {
+        padding: 2px;
+        width: 154px;
+        height: 32px;
+        background: rgba(118, 118, 128, 0.12);
+        border-radius: 8px;
+      }
+
+      button {
+        align-items: center;
+        padding: 4px;
+        gap: 10px;
+        width: 75px;
+        height: 28px;
+        border-radius: 6px;
+        border: none;
+        color: $gray_7;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .greenButton {
+        background: #30d158;
+        color: $white;
+      }
+      .normal {
+        word-wrap: break-word;
+      }
+      .redButton {
+        background: $red_11;
+        color: $white;
+      }
+    }
+  }
+  .refId {
+    color: #3b9ff3;
+  }
+}

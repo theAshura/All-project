@@ -1,0 +1,115 @@
+@import '../../../assets/css//utilities/variable.scss';
+
+.wrap-textarea {
+  .label {
+    font-size: px-to-rem(14);
+    color: $gray_1;
+  }
+
+  textarea {
+    border-radius: $input-radius;
+    display: flex;
+    align-items: center;
+    line-height: 150%;
+    display: inline-flex;
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0.75rem 1rem;
+
+    &.normal {
+      color: $gray_3;
+      border: 1px solid $gray_9;
+      background-color: $white;
+    }
+
+    &.disabled {
+      color: $gray_7;
+      border: 1px solid $gray_9;
+      background-color: $gray_11;
+      cursor: not-allowed;
+    }
+
+    &.warning {
+      color: $gray_4;
+      border: 1px solid $orange_3;
+      background-color: $orange_13;
+    }
+
+    &.info {
+      color: $gray_4;
+      border: 1px solid $blue_3;
+      background-color: $blue_10;
+    }
+
+    &.error {
+      color: $gray_4;
+      border: 1px solid $red_3;
+      background-color: $red_10;
+    }
+
+    &:hover,
+    &:active {
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $blue_3;
+      color: $gray_3;
+      background-color: $white;
+    }
+
+    &::placeholder {
+      color: $gray_7;
+      font-style: normal;
+      line-height: 24px;
+    }
+  }
+  .message {
+    padding: 0.25rem 0.75rem;
+    border-radius: $input-radius;
+    display: flex;
+    align-items: center;
+    font-size: px-to-rem(13);
+    svg {
+      margin-right: 0.25rem;
+    }
+
+    &.normal {
+      color: $gray_18;
+      background-color: $gray_11;
+      fill: $gray_3;
+    }
+    &.disabled {
+      color: $gray_3;
+      background-color: $gray_11;
+      fill: $gray_3;
+    }
+
+    &.warning {
+      color: $orange_14;
+      background-color: $orange_13;
+      fill: $orange_3;
+    }
+
+    &.info {
+      color: $blue_2;
+      background-color: $blue_10;
+      fill: $blue_3;
+    }
+
+    &.error {
+      fill: $red_3;
+      color: $red_3;
+      background-color: $red_10;
+    }
+  }
+
+  .message-required {
+    color: $red_2;
+    padding-left: 14px;
+    font-size: 12.25px;
+    font-weight: 400 !important;
+  }
+}

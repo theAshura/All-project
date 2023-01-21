@@ -1,0 +1,125 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapper {
+  background: $white;
+  padding: 14px 20px 0px 20px;
+  height: 100%;
+}
+
+.feedbackAndRemarks {
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: $title_font_size;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+}
+
+.divider {
+  background: $gray_11;
+  width: 100%;
+  height: 1px;
+}
+
+.subTitle {
+  min-width: 120px;
+}
+
+.riskManagerWrap {
+  border: 1px solid $gray_11;
+  border-radius: 8px;
+  padding: 14px 10px;
+}
+
+.riskBox {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.riskTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 0 12px;
+  height: 26px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.riskTitleLow {
+  color: $green_1 !important;
+}
+
+.riskTitleMedium {
+  color: $yellow_13 !important;
+}
+
+.riskTitleHigh {
+  color: $orange_3 !important;
+}
+.negligible {
+  background-color: $blue_10;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12 !important;
+  border: 1px solid $green_1 !important;
+  color: $green_1 !important;
+}
+
+.medium {
+  background-color: $yellow_12 !important;
+  border: 1px solid $yellow_13 !important;
+  color: $yellow_13 !important;
+}
+
+.high {
+  background-color: $orange_13 !important;
+  border: 1px solid $orange_3 !important;
+  color: $orange_3 !important;
+}
+
+.negligibleColor {
+  color: $blue_3;
+}
+
+.lowColor {
+  color: $green_1;
+}
+
+.mediumColor {
+  color: $yellow_13;
+}
+
+.highColor {
+  color: $orange_3;
+}
+
+.timeloss {
+  font-weight: 600;
+}
+
+.yes {
+  color: $red_11;
+}
+
+.no {
+  color: $blue_3;
+}
+
+.styleChartDoughnut {
+  width: 120px !important;
+  height: 120px !important;
+}
+
+.styleChartInfo {
+  padding-top: 10px;
+}

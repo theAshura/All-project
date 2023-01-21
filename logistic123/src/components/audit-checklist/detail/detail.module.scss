@@ -1,0 +1,114 @@
+@import 'assets/css/utilities/';
+@import '../../ui/button/button.scss';
+
+.wrapDetail {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .headerContainer {
+    background-color: $white;
+    .codeTitle {
+      color: $gray_5;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      .codeValue {
+        color: $gray_3;
+        padding-left: 5px;
+      }
+    }
+    .stick {
+      margin: 0 10px;
+      height: 16px;
+      width: 1px;
+      background-color: $gray_7;
+    }
+    .headers {
+      .title {
+        color: $gray_3;
+        font-size: $title_font_size;
+        line-height: 28px;
+      }
+    }
+    .chooseTemplate {
+      width: 170px;
+    }
+    .tabsWrapper {
+      gap: 32px;
+      .tabsButton {
+        border: 2px solid #ffff !important;
+        border-radius: 0;
+        @include reset-button;
+        color: $gray_7;
+        gap: 32px;
+      }
+      .tabsButtonActive {
+        color: $blue_3;
+        border-bottom: 2px solid $blue_3 !important;
+      }
+    }
+    .lineStepStyle {
+      @media (max-width: 1200px) {
+        width: 700px;
+      }
+    }
+  }
+}
+
+.textContent {
+  color: $gray_3;
+}
+
+.modalBody {
+  padding: 24px;
+}
+
+@media (max-width: 1400px) {
+}
+
+.submitBtn {
+  @extend .button;
+  gap: 11px !important;
+  background-color: $green_1 !important;
+  margin-left: 20px !important;
+  img {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  &:hover,
+  &:active {
+    background: $green_3;
+  }
+}
+
+.submitsBtnDisable {
+  cursor: not-allowed;
+  background-color: #a0e3d2 !important;
+}
+
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  img {
+    top: 50% !important;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}

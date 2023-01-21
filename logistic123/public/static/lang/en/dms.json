@@ -1,0 +1,21 @@
+{
+  "txDMS": "Document Management System (DMS)",
+  "txDMSInformation": "Document Management System (DMS) Information",
+  "txDMSCode": "DMS code",
+  "txDMSName": "DMS name",
+  "txDescription": "Description",
+  "txStatus": "Status",
+  "txModuleName": "Module name",
+  "txAttachment": "Attachment",
+  "txNo": "No",
+  "txDocument": "Document",
+  "txCreatedBy": "Created by user",
+  "txCreatedDate": "Created Date",
+  "txUpdatedBy": "Updated by user",
+  "txUpdatedDate": "Updated Date",
+  "placeHolder": {
+    "txDMSCode": "Enter DMS code",
+    "txDMSName": "Enter DMS name",
+    "txDescription": "Enter Description"
+  }
+}

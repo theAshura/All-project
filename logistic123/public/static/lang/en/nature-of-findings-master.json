@@ -1,0 +1,20 @@
+{
+  "txNatureOfFindingsMaster": "Nature of Findings",
+  "txNatureOfFindingsMasterTitle": "Nature Of Findings",
+  "txRMInformation": "Nature of findings information",
+  "txNatureOfFindingsCode": "Nature of findings code",
+  "txNatureOfFindingsName": "Nature of findings name",
+  "txNatureOfFindingsCodeList": "Nature of findings Code",
+  "txNatureOfFindingsNameList": "Nature of findings Name",
+  "txDescription": "Description",
+  "txCreatedDate": "Created Date",
+  "txCreatedBy": "Created by User",
+  "txUpdatedDate": "Updated Date",
+  "txUpdatedBy": "Updated by User",
+  "txStatus": "Status",
+  "placeHolder": {
+    "txNatureOfFindingsCode": "Enter nature of findings code",
+    "txNatureOfFindingsName": "Enter nature of findings name",
+    "txDescription": "Enter Description"
+  }
+}

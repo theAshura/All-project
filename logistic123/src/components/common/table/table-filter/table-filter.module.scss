@@ -1,0 +1,88 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperFilter {
+  background: $gray_12;
+  border-radius: 4px;
+  padding: 15px 30px;
+  height: 96px;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+
+  .wrapAction {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .inputSearch {
+    width: 630px;
+    height: 40px;
+    background: $white;
+    border: 1px solid $gray_9;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  .buttonFilter {
+    margin-left: 25px;
+    width: 125px !important;
+    font-size: px-to-rem(14);
+
+    img {
+      margin-bottom: 5px;
+      margin-left: 5px;
+    }
+  }
+  .labelFilterSearch {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: normal;
+  }
+
+  .labelFilter {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: normal;
+    margin-bottom: $input-radius;
+    margin-left: 30px;
+  }
+
+  .wrapSelect {
+    .inputSelect {
+      margin-left: 30px;
+      width: 180px;
+      height: 40px;
+      background: $white;
+
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapperFilter {
+    height: 200px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1460px) {
+  .wrapperFilter {
+    div:first-child {
+      flex-grow: 1;
+    }
+    .inputSearch {
+      width: auto;
+      height: 40px;
+    }
+    .wrapSelect {
+      .inputSelect {
+        height: 40px;
+      }
+    }
+    .buttonFilter {
+      height: 40px;
+    }
+  }
+}

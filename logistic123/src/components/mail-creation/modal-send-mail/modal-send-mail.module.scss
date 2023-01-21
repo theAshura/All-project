@@ -1,0 +1,149 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 10vh;
+  max-width: 1170px;
+  @media (max-width: 1200px) {
+    max-width: 770px;
+  }
+  .contentClassName {
+    width: 1170px;
+    @media (max-width: 1200px) {
+      width: 770px;
+    }
+  }
+}
+
+.tabOpenEmailModal {
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+  margin-bottom: 0px;
+  max-width: 770px;
+  .contentClassName {
+    width: 770px;
+  }
+}
+
+.tabCloseEmailModal {
+  position: fixed;
+  right: 10px;
+  bottom: -622px;
+  @media (max-width: 1200px) {
+    bottom: -472px;
+  }
+  margin-bottom: 0px;
+  max-width: 200px;
+  .contentClassName {
+    width: 200px;
+  }
+}
+
+.dotRequired {
+  color: $red_2;
+  padding-left: 3px;
+}
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}
+
+.modalActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.contentClassName {
+  position: relative;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+
+  .header {
+    background: $blue_3;
+    padding: 8px 20px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 12px 20px;
+    background-color: $white;
+    height: 552px;
+    overflow: auto;
+    @media (max-width: 1200px) {
+      height: 400px;
+    }
+    .rowWrap {
+      margin-bottom: 12px;
+      .label {
+        margin-right: 8px;
+        display: flex;
+        font-weight: 400;
+        align-items: center;
+        font-size: 14px;
+        // height: 100%;
+        .infoIcon {
+          margin-left: 4px;
+        }
+      }
+      .customInput {
+        width: 100%;
+      }
+    }
+
+    .separateLine {
+      background: $gray_11;
+      height: 2px;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .label {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: $gray_3;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: $white;
+    .saveDraft {
+      margin-left: 20px;
+    }
+    .send {
+      margin-left: 20px;
+    }
+  }
+  .btnSelect {
+    font-size: 14px;
+    width: 100%;
+  }
+  .disabledInput {
+    color: $gray_3 !important;
+    background-color: $gray_11 !important;
+    &:focus {
+      color: $gray_3 !important;
+      background-color: $gray_11 !important;
+    }
+  }
+}

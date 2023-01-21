@@ -1,0 +1,33 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.inputFile {
+  display: none;
+}
+
+.zipLineItem {
+  background: $blue_10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  .name {
+    color: $primary;
+  }
+  .size {
+    color: $gray_3;
+    margin-left: 5px;
+  }
+  .closeIcon {
+    cursor: pointer;
+    width: 9.4px;
+    height: 9.4px;
+  }
+}
+
+.icButton {
+  padding-left: 9px;
+}

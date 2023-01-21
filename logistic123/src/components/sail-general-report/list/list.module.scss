@@ -1,0 +1,31 @@
+@import 'assets/css/utilities/variable.scss';
+
+.dataWrapper {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .noData {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+.checklist {
+  background-color: $bg-color-container;
+  padding: 10px;
+  img {
+    width: 100%;
+  }
+}
+
+.dataWrapper {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .noData {
+    height: 110px;
+    width: 110px;
+  }
+}

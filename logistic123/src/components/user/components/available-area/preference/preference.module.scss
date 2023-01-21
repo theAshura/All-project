@@ -1,0 +1,97 @@
+@import 'assets/css/utilities/variable.scss';
+
+.preference {
+  background: $white;
+  border-radius: 4px;
+  min-height: 400px;
+  // overflow: hidden;
+  .preferenceHeader {
+    height: 48px;
+    color: $white;
+    line-height: 22px;
+    font-weight: px-to-rem(14);
+    font-weight: normal;
+    padding: 0px 15px;
+    border-radius: 4px 4px 0px 0px;
+
+    .addMore {
+      font-weight: 500;
+      text-decoration-line: underline;
+      cursor: pointer;
+      border: unset;
+      background-color: transparent;
+    }
+  }
+  .strong {
+    background-color: $blue_3;
+  }
+  .neutral {
+    background-color: $green_1;
+  }
+  .no {
+    background-color: $orange_main;
+  }
+}
+
+.preferenceItem {
+  margin: 0px 15px;
+  padding: 15px 0px;
+
+  border-bottom: 1px solid $gray_11;
+  .countryFlag {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .country {
+    flex-grow: 1;
+    padding-left: 10px;
+    p {
+      font-weight: 600;
+      font-size: px-to-rem(13);
+      line-height: 20px;
+      color: $gray_3;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-weight: 500;
+      font-size: px-to-rem(11);
+      line-height: 16px;
+      text-decoration-line: underline;
+      padding: 0;
+      color: $blue_3;
+    }
+  }
+  .actions {
+    position: relative;
+
+    .moreAction {
+      width: 13.33px;
+      height: 3.33px;
+    }
+    .dropdownMenu {
+      padding: 0;
+    }
+    .dropdownItem {
+      display: block;
+      width: 100%;
+      clear: both;
+      text-align: inherit;
+      text-decoration: none;
+      white-space: nowrap;
+      border-radius: 0;
+    }
+    .groupBtnOptions {
+      position: absolute;
+      width: 300px;
+      margin-top: 10px;
+      button {
+        display: block;
+        background-color: $white;
+        border: 1px solid $gray_10;
+      }
+    }
+  }
+}

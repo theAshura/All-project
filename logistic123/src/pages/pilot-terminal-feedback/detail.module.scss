@@ -1,0 +1,67 @@
+@import 'assets/css/utilities/variable.scss';
+
+.header {
+  padding: 0px 0px 10px 0px !important;
+}
+.wrapper {
+  background-color: $bg-color-container;
+  height: calc(100vh - 138px);
+  overflow: auto;
+  .wrapperContent {
+    background-color: $white;
+    border-radius: 5px;
+    height: calc(100vh - 160px);
+    padding: 0 20px;
+  }
+}
+
+.wrapperDetail {
+  background-color: $bg-color-container;
+  height: calc(100vh - 108px);
+  overflow: auto;
+  .wrapperForm {
+    height: calc(100vh - 107px);
+    overflow: auto;
+  }
+}
+
+.headerBtn {
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+.refDetail {
+  margin-top: 5px;
+  text-align: right;
+  color: $gray_5;
+  font-size: 14px;
+  line-height: 22px;
+
+  span {
+    color: $gray_3;
+  }
+}
+
+.statusAndRefContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.marginLeft10px {
+  margin-left: 10px;
+}
+
+.lineWidth {
+  width: 380px;
+}
+
+.margin0 {
+  margin: 0 !important;
+}

@@ -1,0 +1,177 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $bg-color-container;
+}
+
+.tableWrapper {
+  width: calc(100% - 392px);
+}
+
+.summaryWrapper {
+  width: 372px;
+}
+
+.container {
+  background-color: $white;
+  border-radius: 5px;
+  padding-bottom: 5px;
+
+  .icon {
+    font-size: 16px;
+    line-height: 10px;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.groupButtons {
+  background-color: $bg-color-container;
+  width: 100%;
+  padding: 0px 40px 20px 40px;
+}
+
+.labelForm {
+  color: $gray_3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  .required {
+    color: $red_3;
+    font-size: 13px;
+  }
+}
+
+.containerForm {
+  .titleContainer {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .subTitleContainer {
+    color: $gray_3;
+    font-size: px-to-rem(16);
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .inputSelect {
+    margin-right: 20px;
+    height: 40px;
+    background: $white;
+    box-sizing: border-box;
+    border-radius: $input-radius;
+  }
+
+  .ant-select-selection-placeholder {
+    padding: 7px;
+  }
+
+  .labelSelect {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+
+  .wrapCheckbox {
+    display: flex;
+    align-items: center;
+
+    .name {
+      margin-left: 0px;
+      font-size: px-to-rem(16);
+    }
+  }
+}
+
+.wrapCheckbox {
+  display: flex;
+  align-items: center;
+
+  .name {
+    margin-left: 0px;
+  }
+}
+
+.titleForm {
+  margin-bottom: unset;
+  font-size: 18px;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray_3_1;
+}
+
+.labelInput {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray_3;
+}
+
+.dimensionLabel {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mlNone {
+  margin-left: 0px;
+}
+
+.dotRequired {
+  color: $red_2;
+}
+
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}
+
+.GroupButton {
+  margin-right: 20px;
+}
+
+.imgError {
+  position: relative;
+  bottom: 15px;
+  color: $red_2;
+  padding-left: 14px;
+}
+
+.disabledInput {
+  color: $gray_7 !important;
+  border: 1px solid $gray_9 !important;
+  background-color: $gray_11 !important;
+
+  :hover {
+    cursor: not-allowed !important;
+  }
+}
+
+.titleNote {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $gray_17;
+}
+
+.infoText {
+  color: $gray_3;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}

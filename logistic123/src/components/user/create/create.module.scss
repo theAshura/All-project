@@ -1,0 +1,20 @@
+@import 'assets/css/utilities/variable.scss';
+
+.newUserManagement {
+  height: 100%;
+  .wrapContainer {
+    min-height: calc(100vh - 56px);
+    height: fit-content;
+    background-color: $bg-color-container;
+    width: 100%;
+    border-left: 1px solid $gray_11;
+
+    .title {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 28px;
+      margin: 0 !important;
+      color: $gray_3;
+    }
+  }
+}

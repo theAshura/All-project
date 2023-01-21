@@ -1,0 +1,114 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  background-color: $white;
+  padding: 10px;
+
+  @media (min-width: 1440px) {
+    padding: 10px 20px;
+  }
+}
+
+.riskRating {
+  max-width: 350px;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    max-width: unset;
+    margin: unset;
+    width: 135px;
+  }
+}
+
+.title {
+  color: $gray_3;
+  font-size: $title_font_size;
+  font-weight: 700;
+}
+
+.rowItem {
+  padding-bottom: 16px;
+}
+.vetting {
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: $gray_3;
+}
+.statusVetting {
+  color: $green_2;
+  border: 1px solid $gray_10;
+  border-radius: 5px;
+  padding: 3px 10px;
+  margin-left: 5px;
+  min-width: 75px;
+  min-height: 28px;
+  font-size: 14px;
+}
+
+.sailInspection {
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.rowInfo {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0px 10px;
+    width: 100%;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0px 10px;
+    width: 100%;
+  }
+}
+
+.colInfo {
+  @media (min-width: 1024px) {
+    width: 16.2%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 16.2%;
+    margin-bottom: 0px;
+  }
+}
+
+.wrapInfo {
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.wrapRisk {
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.lastestDocUpdate {
+  @media (min-width: 1440px) {
+    width: calc(100% - 810px);
+  }
+
+  @media (min-width: 1600px) {
+    width: calc(100% - 1010px);
+  }
+}
+
+.card {
+  @media (min-width: 1024px) {
+    height: 54px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 36px;
+  }
+}

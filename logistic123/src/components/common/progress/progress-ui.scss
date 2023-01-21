@@ -1,0 +1,13 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.progress-ui {
+  height: 24px;
+  background: $blue_9_2;
+  border-radius: 4px;
+  overflow: hidden;
+  .progress {
+    background: $blue_3;
+    border-radius: 4px;
+    height: 100%;
+  }
+}

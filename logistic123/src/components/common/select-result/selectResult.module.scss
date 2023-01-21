@@ -1,0 +1,151 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.disable {
+  cursor: not-allowed;
+}
+
+.selectResult {
+  border: 2px dashed $gray_15;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  padding-bottom: 0;
+  display: flex;
+
+  &.error {
+    border-color: $red_3 !important;
+
+    .title {
+      color: $red_3 !important;
+    }
+  }
+
+  .countItem {
+    border: 1px solid $gray_15;
+    border-radius: 8px;
+    max-width: 212px;
+    border: 1px solid $gray_10;
+    display: flex;
+    align-items: center;
+    color: $gray_5;
+    height: 30px;
+    padding: 0 10px;
+
+    span {
+      margin-top: -3px;
+      padding-right: 2px !important;
+    }
+  }
+
+  .leftContent {
+    display: flex;
+    flex: 1;
+    min-height: 2.1875rem;
+    width: 100%;
+
+    .title {
+      padding-right: 12px;
+      line-height: 22px;
+      font-size: px-to-rem(14);
+      color: $gray_5;
+      font-weight: 600;
+
+      span,
+      img {
+        padding-left: 8px;
+        padding: 4px 0;
+      }
+    }
+  }
+
+  .rightContent {
+    padding: 4px 0;
+    height: 35px;
+  }
+
+  .TopContentVertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    .title {
+      padding-right: 12px;
+      line-height: 22px;
+      font-size: px-to-rem(14);
+      color: $gray_5;
+      font-weight: 600;
+
+      span,
+      img {
+        padding-left: 8px;
+        padding: 4px 0;
+      }
+    }
+  }
+
+  .bottomContentVertical {
+    margin: 4px 0;
+    overflow: auto;
+    max-height: 200px;
+  }
+}
+
+.topBar {
+  min-height: 2.1875rem;
+}
+
+.listItemSelected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  align-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.listItemSelectedVertical {
+  max-height: 175px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px 8px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.itemSelectedVertical {
+  margin: 0;
+}
+
+.buttonClearAll {
+  height: 22px !important;
+  font-size: 14px !important;
+  white-space: nowrap;
+}
+
+.message {
+  color: $red_3 !important;
+  font-size: px-to-rem(14);
+  padding: 10px 10px 0;
+  font-weight: 400 !important;
+}

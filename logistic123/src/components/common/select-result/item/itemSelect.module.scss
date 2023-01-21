@@ -1,0 +1,38 @@
+@import '../../../../assets/css/utilities/variable.scss';
+
+.itemSelect {
+  border-radius: 8px;
+  border: 1px solid $gray_10;
+  display: flex;
+  align-items: center;
+  color: $gray_5;
+  margin-right: 3px;
+  height: 30px;
+  overflow: hidden;
+
+  .itemContent {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 13px;
+  }
+
+  .btnSmall {
+    height: 8px;
+    padding: 2px 7px;
+
+    img {
+      padding: 0;
+    }
+  }
+
+  .disable {
+    cursor: not-allowed;
+  }
+}
+
+@media (max-width: 1200px) {
+  .itemSelect {
+    max-width: 95%;
+  }
+}

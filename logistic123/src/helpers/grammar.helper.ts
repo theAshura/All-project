@@ -1,0 +1,18 @@
+export const replaceGrammarPlanning = (text) =>
+  String(text)
+    ?.replace('reassigned', 're-assign')
+    ?.replace('Reassigned', 'Re-assign')
+    ?.replace('Reviewed', 'Review')
+    ?.replace('reviewed', 'review')
+    ?.replace('Rejected', 'Re-assign')
+    ?.replace('rejected', 're-assign')
+    ?.replace('Reject', 'Re-assign')
+    ?.replace('reject', 're-assign')
+    ?.replace('Approved', 'Approve')
+    ?.replace('approved', 'approve')
+    ?.replace('Closeout', 'Close out')
+    ?.replace('closeout', 'close out')
+    ?.replace('Accepted', 'Accept')
+    ?.replace('Auditor_accept', 'Accept')
+    ?.replace('accepted', 'accept')
+    ?.replace('auditor_accept', 'accept');

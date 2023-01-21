@@ -1,0 +1,72 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.dropdown-menu-custom {
+  border: 1px solid $gray_11;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dropdown-item-custom {
+  display: flex;
+  padding: 0 12.5px;
+  height: 42px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: px-to-rem(13);
+  line-height: px-to-rem(20);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray_11;
+  }
+
+  &:hover {
+    background: $gray_11;
+  }
+
+  /* identical to box height, or 154% */
+}
+
+.dropdown-toggle-custom {
+  padding: 0;
+  background: transparent;
+  border: none;
+
+  &:active,
+  &:focus,
+  &:focus:active,
+  &:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.dropdown-normal {
+  /* Grey/3 */
+
+  color: $gray_3;
+
+  &:active,
+  &:focus,
+  &:focus:active,
+  &:hover {
+    background: $gray_11;
+    color: $gray_3;
+  }
+}
+
+.dropdown-danger {
+  /* Grey/3 */
+
+  color: $red_3;
+
+  &:active,
+  &:focus,
+  &:focus:active,
+  &:hover {
+    background: $gray_11;
+    color: $red_3;
+  }
+}

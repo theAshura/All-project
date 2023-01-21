@@ -1,0 +1,45 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.wrapper {
+  background-color: $bg-color-container;
+  height: 100%;
+  .titleActionWrapper {
+    min-height: 40px;
+  }
+  .mainTitle {
+    color: $gray_3;
+    font-size: px-to-rem(20);
+    line-height: 30px;
+  }
+  .detailBtns {
+    display: flex;
+    gap: 8px;
+    .btn {
+      display: flex;
+      gap: 10px;
+      width: 100px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  .card {
+    margin-top: 24px;
+    min-height: 305px;
+    .title {
+      color: $gray_3;
+      margin: 0;
+    }
+  }
+  .wrapBtn {
+    button {
+      width: 160px;
+    }
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}

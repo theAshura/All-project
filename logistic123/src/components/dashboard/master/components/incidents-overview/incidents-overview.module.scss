@@ -1,0 +1,52 @@
+@import 'assets/css/utilities/variable.scss';
+.incidentsOverviewContainer,
+.contentContainer {
+  padding: 20px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray_19;
+  border-radius: 4px;
+  @media (max-width: 1200px) {
+    padding: 10px;
+  }
+  .title {
+    font-size: 15px;
+    color: $gray_3;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+
+  .titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .contentContainerIncident {
+    min-height: 450px;
+    flex-grow: 1;
+    padding: 0;
+  }
+  .paddingNone {
+    padding: 0 !important;
+  }
+  .fullHeight {
+    height: 100% !important;
+  }
+  .maxHeight170 {
+    max-height: 228px !important;
+  }
+  .customClassTitle {
+    @media (max-width: 1200px) {
+      min-height: 96px !important;
+    }
+  }
+}
+
+.contentContainerIncidentPieChart {
+  border: 1px solid $gray_19;
+  min-height: 96%;
+  margin: 12px 0;
+  border-radius: 4px;
+}

@@ -1,0 +1,50 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 20vh;
+}
+
+.contentClassName {
+  position: relative;
+  width: 400px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+  .header {
+    background: $blue_3;
+    padding: 9px 16px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 12px 16px;
+    .wrapInfo {
+      margin-bottom: 12px;
+      .label {
+        margin-bottom: 2px;
+        color: $gray_5;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .value {
+        font-weight: 600;
+        color: $gray_3;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+}

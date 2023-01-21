@@ -1,0 +1,112 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  border-radius: 5px;
+  padding-top: 5px;
+
+  .containerForm {
+    .buttonSchedule {
+      padding-top: 19px;
+    }
+
+    .disabledInput {
+      .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+        .ant-select-selector {
+        color: rgba(0, 0, 0, 0.25);
+        background-color: $gray_11;
+        cursor: not-allowed;
+      }
+    }
+
+    .buttonPort {
+      width: '100%';
+    }
+
+    .titleContainer {
+      color: $gray_3;
+      font-size: $title_font_size;
+      font-weight: 700;
+    }
+
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+
+    .button {
+      font-weight: 500;
+      font-size: 14px;
+
+      .icButton {
+        padding-left: 9px;
+      }
+    }
+
+    .wrapTitle {
+      margin-top: 1rem;
+
+      .title {
+        font-weight: bold;
+        font-size: $title_font_size;
+      }
+    }
+  }
+
+  ::placeholder {
+    font-size: 1rem !important;
+  }
+}
+
+.table {
+  overflow: hidden;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+
+  img {
+    top: 50% !important;
+  }
+
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .noData {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.wrapCheckbox {
+  display: flex;
+  align-items: center;
+
+  .name {
+    margin-left: 0px;
+    font-size: px-to-rem(16);
+  }
+}

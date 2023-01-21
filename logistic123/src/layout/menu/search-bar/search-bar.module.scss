@@ -1,0 +1,34 @@
+@import 'assets/css/utilities/variable.scss';
+
+.inputSearch {
+  position: relative;
+  padding: 15px 5px;
+  div {
+    width: 100%;
+  }
+  .wrapSearchResult {
+    position: absolute;
+    background: $bg-color-container;
+    z-index: 100;
+    width: 255px;
+    list-style: none;
+    padding: 0px;
+    max-height: 370px;
+    overflow: auto;
+    li {
+      font-size: 14px;
+      cursor: pointer;
+      .link {
+        padding: 10px;
+        display: block;
+        color: $gray_3;
+        &:hover {
+          background-color: $blue_4;
+        }
+      }
+      .active {
+        background-color: $blue_4;
+      }
+    }
+  }
+}

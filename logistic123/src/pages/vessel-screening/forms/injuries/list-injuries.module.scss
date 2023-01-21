@@ -1,0 +1,87 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  .wrapper {
+    background-color: $white;
+    padding: 0px 20px 40px 20px;
+    margin-bottom: 15px;
+    background-color: $white;
+    border-radius: 4px;
+    height: 100%;
+  }
+}
+
+.chartTitle {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: $title_font_size;
+  line-height: 24px;
+}
+
+.chartRiskLower {
+  border-top: 1px solid $gray_11;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.chartRisk {
+  color: $green_2;
+  font-weight: 700;
+}
+
+.iconDown {
+  width: 10px;
+  height: 10px;
+}
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.headerBtn {
+  position: relative;
+  top: -30px;
+  float: right;
+  right: 20px;
+  .buttonFilter {
+    width: 100px;
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+.datePickerReview {
+  padding: 0px 0px 10px 0px !important;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 240px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0px 6px 0px 0px !important;
+  }
+}
+
+.objectReview {
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6px;
+  }
+}
+
+.header {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: unset !important;
+
+  @media (min-width: 1600px) {
+    flex-direction: unset;
+    justify-content: unset !important;
+  }
+}

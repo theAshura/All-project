@@ -1,0 +1,66 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.wrapper {
+  background-color: $gray_16;
+  .content {
+    border: none;
+    box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    margin-top: 30vh;
+    background-color: $white;
+    .container {
+      border-radius: 4px;
+      overflow: hidden;
+      // max-width: 400px;
+      max-height: 70vh;
+      .headerModalExport {
+        justify-content: space-between;
+        background-color: $blue_3;
+        padding: 15px 20px;
+        button {
+          background-color: unset;
+          border: unset;
+          border-color: unset;
+        }
+        .title {
+          font-weight: 700;
+          font-size: px-to-rem(16);
+          line-height: 24px;
+          color: $white;
+        }
+        .titleRightExport {
+          font-weight: 500;
+          font-size: px-to-rem(14);
+          line-height: 22px;
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+      .form {
+        padding: 16px 20px 0px 20px;
+        .mt1 {
+          margin-top: 20px;
+        }
+        .label {
+          font-size: px-to-rem(16);
+          font-weight: 600;
+        }
+        .textError {
+          margin-top: 16px;
+          font-size: px-to-rem(16);
+          color: $red_3;
+        }
+      }
+      .btnGroup {
+        padding: 30px 20px 20px 20px;
+
+        .btnCancel {
+          margin-right: 10px;
+        }
+        .btnDelete {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

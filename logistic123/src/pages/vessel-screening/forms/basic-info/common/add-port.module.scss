@@ -1,0 +1,61 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 26px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+
+  .containerForm {
+    .icButton {
+      margin-left: 10px;
+    }
+  }
+}
+
+.dataWrapperEmpty {
+  min-height: 180px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    top: 50% !important;
+    width: 110px;
+    height: 110px;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.labelHeader {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: $title_font_size;
+  line-height: 24px;
+}
+.titleForm {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.contentForm {
+  color: $gray_3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.icon {
+  font-size: 16px;
+  line-height: 10px;
+}

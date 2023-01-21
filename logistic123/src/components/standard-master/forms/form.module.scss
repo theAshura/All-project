@@ -1,0 +1,36 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+@media (max-width: 1400px) {
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  .containerForm {
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+  }
+  .titleForm {
+    font-size: $title_font_size;
+    line-height: 24px;
+  }
+  .radioForm {
+    height: 32px !important;
+  }
+  .radioLabel {
+    padding-bottom: 0 !important;
+  }
+}
+.wrapperTableContainer {
+  height: 100%;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}

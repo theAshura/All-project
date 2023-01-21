@@ -1,0 +1,71 @@
+@import '../../../assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/';
+.createContainer {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  padding-bottom: 50px;
+  .headerContainer {
+    background-color: transparent;
+    margin: 0px;
+    .headers {
+      .title {
+        color: $gray_3;
+        font-size: $title_font_size;
+        line-height: 28px;
+        margin-top: 4px;
+      }
+      .status {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: flex-end;
+        .statusValue {
+          color: $blue_3;
+          margin-left: 4px;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    .lineStepStatus {
+      margin-top: 50px;
+    }
+    .chooseTemplate {
+      width: 170px;
+    }
+    .tabsWrapper {
+      gap: 32px;
+      border-bottom: 1px solid $gray_10;
+      .tabsButton {
+        @include reset-button;
+        color: $gray_7;
+        gap: 32px;
+      }
+      .tabsButtonActive {
+        color: $blue_3;
+        border-bottom: 2px solid $blue_3;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .formContainer {
+    height: 100%;
+    margin-top: 0px;
+    background-color: transparent;
+    padding: 0px;
+  }
+}
+.buttonFilter {
+  min-width: 100px;
+}
+@media (max-width: 1400px) {
+}
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}

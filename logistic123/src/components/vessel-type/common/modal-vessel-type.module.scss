@@ -1,0 +1,26 @@
+@import 'assets/css/utilities/variable.scss';
+
+.title {
+  margin-bottom: 27px;
+  font-weight: 600;
+  font-size: $title_font_size;
+  line-height: 150%;
+  color: $gray_3;
+}
+
+.wrapIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -12px;
+  margin-right: -12px;
+  img {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    cursor: pointer;
+  }
+}
+.iconSelected {
+  width: 20px;
+}

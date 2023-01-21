@@ -1,0 +1,74 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  text-align: center;
+  height: 100%;
+  padding: 5px;
+  padding-top: 40px;
+  padding: 23px 16px;
+  .title {
+    color: $gray_3;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    img {
+      margin-bottom: 5px;
+      margin-left: 3px;
+    }
+  }
+  .numberRate {
+    font-weight: 700;
+    font-size: 48px;
+  }
+  .content {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.375rem;
+    letter-spacing: 0.4px;
+  }
+  .rowInfo {
+    margin-bottom: 8px;
+  }
+}
+
+.wrapRisk {
+  font-weight: 700;
+  font-size: 48px;
+  color: $gray_9;
+  border: 1px solid $gray_9;
+  background-color: $gray_12;
+  border-radius: 0.5rem;
+}
+
+.negligible {
+  font-weight: 700;
+  font-size: 48px;
+  color: $blue_3;
+  border: 1px solid $blue_3;
+  background-color: $blue_10;
+  border-radius: 0.5rem;
+}
+.lowColor {
+  font-weight: 700;
+  font-size: 48px;
+  color: #18ba92;
+  border: 1px solid $green_1;
+  background-color: $green_12;
+  border-radius: 0.5rem;
+}
+.mediumColor {
+  font-weight: 700;
+  font-size: 48px;
+  color: $yellow_13;
+  border: 1px solid $yellow_13;
+  background-color: $yellow_12;
+  border-radius: 0.5rem;
+}
+.highColor {
+  font-weight: 700;
+  font-size: 48px;
+  color: $red_3;
+  border: 1px solid $red_3;
+  background-color: $red_10;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,98 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+
+  .wrapperForm {
+    height: calc(100vh - 107px);
+    overflow: auto;
+    padding: 8px 20px;
+  }
+}
+
+.chart {
+  .noData {
+    padding: 80px;
+  }
+}
+
+.containerWrapper {
+  background-color: $white;
+  border-radius: 4px;
+  padding: 15px 20px;
+  @media (max-width: 1200px) {
+    padding: 10px;
+  }
+  &.firstRow {
+    height: 350px;
+  }
+
+  &.secondRow {
+    height: 280px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: $title_font_size;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+    color: $gray_3;
+  }
+  .btnChart {
+    margin: 10px 5px;
+    border: none !important;
+    font-size: 12px !important;
+    height: 24px;
+    width: 40px;
+    border-radius: 4 px !important;
+  }
+  .chartDoughnut {
+    padding-top: 40px;
+  }
+  .chartDoughnutSecond {
+    padding-top: 15px;
+  }
+
+  .btnType {
+    border-radius: 0;
+    height: 24px;
+    margin: 10px 0;
+
+    &.active {
+      border-color: $blue_3;
+      svg {
+        fill: $blue_3;
+      }
+    }
+  }
+  .chartTypeDoughnut {
+    flex: 1;
+    .styleChartDoughnut {
+      width: 300px !important;
+      height: 300px !important;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .chartDoughnut {
+    .styleChartDoughnut {
+      width: 180px !important;
+      height: 180px !important;
+    }
+  }
+}
+
+.fullHeight {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+}
+
+.height100percent {
+  height: 100% !important;
+}

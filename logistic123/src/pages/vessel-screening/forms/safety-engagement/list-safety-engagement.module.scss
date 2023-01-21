@@ -1,0 +1,33 @@
+@import 'assets/css/utilities/variable.scss';
+
+.datePickerReview {
+  padding: 0px 0px 10px 0px !important;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 240px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0px 6px 0px 0px !important;
+  }
+}
+
+.objectReview {
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6px;
+  }
+}
+
+.header {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: unset !important;
+
+  @media (min-width: 1600px) {
+    flex-direction: unset;
+    justify-content: unset !important;
+  }
+}

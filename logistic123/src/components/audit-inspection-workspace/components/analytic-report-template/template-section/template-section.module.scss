@@ -1,0 +1,154 @@
+@import 'assets/css/utilities/variable.scss';
+
+.pdfWrap {
+  margin-top: 12px;
+  background-color: $white;
+  padding: 10px 20px;
+  .tableContainer {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+
+  .titleHeader {
+    font-style: normal;
+    font-weight: 600;
+    font-size: $title_font_size;
+    color: $gray_3;
+  }
+  .table {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: separate;
+    font-size: 12px;
+    color: $gray_5;
+    thead {
+      background: $bg-color1;
+      tr {
+        th {
+          border: none;
+          font-size: 12px;
+          top: 0;
+          left: 0;
+          z-index: 5;
+          position: sticky;
+          background: $bg-color1;
+        }
+      }
+    }
+    tbody {
+      td {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .highLight {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.4px;
+        color: #242325;
+      }
+    }
+  }
+  .badges {
+    display: flex;
+    align-items: center;
+    color: $gray_5;
+    .titleBadge {
+      margin-right: 15px;
+      font-size: 14px;
+    }
+    .badge {
+      font-size: 14px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      &:last-child {
+        margin-right: 0px;
+      }
+      .dotRed {
+        width: 10px;
+        height: 10px;
+        background: $red_11;
+        border-radius: 50%;
+      }
+      .dotOrange {
+        width: 10px;
+        height: 10px;
+        background: $orange_16;
+        border-radius: 50%;
+      }
+      .dotYellow {
+        width: 10px;
+        height: 10px;
+        background: $orange_17;
+        border-radius: 50%;
+      }
+      .dotGreen {
+        width: 10px;
+        height: 10px;
+        background: $green_16;
+        border-radius: 50%;
+      }
+      .dotBlue {
+        width: 10px;
+        height: 10px;
+        background: $blue_11;
+        border-radius: 50%;
+      }
+      .label {
+        margin-left: 4px;
+      }
+    }
+  }
+  .customBorderRight {
+    border-right: solid 1px $gray_11 !important;
+  }
+  .customBorderLeft {
+    border-left: solid 1px $gray_11 !important;
+  }
+  .customBorderBottom {
+    border-bottom: solid 1px $gray_11 !important;
+  }
+  .unassigned {
+    color: $gray_7;
+    width: 12%;
+  }
+  .negligible {
+    color: $blue_11;
+    width: 12%;
+  }
+  .low {
+    color: $green_1;
+    width: 12%;
+  }
+  .medium {
+    color: $orange_16;
+    width: 12%;
+  }
+  .high {
+    color: $red_11;
+    width: 12%;
+  }
+  .weightScore {
+    color: $orange_17;
+  }
+  .total {
+    color: $gray_5;
+  }
+  .alignTableCell {
+    vertical-align: middle;
+    text-align: center;
+  }
+  .mainCategory {
+    font-weight: 800;
+    color: $gray_5;
+  }
+}

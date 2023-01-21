@@ -1,0 +1,13 @@
+@import 'assets/css//utilities/variable.scss';
+
+.breadCrumb {
+  font-size: 12px;
+  font-weight: 500;
+  color: $gray_3;
+  .breadCrumbLink {
+    color: $gray_3;
+    &:hover {
+      color: $blue_3;
+    }
+  }
+}

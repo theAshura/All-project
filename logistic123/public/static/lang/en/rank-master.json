@@ -1,0 +1,20 @@
+{
+  "txRankMaster": "Rank",
+  "txRMInformation": "Rank information",
+  "txRankCode": "Rank code",
+  "txRankName": "Rank name",
+  "txDescription": "Description",
+  "txCreatedDate": "Created Date",
+  "txCreatedBy": "Created by User",
+  "txUpdatedDate": "Updated Date",
+  "txUpdatedBy": "Updated by User",
+  "txStatus": "Status",
+  "txType": "Type",
+  "placeHolder": {
+    "txRankCode": "Enter rank code",
+    "txRankName": "Enter rank name",
+    "txDescription": "Enter description"
+  },
+  "rankCodeIsExisted": "The rank code is existed",
+  "rankNameIsExisted": "The rank name is existed"
+}

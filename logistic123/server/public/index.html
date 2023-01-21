@@ -1,0 +1,3226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>i-Nautix | Analytical Report</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/logo.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/print.min.css" />
+    <style>
+      .ui-datepicker-calendar thead tr {
+        background: rgb(62, 180, 226);
+        color: #fff;
+      }
+      .ui-datepicker-calendar thead tr th {
+        color: #fff;
+      }
+      .ui-datepicker-calendar tbody tr {
+        background-color: #f1f1f1;
+      }
+      /* .ui-datepicker-calendar tbody tr td.ui-state-disabled {
+            background-color: #ddd;
+        } */
+      #ui-datepicker-div {
+        padding: 0px;
+        border-radius: 1px;
+      }
+      .ui-datepicker-calendar tbody td a.ui-state-active {
+        background-color: rgb(4, 130, 180);
+      }
+      .ui-datepicker-calendar tbody td {
+        width: 2.5rem;
+        padding: 5px;
+      }
+      .ui-datepicker-calendar tbody td a {
+        border-radius: 50px;
+        line-height: initial;
+        padding: 7px 5px;
+      }
+      .ui-datepicker-title {
+        margin: 0px;
+        padding-top: 7px;
+      }
+    </style>
+  </head>
+
+  <body id="main-body">
+    <div id="main">
+      <div class="all_main">
+        <!-- sidebar section -->
+        <div id="mySidebar" class="sidebar sidebar-mbl">
+          <button
+            type="button"
+            onclick="sideBar()"
+            class="close close-sidebar"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- <div class="sidebar-pd">
+            <div class="top-header d-flex">
+              <div class="dropdown mb-4">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/images/page1/profile.png"
+                    class="user-img"
+                    alt="user-img"
+                  />
+                  &nbsp;
+                  <div>
+                    <p class="name mb-0">John Smith</p>
+                    <p class="place mb-0">Chief Executive</p>
+                  </div>
+                  <img
+                    src="assets/images/page1/drop-down-top.png"
+                    class="dropdown-ic"
+                    alt="dropdown"
+                  />
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </div>
+              <div class="d-flex modes">
+                <img
+                  style="height: 16px !important"
+                  src="assets/images/page1/day-mode.png"
+                  class="img-fluid day-mode"
+                  alt="day"
+                />
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="darkSwitch"
+                  />
+                  <label class="custom-control-label" for="darkSwitch"
+                    ><img
+                      src="assets/images/page1/dark-mode.png"
+                      class="img-fluid"
+                      alt="dark"
+                  /></label>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav-menu p-0">
+              <li class="nav-item navitem">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/images/page1/message.png"
+                    class="message"
+                    alt="message"
+                  />
+                </a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/images/page1/mail.png"
+                    class="mail"
+                    alt="mail"
+                  />
+                </a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/images/page1/download.png"
+                    class="download"
+                    alt="download"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/images/page1/notifications.png"
+                    class="notification"
+                    alt="notification"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <a
+              id="dashboard-a"
+              class="sidebar-a drop-a cursor-pointer links link-1"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><img
+                class="mr-3"
+                src="assets/images/page1/dashboard.png"
+              />Dashboard
+              <div class="sidebar-drop dis-none dashboard-drop list-group">
+                <a
+                  href="#"
+                  class="sidebar-drop-a list-group-item list-group-item-action"
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  class="sidebar-drop-a list-group-item list-group-item-action"
+                  >Dapibus ac facilisis in</a
+                >
+                <a
+                  href="#"
+                  class="sidebar-drop-a list-group-item list-group-item-action"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Vestibulum at eros</a
+                >
+              </div></a
+            >
+            <a id="vessel-a" class="sidebar-a cursor-pointer links link-2"
+              ><img src="assets/images/page1/vessel.png" /> &nbsp; Vessel
+              Score</a
+            >
+            <a id="officer-a" class="sidebar-a cursor-pointer links link-3"
+              ><img src="assets/images/page1/officer.png" /> &nbsp; Officer
+              Score</a
+            >
+            <a id="compare-a" class="sidebar-a cursor-pointer links link-4"
+              ><img src="assets/images/page1/compare.png" /> &nbsp; Compare</a
+            >
+            <a id="report-a" class="sidebar-a cursor-pointer links link-5"
+              ><img src="assets/images/page1/reporting.png" /> &nbsp; Reporting
+              KPI</a
+            >
+            <a id="audit-a" class="sidebar-a cursor-pointer links link-6 active"
+              ><img src="assets/images/page1/audit icon- blue.png" /> &nbsp;
+              Inspection Analysis Report</a
+            >
+            <a id="analysis-a" class="sidebar-a cursor-pointer links link-7"
+              ><img src="assets/images/page1/analysis.png" /> &nbsp; Analysis</a
+            >
+            <a id="data-a" class="sidebar-a cursor-pointer links link-8"
+              ><img src="assets/images/page1/data-source.png" /> &nbsp; Data
+              Source</a
+            >
+            <a id="download-a" class="sidebar-a cursor-pointer links link-9"
+              ><img src="assets/images/page1/download-kpi.png" /> &nbsp;Download
+              KPI File</a
+            >
+          </div> -->
+
+          <a href="#" class="logo">
+            <img
+              src="assets/images/logoHeader.svg"
+              class="img-fluid"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <!-- End Sidebar -->
+        <!--  -->
+        <!-- sidebar section -->
+        <div id="mySidebar" class="sidebar sidebar-tab">
+          <div class="sidebar-pd">
+            <div class="top-header d-flex">
+              <div class="dropdown mb-4">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/images/page1/profile.png"
+                    class="user-img"
+                    alt="user-img"
+                  />
+                  &nbsp;
+                  <div></div>
+                  <img
+                    src="assets/images/page1/drop-down-top.png"
+                    class="dropdown-ic"
+                    alt="dropdown"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <ul class="nav-menu p-0">
+              <li class="nav-item navitem">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/images/page1/notifications.png"
+                    class="notification"
+                    alt="notification"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <a href="#" class="links link-1"
+              ><img src="assets/images/page1/dashboard.png"
+            /></a>
+            <a href="#" class="links link-2"
+              ><img src="assets/images/page1/vessel.png"
+            /></a>
+            <a href="#" class="links link-3"
+              ><img src="assets/images/page1/officer.png"
+            /></a>
+            <a href="#" class="links link-4"
+              ><img src="assets/images/page1/compare.png"
+            /></a>
+            <a href="" class="links link-5 active"
+              ><img src="assets/images/page1/reporting-blue.png"
+            /></a>
+            <a href="" class="links link-6"
+              ><img src="assets/images/page1/analysis.png"
+            /></a>
+            <a href="" class="links link-7"
+              ><img src="assets/images/page1/data-source.png"
+            /></a>
+            <a href="" class="links link-8"
+              ><img src="assets/images/page1/download-kpi.png"
+            /></a>
+          </div>
+
+          <div class="logo">
+            <img
+              src="assets/images/page1/logo.png"
+              class="img-fluid"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <!--  -->
+        <!-- header -->
+        <div class="header">
+          <div>
+            <button id="side-menu-toggle-btn">
+              <img
+                src="assets/images/page1/menu.png"
+                class="img-fluid"
+                alt="menu"
+              />
+            </button>
+            <h3 class="title header-title">Analytical Report</h3>
+          </div>
+
+          <div class="right" id="page-top-right">
+            <a href="#">
+              <img
+                src="assets/images/logoHeader.svg"
+                alt="solverminds"
+                style="width: 150px"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- end -->
+
+        <div class="Audit-detail-page">
+          <!-- <h1 class="audit-header">Audit Details</h1> -->
+          <div class="audit_form">
+            <form id="form">
+              <div class="row pt-3">
+                <div class="col-1">
+                  <img
+                    src="assets/images/page1/ship.png"
+                    class="img-fluid ship-ic"
+                    alt="ship"
+                  />
+                </div>
+
+                <div class="col-4 pr-5">
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="ves_name"
+                      class="form-control"
+                      required
+                    />
+                    <label for="ves_name" class=""
+                      >Vessel Name<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="smname"
+                      class="form-control"
+                      required
+                    />
+                    <label for="smname" class=""
+                      >Ship Mgt Company Name<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="master"
+                      class="form-control"
+                      required
+                    />
+                    <label for="master" class="">Master<span>*</span></label>
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input type="text" id="chiefEng" class="form-control" />
+                    <label for="chiefEng" class="">Cheif Engineer</label>
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="datepicker"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="datepicker" class=""
+                      >Date Of Inspection<span>*</span></label
+                    >
+                    <img
+                      src="assets/images/page1/calendar.png"
+                      alt="calendar"
+                      class="img-fluid calendar"
+                    />
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="portInsp"
+                      class="form-control"
+                      required
+                    />
+                    <label for="portInsp" class=""
+                      >Port Of Inspection<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="inspectorName"
+                      class="form-control"
+                      required
+                    />
+                    <label for="inspectorName" class=""
+                      >Inspector Name<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="file-upload">
+                    <p class="label-file-text">Attach a file <span>*</span></p>
+                    <label for="input">Browse</label
+                    ><span class="fileName"></span>
+                    <input
+                      type="file"
+                      id="input"
+                      name="input[]"
+                      style="visibility: hidden"
+                      accept=".xls,.xlsx"
+                      required
+                    />
+                  </div>
+                  <!--  -->
+                </div>
+
+                <div class="col-4 pl-5">
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="imoNum"
+                      class="form-control"
+                      required
+                    />
+                    <label for="imoNum" class=""
+                      >IMO Number<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="datepicker1"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="datepicker1" class=""
+                      >Date Of Delivery<span>*</span></label
+                    >
+                    <img
+                      src="assets/images/page1/calendar.png"
+                      alt="calendar"
+                      class="img-fluid calendar"
+                    />
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="vess_type"
+                      class="form-control"
+                      required
+                    />
+                    <label for="vess_type" class=""
+                      >Vessel Type<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="shipYard"
+                      class="form-control"
+                      required
+                    />
+                    <label for="shipYard" class=""
+                      >Ship Yard<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="shipYardCntry"
+                      class="form-control"
+                      required
+                    />
+                    <label for="shipYardCntry" class=""
+                      >Ship Yard Country<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="sizeGRT"
+                      class="form-control"
+                      required
+                    />
+                    <label for="sizeGRT" class=""
+                      >Size(GRT)<span>*</span></label
+                    >
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-flex mt-4">
+            <button type="submit" id="submit" class="mr-2">Submit</button>
+            <button type="button" id="cancel" class="ml-2">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div class="forms_sec d-none clearfix">
+        <!-- <h1 class="audit-header">Audit Details</h1> -->
+        <div class="f-right">
+          <a href="#" id="print-report-btn"
+            ><img
+              src="assets/images/page1/export.png"
+              class="img-fluid"
+              alt="export"
+          /></a>
+          &nbsp; &nbsp;
+          <a href="Analytic-Report.html"
+            ><img
+              src="assets/images/page1/close.png"
+              class="img-fluid"
+              alt="close"
+          /></a>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div id="showformval">
+              <div class="row">
+                <div class="col-12 show_details_head clearfix">
+                  <h5 class="black_text bold showVesName" id="showVesName"></h5>
+                  <p
+                    class="
+                      showimonum
+                      show_after_ves_name
+                      grey_txt
+                      fetched_sub_details
+                    "
+                    id="showimonum"
+                  ></p>
+                  <p
+                    class="black_text showsmname show_after_ves_name"
+                    id="showsmname"
+                  ></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="fetched_sub_sec">
+                    <p class="grey_txt fetched_sub_details">
+                      Master<span
+                        class="show_sub_data black_text"
+                        id="showsmaster"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Chief Engineer<span
+                        class="show_sub_data black_text"
+                        id="showchiefEng"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Date of Inspection<span
+                        class="show_sub_data black_text"
+                        id="showdatepicker"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Port of Inspection<span
+                        class="show_sub_data black_text"
+                        id="showportInsp"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Inspector Name<span
+                        class="show_sub_data black_text"
+                        id="showinspectorName"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Vessel Type<span
+                        class="show_sub_data black_text"
+                        id="showvess_type"
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="fetched_sub_sec">
+                    <p class="grey_txt fetched_sub_details">
+                      Date of Delivery<span
+                        class="show_sub_data black_text"
+                        id="showdatepicker1"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Age (YY.MM)<span
+                        class="show_sub_data black_text"
+                        id="ageofyear"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Ship Yard<span
+                        class="show_sub_data black_text"
+                        id="showshipYard"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Ship Yard Country<span
+                        class="show_sub_data black_text"
+                        id="showshipYardCntry"
+                      ></span>
+                    </p>
+                    <p class="grey_txt fetched_sub_details">
+                      Size (GRT)<span
+                        class="show_sub_data black_text"
+                        id="showsizeGRT"
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 ship-img-wrap-main">
+            <div class="ship-img-wrap">
+              <strong id="percent_val"></strong>
+              <p>Inspection Performance</p>
+              <div class="svg">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #00b050;
+                    }
+
+                    .st1 {
+                      fill: #ffffff;
+                    }
+
+                    .st2 {
+                      fill: #cccccc;
+                    }
+
+                    .st3 {
+                      fill: #6d6d6f;
+                    }
+
+                    .st4 {
+                      fill: #8f8f8f;
+                    }
+
+                    .st5 {
+                      fill: #e2e0df;
+                    }
+
+                    .st6 {
+                      fill: #2eb24c;
+                    }
+
+                    .st7 {
+                      fill: #1d3557;
+                    }
+
+                    .st8 {
+                      fill: #e63946;
+                    }
+
+                    .st9 {
+                      fill: #457b9d;
+                    }
+
+                    .st10 {
+                      fill: #ff9f1c;
+                    }
+
+                    .st11 {
+                      fill: #011627;
+                    }
+                  </style>
+                  <path
+                    class="st5"
+                    d="M447.3,258.6h-62.6l-13.6,17.9h-2.5v-26.3h-50v26.3h-2.5v-26.3h-50v26.3h-2.5v-26.3h-50v26.3H211v-26.3h-50
+            v26.3h-2.5v-26.3h-50v26.3H96.5v-16H85.3v-14.6h1V243h-1H65.4v-18.1h2v-2.9h-2H35.2h-1.5v2.9h1.5V243h-7.6h-1.5v2.9h1.5v14.6v7v9
+            h-6.8v12.4v6.4L25,297c0.2,0.1,0.4,0.2,0.6,0.2c0.8,0.3,1.6,0.7,2.3,1c0.2,0.1,0.3,0.2,0.5,0.3c0.7,0.4,1.4,0.7,2.1,1.2
+            c0,0,0.1,0,0.1,0.1c1.6,1,3,2.1,4.4,3.2c1.9,1.6,3.6,3.5,5.1,5.5c0,0,0,0,0,0c1,1.3,1.8,2.7,2.6,4.2c0,0.1,0.1,0.1,0.1,0.2
+            c0,0,0,0.1,0.1,0.1c0.3,0.6,0.6,1.2,0.9,1.8c0.1,0.2,0.2,0.4,0.3,0.6c0.2,0.5,0.4,1.1,0.6,1.6c0.1,0.2,0.2,0.4,0.2,0.6
+            c0.2,0.7,0.5,1.5,0.7,2.3l1.5,5.9h61h313.6h17.7l2.3-6.1c2.2-5.8,4.9-11.4,8.1-16.7c0.1-0.2,0.3-0.5,0.4-0.7
+            c0.5-0.9,1.1-1.8,1.7-2.7c0.2-0.4,0.5-0.8,0.8-1.2c0,0,0,0,0,0c1-1.5,2-3,3.1-4.5c0.3-0.4,0.6-0.8,0.8-1.2c0.5-0.6,0.9-1.3,1.4-1.9
+            c0.4-0.5,0.7-0.9,1.1-1.3c0.7-0.9,1.5-1.8,2.3-2.7c0.4-0.5,0.8-0.9,1.2-1.4c0.4-0.5,0.9-1,1.4-1.5c0.7-0.7,1.4-1.5,2.1-2.2
+            c0.5-0.5,0.9-1,1.4-1.4c0.6-0.6,1.1-1.1,1.7-1.7c0.4-0.4,0.8-0.8,1.2-1.1c0.9-0.8,1.8-1.7,2.7-2.5c0.3-0.2,0.5-0.4,0.8-0.7
+            c0.8-0.7,1.6-1.3,2.4-2c0.3-0.3,0.7-0.5,1-0.8c1-0.8,2.1-1.6,3.1-2.4c0.1-0.1,0.3-0.2,0.4-0.3c1-0.7,2-1.4,3-2.1
+            c0.3-0.2,0.6-0.4,0.9-0.6c1.1-0.8,2.3-1.5,3.5-2.2c0,0,0,0,0,0l9-5.5H447.3z M51.7,228.7c0-0.2,0.1-0.3,0.3-0.3h2.3
+            c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3H52c-0.2,0-0.3-0.1-0.3-0.3V228.7z M51.7,233.9c0-0.2,0.1-0.3,0.3-0.3h2.3
+            c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3H52c-0.2,0-0.3-0.1-0.3-0.3V233.9z M42.9,228.7c0-0.2,0.1-0.3,0.3-0.3h2.3
+            c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3h-2.3c-0.2,0-0.3-0.1-0.3-0.3V228.7z M42.9,233.9c0-0.2,0.1-0.3,0.3-0.3h2.3
+            c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3h-2.3c-0.2,0-0.3-0.1-0.3-0.3V233.9z M38.5,228.7c0-0.2,0.1-0.3,0.3-0.3h2.3
+            c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3h-2.3c-0.2,0-0.3-0.1-0.3-0.3V228.7z M37.8,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M37.8,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M38.8,237.3c-0.2,0-0.3-0.1-0.3-0.3v-3.2
+            c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3H38.8z M47,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M47,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M50.2,237.1c0,0.2-0.1,0.3-0.3,0.3h-2.3
+            c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V237.1z M50.2,231.9c0,0.2-0.1,0.3-0.3,0.3h-2.3
+            c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V231.9z M56.2,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M56.2,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M58.9,237.1c0,0.2-0.1,0.3-0.3,0.3h-2.3
+            c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V237.1z M58.9,231.9c0,0.2-0.1,0.3-0.3,0.3h-2.3
+            c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V231.9z M65.4,269.2c0,0.3-0.3,0.6-0.6,0.6H60
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M65.4,258.4c0,0.3-0.3,0.6-0.6,0.6H60
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M74.6,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6H74c0.3,0,0.6,0.3,0.6,0.6V269.2z M74.6,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+            c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6H74c0.3,0,0.6,0.3,0.6,0.6V258.4z M367.4,251.3v25.2h-1.7v-25.2H367.4z
+             M364.5,251.3v25.2h-1.7v-25.2H364.5z M361.7,251.3v25.2H360v-25.2H361.7z M358.8,251.3v25.2h-1.7v-25.2H358.8z M355.9,251.3v25.2
+            h-1.7v-25.2H355.9z M353.1,251.3v25.2h-1.7v-25.2H353.1z M350.2,251.3v25.2h-1.7v-25.2H350.2z M347.3,251.3v25.2h-1.7v-25.2H347.3z
+             M344.4,251.3v25.2h-1.7v-25.2H344.4z M341.6,251.3v25.2h-1.7v-25.2H341.6z M338.7,251.3v25.2H337v-25.2H338.7z M335.8,251.3v25.2
+            h-1.7v-25.2H335.8z M333,251.3v25.2h-1.7v-25.2H333z M330.1,251.3v25.2h-1.7v-25.2H330.1z M327.2,251.3v25.2h-1.7v-25.2H327.2z
+             M324.3,251.3v25.2h-1.7v-25.2H324.3z M319.8,251.3h1.7v25.2h-1.7V251.3z M314.9,251.3v25.2h-1.7v-25.2H314.9z M312,251.3v25.2h-1.7
+            v-25.2H312z M309.1,251.3v25.2h-1.7v-25.2H309.1z M306.3,251.3v25.2h-1.7v-25.2H306.3z M303.4,251.3v25.2h-1.7v-25.2H303.4z
+             M300.5,251.3v25.2h-1.7v-25.2H300.5z M297.7,251.3v25.2H296v-25.2H297.7z M294.8,251.3v25.2h-1.7v-25.2H294.8z M291.9,251.3v25.2
+            h-1.7v-25.2H291.9z M289,251.3v25.2h-1.7v-25.2H289z M286.2,251.3v25.2h-1.7v-25.2H286.2z M283.3,251.3v25.2h-1.7v-25.2H283.3z
+             M280.4,251.3v25.2h-1.7v-25.2H280.4z M277.6,251.3v25.2h-1.7v-25.2H277.6z M274.7,251.3v25.2H273v-25.2H274.7z M271.8,251.3v25.2
+            h-1.7v-25.2H271.8z M267.3,251.3h1.7v25.2h-1.7V251.3z M262.4,251.3v25.2h-1.7v-25.2H262.4z M259.5,251.3v25.2h-1.7v-25.2H259.5z
+             M256.6,251.3v25.2h-1.7v-25.2H256.6z M253.7,251.3v25.2H252v-25.2H253.7z M250.9,251.3v25.2h-1.7v-25.2H250.9z M248,251.3v25.2
+            h-1.7v-25.2H248z M245.1,251.3v25.2h-1.7v-25.2H245.1z M242.3,251.3v25.2h-1.7v-25.2H242.3z M239.4,251.3v25.2h-1.7v-25.2H239.4z
+             M236.5,251.3v25.2h-1.7v-25.2H236.5z M233.6,251.3v25.2H232v-25.2H233.6z M230.8,251.3v25.2h-1.7v-25.2H230.8z M227.9,251.3v25.2
+            h-1.7v-25.2H227.9z M225,251.3v25.2h-1.7v-25.2H225z M222.2,251.3v25.2h-1.7v-25.2H222.2z M219.3,251.3v25.2h-1.7v-25.2H219.3z
+             M214.7,251.3h1.7v25.2h-1.7V251.3z M209.8,251.3v25.2h-1.7v-25.2H209.8z M207,251.3v25.2h-1.7v-25.2H207z M204.1,251.3v25.2h-1.7
+            v-25.2H204.1z M201.2,251.3v25.2h-1.7v-25.2H201.2z M198.3,251.3v25.2h-1.7v-25.2H198.3z M195.5,251.3v25.2h-1.7v-25.2H195.5z
+             M192.6,251.3v25.2h-1.7v-25.2H192.6z M189.7,251.3v25.2H188v-25.2H189.7z M186.9,251.3v25.2h-1.7v-25.2H186.9z M184,251.3v25.2
+            h-1.7v-25.2H184z M181.1,251.3v25.2h-1.7v-25.2H181.1z M178.3,251.3v25.2h-1.7v-25.2H178.3z M175.4,251.3v25.2h-1.7v-25.2H175.4z
+             M172.5,251.3v25.2h-1.7v-25.2H172.5z M169.6,251.3v25.2h-1.7v-25.2H169.6z M166.8,251.3v25.2h-1.7v-25.2H166.8z M162.2,251.3h1.7
+            v25.2h-1.7V251.3z M157.3,251.3v25.2h-1.7v-25.2H157.3z M154.4,251.3v25.2h-1.7v-25.2H154.4z M151.6,251.3v25.2h-1.7v-25.2H151.6z
+             M148.7,251.3v25.2H147v-25.2H148.7z M145.8,251.3v25.2h-1.7v-25.2H145.8z M143,251.3v25.2h-1.7v-25.2H143z M140.1,251.3v25.2h-1.7
+            v-25.2H140.1z M137.2,251.3v25.2h-1.7v-25.2H137.2z M134.3,251.3v25.2h-1.7v-25.2H134.3z M131.5,251.3v25.2h-1.7v-25.2H131.5z
+             M128.6,251.3v25.2h-1.7v-25.2H128.6z M125.7,251.3v25.2H124v-25.2H125.7z M122.9,251.3v25.2h-1.7v-25.2H122.9z M120,251.3v25.2
+            h-1.7v-25.2H120z M117.1,251.3v25.2h-1.7v-25.2H117.1z M114.2,251.3v25.2h-1.7v-25.2H114.2z M109.7,251.3h1.7v25.2h-1.7V251.3z"
+                  />
+                </svg>
+                <div class="cover-ship">
+                  <svg
+                    version="1.1"
+                    id="Layer_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: #00b050;
+                      }
+
+                      .st1 {
+                        fill: #ffffff;
+                      }
+
+                      .st2 {
+                        fill: #cccccc;
+                      }
+
+                      .st3 {
+                        fill: #6d6d6f;
+                      }
+
+                      .st4 {
+                        fill: #8f8f8f;
+                      }
+
+                      .st5 {
+                        fill: #e2e0df;
+                      }
+
+                      .st6 {
+                        fill: #2eb24c;
+                      }
+
+                      .st7 {
+                        fill: #1d3557;
+                      }
+
+                      .st8 {
+                        fill: #e63946;
+                      }
+
+                      .st9 {
+                        fill: #457b9d;
+                      }
+
+                      .st10 {
+                        fill: #ff9f1c;
+                      }
+
+                      .st11 {
+                        fill: #011627;
+                      }
+                    </style>
+                    <path
+                      class="st5"
+                      d="M447.3,258.6h-62.6l-13.6,17.9h-2.5v-26.3h-50v26.3h-2.5v-26.3h-50v26.3h-2.5v-26.3h-50v26.3H211v-26.3h-50
+              v26.3h-2.5v-26.3h-50v26.3H96.5v-16H85.3v-14.6h1V243h-1H65.4v-18.1h2v-2.9h-2H35.2h-1.5v2.9h1.5V243h-7.6h-1.5v2.9h1.5v14.6v7v9
+              h-6.8v12.4v6.4L25,297c0.2,0.1,0.4,0.2,0.6,0.2c0.8,0.3,1.6,0.7,2.3,1c0.2,0.1,0.3,0.2,0.5,0.3c0.7,0.4,1.4,0.7,2.1,1.2
+              c0,0,0.1,0,0.1,0.1c1.6,1,3,2.1,4.4,3.2c1.9,1.6,3.6,3.5,5.1,5.5c0,0,0,0,0,0c1,1.3,1.8,2.7,2.6,4.2c0,0.1,0.1,0.1,0.1,0.2
+              c0,0,0,0.1,0.1,0.1c0.3,0.6,0.6,1.2,0.9,1.8c0.1,0.2,0.2,0.4,0.3,0.6c0.2,0.5,0.4,1.1,0.6,1.6c0.1,0.2,0.2,0.4,0.2,0.6
+              c0.2,0.7,0.5,1.5,0.7,2.3l1.5,5.9h61h313.6h17.7l2.3-6.1c2.2-5.8,4.9-11.4,8.1-16.7c0.1-0.2,0.3-0.5,0.4-0.7
+              c0.5-0.9,1.1-1.8,1.7-2.7c0.2-0.4,0.5-0.8,0.8-1.2c0,0,0,0,0,0c1-1.5,2-3,3.1-4.5c0.3-0.4,0.6-0.8,0.8-1.2c0.5-0.6,0.9-1.3,1.4-1.9
+              c0.4-0.5,0.7-0.9,1.1-1.3c0.7-0.9,1.5-1.8,2.3-2.7c0.4-0.5,0.8-0.9,1.2-1.4c0.4-0.5,0.9-1,1.4-1.5c0.7-0.7,1.4-1.5,2.1-2.2
+              c0.5-0.5,0.9-1,1.4-1.4c0.6-0.6,1.1-1.1,1.7-1.7c0.4-0.4,0.8-0.8,1.2-1.1c0.9-0.8,1.8-1.7,2.7-2.5c0.3-0.2,0.5-0.4,0.8-0.7
+              c0.8-0.7,1.6-1.3,2.4-2c0.3-0.3,0.7-0.5,1-0.8c1-0.8,2.1-1.6,3.1-2.4c0.1-0.1,0.3-0.2,0.4-0.3c1-0.7,2-1.4,3-2.1
+              c0.3-0.2,0.6-0.4,0.9-0.6c1.1-0.8,2.3-1.5,3.5-2.2c0,0,0,0,0,0l9-5.5H447.3z M51.7,228.7c0-0.2,0.1-0.3,0.3-0.3h2.3
+              c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3H52c-0.2,0-0.3-0.1-0.3-0.3V228.7z M51.7,233.9c0-0.2,0.1-0.3,0.3-0.3h2.3
+              c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3H52c-0.2,0-0.3-0.1-0.3-0.3V233.9z M42.9,228.7c0-0.2,0.1-0.3,0.3-0.3h2.3
+              c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3h-2.3c-0.2,0-0.3-0.1-0.3-0.3V228.7z M42.9,233.9c0-0.2,0.1-0.3,0.3-0.3h2.3
+              c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3h-2.3c-0.2,0-0.3-0.1-0.3-0.3V233.9z M38.5,228.7c0-0.2,0.1-0.3,0.3-0.3h2.3
+              c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3h-2.3c-0.2,0-0.3-0.1-0.3-0.3V228.7z M37.8,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M37.8,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M38.8,237.3c-0.2,0-0.3-0.1-0.3-0.3v-3.2
+              c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3v3.2c0,0.2-0.1,0.3-0.3,0.3H38.8z M47,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M47,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M50.2,237.1c0,0.2-0.1,0.3-0.3,0.3h-2.3
+              c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V237.1z M50.2,231.9c0,0.2-0.1,0.3-0.3,0.3h-2.3
+              c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V231.9z M56.2,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M56.2,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M58.9,237.1c0,0.2-0.1,0.3-0.3,0.3h-2.3
+              c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V237.1z M58.9,231.9c0,0.2-0.1,0.3-0.3,0.3h-2.3
+              c-0.2,0-0.3-0.1-0.3-0.3v-3.2c0-0.2,0.1-0.3,0.3-0.3h2.3c0.2,0,0.3,0.1,0.3,0.3V231.9z M65.4,269.2c0,0.3-0.3,0.6-0.6,0.6H60
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V269.2z M65.4,258.4c0,0.3-0.3,0.6-0.6,0.6H60
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6h4.8c0.3,0,0.6,0.3,0.6,0.6V258.4z M74.6,269.2c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6H74c0.3,0,0.6,0.3,0.6,0.6V269.2z M74.6,258.4c0,0.3-0.3,0.6-0.6,0.6h-4.8
+              c-0.3,0-0.6-0.3-0.6-0.6v-6.6c0-0.3,0.3-0.6,0.6-0.6H74c0.3,0,0.6,0.3,0.6,0.6V258.4z M367.4,251.3v25.2h-1.7v-25.2H367.4z
+               M364.5,251.3v25.2h-1.7v-25.2H364.5z M361.7,251.3v25.2H360v-25.2H361.7z M358.8,251.3v25.2h-1.7v-25.2H358.8z M355.9,251.3v25.2
+              h-1.7v-25.2H355.9z M353.1,251.3v25.2h-1.7v-25.2H353.1z M350.2,251.3v25.2h-1.7v-25.2H350.2z M347.3,251.3v25.2h-1.7v-25.2H347.3z
+               M344.4,251.3v25.2h-1.7v-25.2H344.4z M341.6,251.3v25.2h-1.7v-25.2H341.6z M338.7,251.3v25.2H337v-25.2H338.7z M335.8,251.3v25.2
+              h-1.7v-25.2H335.8z M333,251.3v25.2h-1.7v-25.2H333z M330.1,251.3v25.2h-1.7v-25.2H330.1z M327.2,251.3v25.2h-1.7v-25.2H327.2z
+               M324.3,251.3v25.2h-1.7v-25.2H324.3z M319.8,251.3h1.7v25.2h-1.7V251.3z M314.9,251.3v25.2h-1.7v-25.2H314.9z M312,251.3v25.2h-1.7
+              v-25.2H312z M309.1,251.3v25.2h-1.7v-25.2H309.1z M306.3,251.3v25.2h-1.7v-25.2H306.3z M303.4,251.3v25.2h-1.7v-25.2H303.4z
+               M300.5,251.3v25.2h-1.7v-25.2H300.5z M297.7,251.3v25.2H296v-25.2H297.7z M294.8,251.3v25.2h-1.7v-25.2H294.8z M291.9,251.3v25.2
+              h-1.7v-25.2H291.9z M289,251.3v25.2h-1.7v-25.2H289z M286.2,251.3v25.2h-1.7v-25.2H286.2z M283.3,251.3v25.2h-1.7v-25.2H283.3z
+               M280.4,251.3v25.2h-1.7v-25.2H280.4z M277.6,251.3v25.2h-1.7v-25.2H277.6z M274.7,251.3v25.2H273v-25.2H274.7z M271.8,251.3v25.2
+              h-1.7v-25.2H271.8z M267.3,251.3h1.7v25.2h-1.7V251.3z M262.4,251.3v25.2h-1.7v-25.2H262.4z M259.5,251.3v25.2h-1.7v-25.2H259.5z
+               M256.6,251.3v25.2h-1.7v-25.2H256.6z M253.7,251.3v25.2H252v-25.2H253.7z M250.9,251.3v25.2h-1.7v-25.2H250.9z M248,251.3v25.2
+              h-1.7v-25.2H248z M245.1,251.3v25.2h-1.7v-25.2H245.1z M242.3,251.3v25.2h-1.7v-25.2H242.3z M239.4,251.3v25.2h-1.7v-25.2H239.4z
+               M236.5,251.3v25.2h-1.7v-25.2H236.5z M233.6,251.3v25.2H232v-25.2H233.6z M230.8,251.3v25.2h-1.7v-25.2H230.8z M227.9,251.3v25.2
+              h-1.7v-25.2H227.9z M225,251.3v25.2h-1.7v-25.2H225z M222.2,251.3v25.2h-1.7v-25.2H222.2z M219.3,251.3v25.2h-1.7v-25.2H219.3z
+               M214.7,251.3h1.7v25.2h-1.7V251.3z M209.8,251.3v25.2h-1.7v-25.2H209.8z M207,251.3v25.2h-1.7v-25.2H207z M204.1,251.3v25.2h-1.7
+              v-25.2H204.1z M201.2,251.3v25.2h-1.7v-25.2H201.2z M198.3,251.3v25.2h-1.7v-25.2H198.3z M195.5,251.3v25.2h-1.7v-25.2H195.5z
+               M192.6,251.3v25.2h-1.7v-25.2H192.6z M189.7,251.3v25.2H188v-25.2H189.7z M186.9,251.3v25.2h-1.7v-25.2H186.9z M184,251.3v25.2
+              h-1.7v-25.2H184z M181.1,251.3v25.2h-1.7v-25.2H181.1z M178.3,251.3v25.2h-1.7v-25.2H178.3z M175.4,251.3v25.2h-1.7v-25.2H175.4z
+               M172.5,251.3v25.2h-1.7v-25.2H172.5z M169.6,251.3v25.2h-1.7v-25.2H169.6z M166.8,251.3v25.2h-1.7v-25.2H166.8z M162.2,251.3h1.7
+              v25.2h-1.7V251.3z M157.3,251.3v25.2h-1.7v-25.2H157.3z M154.4,251.3v25.2h-1.7v-25.2H154.4z M151.6,251.3v25.2h-1.7v-25.2H151.6z
+               M148.7,251.3v25.2H147v-25.2H148.7z M145.8,251.3v25.2h-1.7v-25.2H145.8z M143,251.3v25.2h-1.7v-25.2H143z M140.1,251.3v25.2h-1.7
+              v-25.2H140.1z M137.2,251.3v25.2h-1.7v-25.2H137.2z M134.3,251.3v25.2h-1.7v-25.2H134.3z M131.5,251.3v25.2h-1.7v-25.2H131.5z
+               M128.6,251.3v25.2h-1.7v-25.2H128.6z M125.7,251.3v25.2H124v-25.2H125.7z M122.9,251.3v25.2h-1.7v-25.2H122.9z M120,251.3v25.2
+              h-1.7v-25.2H120z M117.1,251.3v25.2h-1.7v-25.2H117.1z M114.2,251.3v25.2h-1.7v-25.2H114.2z M109.7,251.3h1.7v25.2h-1.7V251.3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 ves_pot_risk-main">
+            <div class="ves_pot_risk">
+              <p>Vessel Potential Risk</p>
+              <div
+                class="container-gauge"
+                style="width: 200px; margin: auto"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="main_table_container mt-2">
+          <div id="show_div">
+            <!-- tables -->
+            <div class="row">
+              <div class="col-md-6">
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Category Overview</h6>
+                  <thead>
+                    <tr id="c-head1">
+                      <th class="vert_center" rowspan="2">Category</th>
+                      <th class="upper_case text_center" colspan="4">
+                        Potential risks finding Count
+                      </th>
+                    </tr>
+                    <tr id="main_c-head1">
+                      <th class="text-center">Low</th>
+                      <th class="text-center">Medium</th>
+                      <th class="text-center">High</th>
+                      <th class="text-center" style="border-right: 0">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="c-datas1"></tbody>
+                  <tfoot id="c-foot1"></tfoot>
+                </table>
+              </div>
+              <div class="col-md-6">
+                <table id="grid2" border="1" class="table">
+                  <h6 class="bold table_name">Location Overview</h6>
+                  <thead>
+                    <tr id="c-head2">
+                      <th class="vert_center" rowspan="2">Location</th>
+                      <th class="upper_case text_center" colspan="4">
+                        Potential risks finding Count
+                      </th>
+                    </tr>
+                    <tr id="main_c-head2">
+                      <th class="text-center">Low</th>
+                      <th class="text-center">Medium</th>
+                      <th class="text-center">High</th>
+                      <th class="text-center" style="border-right: 0">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="c-datas2"></tbody>
+                  <tfoot id="c-foot2"></tfoot>
+                </table>
+              </div>
+            </div>
+            <!-- calculation section -->
+            <div class="cp-wrap">
+              <div class="row">
+                <div class="col-6">
+                  <!-- <h6 class="bold table_name">Category Overview</h6>
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+                            </figure> -->
+                  <div class="chart-card category-overview-chart-wrap">
+                    <h2>CATEGORY OVERVIEW</h2>
+                    <div
+                      id="category-overview-chart"
+                      style="height: 350px; width: 100%; margin: auto"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="calculations">
+                    <div class="hand_sym">
+                      <img src="assets/images/page2/hand.png" />
+                    </div>
+                    <div class="range_details_main">
+                      <p class="bold range_head">
+                        Inspection Performance Range
+                      </p>
+                      <div class="range_details">
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/red-ins.png" />
+                            <span>Red (0-50)</span>
+                          </p>
+                        </div>
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/orange-ins.png" />
+                            <span>Orange (51-70)</span>
+                          </p>
+                        </div>
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/yellow-ins.png" />
+                            <span>Yellow (71-85)</span>
+                          </p>
+                        </div>
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/green-ins.png" />
+                            <span>Green (&gt; 85)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="range_details_main potential_risk_details_main">
+                      <p class="bold range_head">Potential Risks Range</p>
+                      <div class="range_details">
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/high.png" />
+                            <span>High (&lt; -50)</span>
+                          </p>
+                        </div>
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/medium.png" />
+                            <span>Medium (-20 ~ -49)</span>
+                          </p>
+                        </div>
+                        <div class="ranges">
+                          <p>
+                            <img src="assets/images/page2/low.png" />
+                            <span>Low (&gt; -19)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="actual_cals">
+                      <div id="total_chklist">
+                        <p>
+                          Total Checklist Items
+                          <span id="tot_chklst"></span>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          Verified Items
+                          <span id="verified_items"></span>
+                        </p>
+                      </div>
+                      <hr />
+                      <div>
+                        <p>
+                          Finding Weighted Score
+                          <span id="finding_weighted_score"></span>
+                        </p>
+                      </div>
+                      <hr />
+                      <div>
+                        <p>
+                          Inspection Score
+                          <span id="inspection_score"> </span>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          Inspection Performance
+                          <span id="inspection_perf"></span>
+                        </p>
+                      </div>
+                      <hr />
+                      <div>
+                        <p>
+                          Potential Risk
+                          <span id="potential_risk"> </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- page beak for print devices -->
+            <div class="report-display not-printable d-none report-border">
+              <div class="page-break"></div>
+
+              <table id="grid1" border="1" class="table">
+                <h6 class="bold table_name">Report of Findings</h6>
+                <thead>
+                  <tr>
+                    <th width="80" class="vert_center">Code</th>
+                    <th style="border-right: 0" class="vert_center">Item</th>
+                    <th
+                      style="min-width: 120px; border-right: 0"
+                      class="vert_center"
+                    >
+                      Rectified
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="report-datas"></tbody>
+              </table>
+            </div>
+
+            <!-- report page printable -->
+            <div class="printable">
+              <div class="report-print-part1 d-none report-border">
+                <div class="page-break"></div>
+
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Report of Findings</h6>
+                  <thead>
+                    <tr>
+                      <th width="80" class="vert_center">Code</th>
+                      <th style="border-right: 0" class="vert_center">Item</th>
+                      <th
+                        style="min-width: 120px; border-right: 0"
+                        class="vert_center"
+                      >
+                        Rectified
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="report-datas-print-part1"></tbody>
+                </table>
+              </div>
+              <div class="report-print-part2 d-none report-border">
+                <div class="page-break"></div>
+
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Report of Findings</h6>
+                  <thead>
+                    <tr>
+                      <th width="80" class="vert_center">Code</th>
+                      <th style="border-right: 0" class="vert_center">Item</th>
+                      <th
+                        style="min-width: 120px; border-right: 0"
+                        class="vert_center"
+                      >
+                        Rectified
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="report-datas-print-part2"></tbody>
+                </table>
+              </div>
+
+              <div class="report-print-part3 d-none report-border">
+                <div class="page-break"></div>
+
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Report of Findings</h6>
+                  <thead>
+                    <tr>
+                      <th width="80" class="vert_center">Code</th>
+                      <th style="border-right: 0" class="vert_center">Item</th>
+                      <th
+                        style="min-width: 120px; border-right: 0"
+                        class="vert_center"
+                      >
+                        Rectified
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="report-datas-print-part3"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- page beak for print devices -->
+            <div class="page-break"></div>
+
+            <div class="total_num_find">
+              <h6 class="bold table_name">Total Number of Findings</h6>
+              <div class="graph_index">
+                <div class="ranges">
+                  <p>
+                    <img src="assets/images/page2/fhigh.png" />
+                    <span>High Risk</span>
+                  </p>
+                </div>
+                <div class="ranges">
+                  <p>
+                    <img src="assets/images/page2/fmedium.png" />
+                    <span>Medium Risk</span>
+                  </p>
+                </div>
+                <div class="ranges">
+                  <p>
+                    <img src="assets/images/page2/flow.png" />
+                    <span>Low Risk</span>
+                  </p>
+                </div>
+              </div>
+              <div class="chart-cards">
+                <div class="chart-card num-of-mc-chart">
+                  <h2>MAIN CATEGORY</h2>
+
+                  <div id="num-of-mc-chart" style="height: 350px"></div>
+                </div>
+                <div class="chart-card">
+                  <h2>1ST SUB CATEGORY</h2>
+
+                  <div id="num-of-sc-chart" style="height: 350px"></div>
+                </div>
+                <div class="chart-card">
+                  <h2>LOCATION WISE</h2>
+
+                  <div id="num-of-lw-chart" style="height: 350px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="total_num_find">
+              <h6 class="bold table_name">
+                Total Weighted Score
+                <span
+                  style="
+                    font-size: 8.5px;
+                    text-transform: lowercase;
+                    font-weight: 600;
+                    color: #777;
+                    position: absolute;
+                    padding-left: 15px;
+                  "
+                  >( -ve signs for the weighted scores have been omitted<br />for
+                  graphical representation on the below graphs )</span
+                >
+              </h6>
+              <div class="graph_index">
+                <p
+                  class="bold range_head"
+                  style="
+                    margin-bottom: 0;
+                    margin-top: 5px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                  "
+                >
+                  Computed Risk Score:
+                </p>
+                <div class="ranges">
+                  <p>
+                    <img src="assets/images/page2/high.png" />
+                    <span>High</span>
+                  </p>
+                </div>
+                <div class="ranges">
+                  <p>
+                    <img src="assets/images/page2/medium.png" />
+                    <span>Medium</span>
+                  </p>
+                </div>
+                <div class="ranges">
+                  <p>
+                    <img src="assets/images/page2/low.png" />
+                    <span>Low</span>
+                  </p>
+                </div>
+              </div>
+              <div class="chart-cards pt-4">
+                <div class="chart-card">
+                  <h2>MAIN CATEGORY</h2>
+
+                  <div id="weighted-mc-chart" style="height: 350px"></div>
+                </div>
+                <div class="chart-card">
+                  <h2>1ST SUB CATEGORY</h2>
+
+                  <div id="weighted-sc-chart" style="height: 350px"></div>
+                </div>
+                <div class="chart-card">
+                  <h2>LOCATION WISE</h2>
+
+                  <div id="weighted-lw-chart" style="height: 350px"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="total_num_find"> -->
+            <!-- <h6 class="bold table_name">Category Overview</h6> -->
+            <div class="row">
+              <div class="col-4">
+                <figure class="highcharts-figure">
+                  <div id="container-main"></div>
+                </figure>
+              </div>
+              <div class="col-4">
+                <figure class="highcharts-figure">
+                  <div id="container-sub"></div>
+                </figure>
+              </div>
+              <div class="col-4">
+                <figure class="highcharts-figure">
+                  <div id="container-loc"></div>
+                </figure>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- page beak for print devices -->
+            <div class="page-break"></div>
+
+            <!-- Sub category table -->
+            <div class="row">
+              <div class="col-md-8 not-printable">
+                <table id="grid3" border="1" class="table">
+                  <h6 class="bold table_name">Detailed Analytic Report</h6>
+                  <div class="range_details_main potential_risk_details_main">
+                    <p class="bold range_head">Potential Risks Range</p>
+                    <div class="range_details">
+                      <div class="ranges">
+                        <p>
+                          <img src="assets/images/page2/high.png" />
+                          <span>High (&lt; -50)</span>
+                        </p>
+                      </div>
+                      <div class="ranges">
+                        <p>
+                          <img src="assets/images/page2/medium.png" />
+                          <span>Medium (-20 ~ -49)</span>
+                        </p>
+                      </div>
+                      <div class="ranges">
+                        <p>
+                          <img src="assets/images/page2/low.png" />
+                          <span>Low (&gt; -19)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <thead>
+                    <tr id="c-head3">
+                      <th class="vert_center" rowspan="2">
+                        Detailed Sub Category Wise
+                      </th>
+                      <th class="upper_case text_center" colspan="3">
+                        Potential risks finding Count
+                      </th>
+                      <th
+                        class="vert_center"
+                        style="text-align: center"
+                        rowspan="2"
+                      >
+                        Weighted <br />Score
+                      </th>
+                      <th class="upper_case text_center" colspan="2">
+                        Finding Count
+                      </th>
+                      <!-- <th rowspan="2">Total</th> -->
+                    </tr>
+                    <tr id="main_c-head3">
+                      <th class="text-center">Low</th>
+                      <th class="text-center">Medium</th>
+                      <th class="text-center">High</th>
+                      <th class="text-center">Normal</th>
+                      <th
+                        class="
+                          text-center
+                          focus-highlight focus-head focus-head-no-content
+                        "
+                        style="border-right: 0"
+                      >
+                        Focus
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="c-datas3"></tbody>
+                  <tfoot id="c-foot3"></tfoot>
+                </table>
+              </div>
+              <div class="col-4">
+                <div
+                  class="
+                    calculations
+                    cloned-one
+                    report-display-foc
+                    d-none
+                    report-border
+                  "
+                  style="border-bottom: none"
+                >
+                  <!-- <div class="hand_sym">
+                                    <img src="assets/images/page2/hand.png" />
+                                </div> -->
+                  <table id="grid1" border="1" class="table">
+                    <h6 class="bold table_name">Focus Item Findings</h6>
+                    <thead>
+                      <tr>
+                        <th width="80" class="vert_center">Code</th>
+                        <th style="border-right: 0" class="vert_center">
+                          Item
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="detailed-report-datas"></tbody>
+                  </table>
+                  <!-- <div class="range_details_main potential_risk_details_main">
+                                    <p class="bold range_head">Potential Risks Range</p>
+                                    <div class="range_details">
+                                        <div class="ranges">
+                                            <p>
+                                                <img src="assets/images/page2/high.png" />
+                                                <span>High (&lt; -50)</span>
+                                            </p>
+                                        </div>
+                                        <div class="ranges">
+                                            <p>
+                                                <img src="assets/images/page2/medium.png" />
+                                                <span>Medium (-20 ~ -49)</span>
+                                            </p>
+                                        </div>
+                                        <div class="ranges">
+                                            <p>
+                                                <img src="assets/images/page2/low.png" />
+                                                <span>Low (&gt; -19)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                </div>
+              </div>
+
+              <div class="col-md-12 printable">
+                <h6 class="bold table_name">Detailed Analytic Report</h6>
+                <div class="row">
+                  <div class="col-md-9">
+                    <table id="grid3" border="1" class="table">
+                      <div
+                        class="range_details_main potential_risk_details_main"
+                      >
+                        <p class="bold range_head">Potential Risks Range</p>
+                        <div class="range_details">
+                          <div class="ranges">
+                            <p>
+                              <img src="assets/images/page2/high.png" />
+                              <span>High (&lt; -50)</span>
+                            </p>
+                          </div>
+                          <div class="ranges">
+                            <p>
+                              <img src="assets/images/page2/medium.png" />
+                              <span>Medium (-20 ~ -49)</span>
+                            </p>
+                          </div>
+                          <div class="ranges">
+                            <p>
+                              <img src="assets/images/page2/low.png" />
+                              <span>Low (&gt; -19)</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <thead>
+                        <tr id="c-head3-part1">
+                          <th class="vert_center" rowspan="2">
+                            Detailed Sub Category Wise
+                          </th>
+                          <th class="upper_case text_center" colspan="3">
+                            Potential risks finding Count
+                          </th>
+                          <th
+                            class="vert_center"
+                            style="text-align: center"
+                            rowspan="2"
+                          >
+                            Weighted <br />Score
+                          </th>
+                          <th class="upper_case text_center" colspan="2">
+                            Finding Count
+                          </th>
+                          <!-- <th rowspan="2">Total</th> -->
+                        </tr>
+                        <tr id="main_c-head3-part1" class="main_c-head3-part1">
+                          <th>Low</th>
+                          <th>Medium</th>
+                          <th>High</th>
+                          <th>Normal</th>
+                          <th
+                            class="
+                              focus-highlight focus-head focus-head-no-content
+                            "
+                            style="border-right: 0"
+                          >
+                            Focus
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody id="c-datas3-part1"></tbody>
+                      <tfoot id="c-foot3-part1"></tfoot>
+                    </table>
+                  </div>
+                  <div class="col-md-3">
+                    <div
+                      class="
+                        calculations
+                        cloned-one
+                        report-display-part1
+                        d-none
+                        report-display-msg
+                      "
+                      style="border-bottom: none"
+                    >
+                      <div class="hand_sym">
+                        <img
+                          style="transform: rotate(90deg)"
+                          src="assets/images/page2/hand.png"
+                        />
+                      </div>
+                      <div>
+                        Please refer to the report section below this table for
+                        Focus Item Finding details.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-break"></div>
+                <div class="row">
+                  <div class="col-md-9">
+                    <table id="grid3" border="1" class="table">
+                      <!-- <h6 class="bold table_name">Detailed Analytic Report</h6> -->
+                      <div
+                        class="range_details_main potential_risk_details_main"
+                      >
+                        <p class="bold range_head">Potential Risks Range</p>
+                        <div class="range_details">
+                          <div class="ranges">
+                            <p>
+                              <img src="assets/images/page2/high.png" />
+                              <span>High (&lt; -50)</span>
+                            </p>
+                          </div>
+                          <div class="ranges">
+                            <p>
+                              <img src="assets/images/page2/medium.png" />
+                              <span>Medium (-20 ~ -49)</span>
+                            </p>
+                          </div>
+                          <div class="ranges">
+                            <p>
+                              <img src="assets/images/page2/low.png" />
+                              <span>Low (&gt; -19)</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <thead>
+                        <tr id="c-head3-part2">
+                          <th class="vert_center" rowspan="2">
+                            Detailed Sub Category Wise
+                          </th>
+                          <th class="upper_case text_center" colspan="3">
+                            Potential risks finding Count
+                          </th>
+                          <th
+                            class="vert_center"
+                            style="text-align: center"
+                            rowspan="2"
+                          >
+                            Weighted <br />Score
+                          </th>
+                          <th class="upper_case text_center" colspan="2">
+                            Finding Count
+                          </th>
+                          <!-- <th rowspan="2">Total</th> -->
+                        </tr>
+                        <tr id="main_c-head3-part2">
+                          <th>Low</th>
+                          <th>Medium</th>
+                          <th>High</th>
+                          <th>Normal</th>
+                          <th
+                            class="
+                              focus-highlight focus-head focus-head-no-content
+                            "
+                            style="border-right: 0"
+                          >
+                            Focus
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody id="c-datas3-part2"></tbody>
+                      <tfoot id="c-foot3-part2"></tfoot>
+                      <tfoot id="c-foot3-page-part2"></tfoot>
+                    </table>
+                  </div>
+                  <div class="col-3">
+                    <div
+                      class="
+                        calculations
+                        cloned-one
+                        report-display-part2
+                        d-none
+                        report-display-msg
+                      "
+                      style="border-bottom: none"
+                    >
+                      <div class="hand_sym">
+                        <img
+                          style="transform: rotate(90deg)"
+                          src="assets/images/page2/hand.png"
+                        />
+                      </div>
+                      <div>
+                        Please refer to the report section below this table for
+                        Focus Item Finding details.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="printable">
+              <div class="report-display-part1 d-none report-border">
+                <!-- page beak for print devices -->
+                <div class="page-break"></div>
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Focus Item Findings</h6>
+                  <thead>
+                    <tr>
+                      <th width="100" class="vert_center">Code</th>
+                      <th style="border-right: 0" class="vert_center">Item</th>
+                    </tr>
+                  </thead>
+                  <tbody id="detailed-report-datas-part1"></tbody>
+                </table>
+              </div>
+
+              <div class="report-display-part2 d-none report-border">
+                <!-- page beak for print devices -->
+                <div class="page-break"></div>
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Focus Item Findings</h6>
+                  <thead>
+                    <tr>
+                      <th width="100" class="vert_center">Code</th>
+                      <th style="border-right: 0" class="vert_center">Item</th>
+                    </tr>
+                  </thead>
+                  <tbody id="detailed-report-datas-part2"></tbody>
+                </table>
+              </div>
+
+              <div class="report-display-part3 d-none report-border">
+                <!-- page beak for print devices -->
+                <div class="page-break"></div>
+                <table id="grid1" border="1" class="table">
+                  <h6 class="bold table_name">Focus Item Findings</h6>
+                  <thead>
+                    <tr>
+                      <th width="100" class="vert_center">Code</th>
+                      <th style="border-right: 0" class="vert_center">Item</th>
+                    </tr>
+                  </thead>
+                  <tbody id="detailed-report-datas-part3"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div style="display: none">
+              <table id="freq" border="0" cellspacing="0" cellpadding="0">
+                <tr nowrap bgcolor="#CCCCFF">
+                  <th colspan="9" class="hdr">
+                    Table of Frequencies (percent)
+                  </th>
+                </tr>
+                <tr nowrap bgcolor="#DDDDDD">
+                  <th class="freq">Direction</th>
+                  <th class="freq">Weighted Score</th>
+                  <th class="freq">Total Findings</th>
+                </tr>
+              </table>
+            </div>
+
+            <div style="display: none">
+              <table id="freq1" border="0" cellspacing="0" cellpadding="0">
+                <tr nowrap bgcolor="#CCCCFF">
+                  <th colspan="9" class="hdr">
+                    Table of Frequencies (percent)
+                  </th>
+                </tr>
+                <tr nowrap bgcolor="#F7A45E">
+                  <th class="freq1">Direction</th>
+                  <th class="freq1">Weighted Score</th>
+                  <th
+                    class="freq1"
+                    style="font-weight: normal; font-style: italic"
+                  >
+                    Total Findings
+                  </th>
+                </tr>
+              </table>
+            </div>
+
+            <div style="display: none">
+              <table id="freq2" border="0" cellspacing="0" cellpadding="0">
+                <tr nowrap bgcolor="#F7A45E">
+                  <th colspan="9" class="hdr">
+                    Table of Frequencies (percent)
+                  </th>
+                </tr>
+                <tr nowrap bgcolor="#F7A45E">
+                  <th class="freq2">Direction</th>
+                  <th class="freq2">Weighted Score</th>
+                  <th class="freq2">Total Findings</th>
+                </tr>
+              </table>
+            </div>
+
+            <p class="footer-content">
+              “The content of this document may not be used for purposes other
+              than that for which it has been supplied and may not be
+              reproduced, either wholly or in part, in any way whatsoever, nor
+              may it be used by, or its content divulged to, any other person or
+              third party without prior written consent. This report is issued
+              without any prejudice to any or all parties concerned on the
+              condition that all parties concerned, waive rights to hold the
+              auditing company or author liable in respect of any consequences
+              arising from the use of the information contained (or not
+              mentioned) in this report.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader">
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jspdf.debug.js"></script>
+    <script src="js/jszip.js"></script>
+    <script src="js/xlsx.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/mdb.min.js"></script>
+    <script src="assets/js/dark-mode-switch.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="js/custom-charts.js"></script>
+
+    <script>
+      // fill data
+      $(function () {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+
+        if (params && params.vesselName) {
+          $('#ves_name').val(params.vesselName);
+        }
+        if (params && params.vesselType) {
+          $('#vess_type').val(params.vesselType);
+        }
+        if (params && params.shipManager) {
+          $('#smname').val(params.shipManager);
+        }
+        if (params && params.dateOfDelivery) {
+          $('#datepicker1').val(params.dateOfDelivery);
+        }
+        if (params && params.inspectorName) {
+          $('#inspectorName').val(params.inspectorName);
+        }
+        // date of inspection
+        if (params && params.dateOfInspection) {
+          $('#datepicker').val(params.dateOfInspection);
+        }
+        if (params && params.portOfInspection) {
+          $('#portInsp').val(params.portOfInspection);
+        }
+        if (params && params.imoNumber) {
+          $('#imoNum').val(params.imoNumber);
+        }
+        if (!$('#master').val() && $('#master').val() !== 0) {
+          $('#master').val('Master');
+        }
+        if (!$('#shipYard').val() && $('#shipYard').val() !== 0) {
+          $('#shipYard').val('Ship Yard');
+        }
+        if (!$('#ma').val() && $('#shipYardCntry').val() !== 0) {
+          $('#shipYardCntry').val('Ship Yard Country');
+        }
+        if (params && params.sizeGrt) {
+          $('#sizeGRT').val(params.sizeGrt);
+        }
+        // if user not fill Ship Yard, Master, Ship Yard Country ==> auto fill as label
+        //  Ship manager name is VM
+        //Vessel built on is VM build date
+        // Size(GRT) VM-Dead
+      });
+    </script>
+
+    <!-- datepicker -->
+    <script>
+      $(function () {
+        $('#datepicker').datepicker({
+          dateFormat: 'd M yy',
+          duration: 'fast',
+          changeMonth: true,
+          changeYear: true,
+          yearRange: '-60:+10',
+        });
+        $('#datepicker1').datepicker({
+          dateFormat: 'd M yy',
+          duration: 'fast',
+          changeMonth: true,
+          changeYear: true,
+          yearRange: '-60:+10',
+        });
+
+        $('.fileName').click(function () {
+          $('#input').val('');
+          $('.fileName').html('');
+        });
+
+        $('#input').change(function () {
+          filename = this.files[0].name;
+          $('.fileName').html(filename + '&nbsp;&nbsp;&nbsp;' + 'X');
+          $('.fileName').show();
+        });
+      });
+    </script>
+
+    <!-- checklist table script -->
+    <script>
+      var buble_main_cat = [];
+      var buble_loc_cat = [];
+      var buble_sub_cat = [];
+      var polar_main_cat = [];
+      var polar_main_weigh_cat = [];
+      var polar_main_data = [];
+      var sub_findings_cat = [];
+      var sub_findings_low = [];
+      var sub_findings_med = [];
+      var sub_findings_high = [];
+      var loc_findings_cat = [];
+      var loc_findings_count_low = [];
+      var loc_findings_count_med = [];
+      var loc_findings_count_high = [];
+      var main_weigh_data = [];
+      var sub_weigh_low = [];
+      var sub_weigh_med = [];
+      var sub_weigh_high = [];
+      var loc_weigh_count_low = [];
+      var loc_weigh_count_med = [];
+      var loc_weigh_count_high = [];
+      var gauge_Data;
+      var gauge_Data_label;
+      var reportFindings = [];
+
+      var main1 = {};
+      var pcounts1 = {};
+      var potential1 = [];
+      var low1 = 0;
+      var med1 = 0;
+      var high1 = 0;
+      var grndtotallow1 = 0;
+      var grndtotalmed1 = 0;
+      var grndtotalhigh1 = 0;
+      var maingrndtotal1 = 0;
+      var verified = 0;
+      var ExcelToJSON1 = function () {
+        this.parseExcel = function (file) {
+          var reader1 = new FileReader();
+          reader1.onload = function (e) {
+            var data1 = e.target.result;
+            var workbook1 = XLSX.read(data1, {
+              type: 'binary',
+            });
+            workbook1.SheetNames.forEach(function (sheetName) {
+              var XL_row_object1 = XLSX.utils.sheet_to_row_object_array(
+                workbook1.Sheets[sheetName],
+              );
+              // count total checklist
+              $('#tot_chklst').text(': ' + XL_row_object1.length);
+              // count verified items
+              $.map(XL_row_object1, function (e) {
+                if (e.Answer != 0) {
+                  verified++;
+                }
+              });
+              $('#verified_items').text(': ' + verified);
+              $.map(XL_row_object1, function (e) {
+                if (!main1.hasOwnProperty(e.mainCategory)) {
+                  main1[e.mainCategory] = [];
+                }
+                main1[e.mainCategory].push([
+                  e.Criticality,
+                  e.Answer,
+                  e.mainAcronym,
+                  e.QuestionCode,
+                  e.QuestionName ? e.QuestionName : '',
+                  e.FindingRemarks ? e.FindingRemarks : '',
+                  e.RectificationVerifiedRemarks
+                    ? e.RectificationVerifiedRemarks
+                    : '',
+                  e.subCategoryTwo,
+                ]);
+              });
+              $.each(main1, function (key, value) {
+                low1 = 0;
+                med1 = 0;
+                high1 = 0;
+                pcounts1[key] = [];
+                $.each(main1[key], function (k, v) {
+                  if ($.trim(v[1]) == -1) {
+                    if (v[0] == 'Low') low1++;
+                    if (v[0] == 'Medium') med1++;
+                    if (v[0] == 'High') high1++;
+                  }
+                  reportFindings.push({
+                    code: v[3],
+                    item:
+                      '<div><strong class="text-uppercase">' +
+                      key +
+                      '</strong></div><div><b>Q: </b>' +
+                      v[4] +
+                      '</div><div><b>Finding: </b>' +
+                      v[5] +
+                      '</div>',
+                    remarks: v[6],
+                    subcattwo: v[7],
+                    ans: v[1],
+                  });
+                });
+                grndtotallow1 += low1;
+                grndtotalmed1 += med1;
+                grndtotalhigh1 += high1;
+                total1 = low1 + med1 + high1;
+                maingrndtotal1 += total1;
+                pcounts1[key].push({
+                  low: low1,
+                  medium: med1,
+                  high: high1,
+                  total1: total1,
+                  acronym: value[0][2],
+                });
+                buble_main_cat.push({
+                  y: low1 + med1 + high1,
+                  x: low1 * 1 + med1 * 5 + high1 * 10,
+                  name: value[0][2],
+                });
+                polar_main_cat.push(
+                  '<span class="bold" style="font-size: 14px;color:#666;">' +
+                    total1 +
+                    '  </span><span style="font-size: 7px;color:#666">' +
+                    key +
+                    '</span>',
+                );
+                polar_main_weigh_cat.push(
+                  '<span class="bold" style="font-size: 14px;color:#666;">' +
+                    (low1 * 1 + med1 * 5 + high1 * 10) +
+                    ' </span> <span style="font-size: 7px;color:#666">' +
+                    key +
+                    '</span>',
+                );
+                // if((low1 * 1 + med1 * 5 + high1 * 10) <= 19){
+                //     polar_main_weigh_cat.push('<span class="bold" style="font-size: 14px;color:#00B050;">' +(low1 * 1 + med1 * 5 + high1 * 10) +' </span> <span style="font-size: 7px;color:#666">'+key+'</span>');
+                // }else if((low1 * 1 + med1 * 5 + high1 * 10) >= 20 && (low1 * 1 + med1 * 5 + high1 * 10) <= 49){
+                //     polar_main_weigh_cat.push('<span class="bold" style="font-size: 14px;color:#FF9F1C;">' +(low1 * 1 + med1 * 5 + high1 * 10) +' </span> <span style="font-size: 7px;color:#666">'+key+'</span>');
+                // }else{
+                //     polar_main_weigh_cat.push('<span class="bold" style="font-size: 14px;color:#E63946;">' +(low1 * 1 + med1 * 5 + high1 * 10) +' </span> <span style="font-size: 7px;color:#666">'+key+'</span>');
+                // }
+
+                polar_main_data.push(total1);
+                main_weigh_data.push(low1 * 1 + med1 * 5 + high1 * 10);
+              });
+
+              // report of findings
+              var reportDisCount = 1;
+              var reportDisCountFoc = 1;
+
+              reportFindings.forEach((report) => {
+                if (Number($.trim(report.ans)) == -1) {
+                  $('.report-display').removeClass('d-none');
+                  var reportPlaceCount = Number(
+                    report.code.split(':')[1].split('-')[0],
+                  );
+                  $('#report-datas').append(
+                    '<tr><td>' +
+                      report.code +
+                      '</td><td>' +
+                      report.item +
+                      '</td><td>' +
+                      report.remarks +
+                      '</td></tr>',
+                  );
+                  if (reportDisCount <= 12) {
+                    $('.report-print-part1').removeClass('d-none');
+                    $('#report-datas-print-part1').append(
+                      '<tr><td>' +
+                        report.code +
+                        '</td><td>' +
+                        report.item +
+                        '</td><td>' +
+                        report.remarks +
+                        '</td></tr>',
+                    );
+                  }
+                  if (reportDisCount > 12 && reportDisCount <= 24) {
+                    $('.report-print-part2').removeClass('d-none');
+                    $('#report-datas-print-part2').append(
+                      '<tr><td>' +
+                        report.code +
+                        '</td><td>' +
+                        report.item +
+                        '</td><td>' +
+                        report.remarks +
+                        '</td></tr>',
+                    );
+                  }
+                  if (reportDisCount > 24) {
+                    $('.report-print-part3').removeClass('d-none');
+                    $('#report-datas-print-part3').append(
+                      '<tr><td>' +
+                        report.code +
+                        '</td><td>' +
+                        report.item +
+                        '</td><td>' +
+                        report.remarks +
+                        '</td></tr>',
+                    );
+                  }
+
+                  if (report.subcattwo == 'Focus') {
+                    setTimeout(() => {
+                      $('.focus-head').removeClass('focus-head-no-content');
+                      $('table td.focus-highlight').css({
+                        'border-left': '1px solid #457B9D',
+                        'border-right': '1px solid #457B9D',
+                      });
+                      $('.focus-footer').css(
+                        'border-bottom',
+                        '1px solid #457B9D',
+                      );
+                    }, 300);
+
+                    $('.report-display-foc').removeClass('d-none');
+                    $('.report-display-msg').removeClass('d-none');
+                    $('#detailed-report-datas').append(
+                      '<tr><td>' +
+                        report.code +
+                        '</td><td>' +
+                        report.item +
+                        '</td></tr>',
+                    );
+
+                    if (reportDisCountFoc <= 12) {
+                      $('.report-display-part1').removeClass('d-none');
+                      $('#detailed-report-datas-part1').append(
+                        '<tr><td>' +
+                          report.code +
+                          '</td><td>' +
+                          report.item +
+                          '</td></tr>',
+                      );
+                    }
+
+                    if (reportDisCountFoc > 12 && reportDisCountFoc <= 24) {
+                      $('.report-display-part2').removeClass('d-none');
+                      $('#detailed-report-datas-part2').append(
+                        '<tr><td>' +
+                          report.code +
+                          '</td><td>' +
+                          report.item +
+                          '</td></tr>',
+                      );
+                    }
+
+                    if (reportDisCount > 24) {
+                      $('.report-display-part3').removeClass('d-none');
+                      $('#detailed-report-datas-part2').append(
+                        '<tr><td>' +
+                          report.code +
+                          '</td><td>' +
+                          report.item +
+                          '</td></tr>',
+                      );
+                    }
+
+                    reportDisCountFoc++;
+                  }
+
+                  // if(reportPlaceCount <= 3){
+                  //     if(report.subcattwo == "Focus"){
+                  //         $(".report-display-part1").removeClass('d-none');
+                  //         $("#detailed-report-datas-part1").append('<tr><td>'+report.code+'</td><td>'+report.item+'</td></tr>');
+                  //     }
+                  // }
+
+                  // if(reportPlaceCount > 3){
+                  //     if(report.subcattwo == "Focus"){
+                  //         $(".report-display-part2").removeClass('d-none');
+                  //         $("#detailed-report-datas-part2").append('<tr><td>'+report.code+'</td><td>'+report.item+'</td></tr>');
+                  //     }
+                  // }
+                  reportDisCount++;
+                }
+              });
+
+              $.map(XL_row_object1, function (e) {
+                if (!potential1.hasOwnProperty(e.Criticality)) {
+                  potential1.push(e.Criticality);
+                }
+              });
+              let usubj1 = potential1.filter(function (v, i, self) {
+                return i == self.indexOf(v);
+              });
+
+              $.each(pcounts1, function (k, v) {
+                $('#c-datas1').append('<tr>');
+                $('#c-datas1').append(
+                  `<td class="first_col"><div style="display:flex;justify-content:space-between;">${k} <span style="padding-right:15px;">${pcounts1[k][0].acronym}</span></div></td>`,
+                );
+                $('#c-datas1').append(
+                  `<td align='middle'>${
+                    pcounts1[k][0].low == 0 ? '-' : pcounts1[k][0].low
+                  }</td>`,
+                );
+                $('#c-datas1').append(
+                  `<td align='middle'>${
+                    pcounts1[k][0].medium == 0 ? '-' : pcounts1[k][0].medium
+                  }</td>`,
+                );
+                $('#c-datas1').append(
+                  `<td align='middle'>${
+                    pcounts1[k][0].high == 0 ? '-' : pcounts1[k][0].high
+                  }</td>`,
+                );
+                $('#c-datas1').append(
+                  `<td align='middle' class="bold">${
+                    pcounts1[k][0].total1 == 0 ? '-' : pcounts1[k][0].total1
+                  }</td>`,
+                );
+                $('#c-datas1').append('</tr>');
+
+                if (
+                  pcounts1[k][0].low * 1 +
+                    pcounts1[k][0].medium * 5 +
+                    pcounts1[k][0].high * 10 <=
+                  19
+                ) {
+                  $('#freq').append(
+                    `<tr nowrap bgcolor="#ff0000"><td class="dir">${
+                      pcounts1[k][0].acronym
+                    }(<span style="color:#5ebe64;font-weight:bold;">${
+                      pcounts1[k][0].low * 1 +
+                      pcounts1[k][0].medium * 5 +
+                      pcounts1[k][0].high * 10
+                    }</span>, <span style="color:#666">${
+                      pcounts1[k][0].total1
+                    }</span>)</td><td class="data">${
+                      pcounts1[k][0].low * 1 +
+                      pcounts1[k][0].medium * 5 +
+                      pcounts1[k][0].high * 10
+                    }</td><td class="data">${pcounts1[k][0].total1}</td></tr>`,
+                  );
+                } else if (
+                  pcounts1[k][0].low * 1 +
+                    pcounts1[k][0].medium * 5 +
+                    pcounts1[k][0].high * 10 >=
+                    20 &&
+                  pcounts1[k][0].low * 1 +
+                    pcounts1[k][0].medium * 5 +
+                    pcounts1[k][0].high * 10 <=
+                    49
+                ) {
+                  $('#freq').append(
+                    `<tr nowrap bgcolor="#ff0000"><td class="dir">${
+                      pcounts1[k][0].acronym
+                    }(<span style="color:#5ebe64;font-weight:bold;">${
+                      pcounts1[k][0].low * 1 +
+                      pcounts1[k][0].medium * 5 +
+                      pcounts1[k][0].high * 10
+                    }</span>, <span style="color:#666">${
+                      pcounts1[k][0].total1
+                    }</span>)</td><td class="data">${
+                      pcounts1[k][0].low * 1 +
+                      pcounts1[k][0].medium * 5 +
+                      pcounts1[k][0].high * 10
+                    }</td><td class="data">${pcounts1[k][0].total1}</td></tr>`,
+                  );
+                } else {
+                  $('#freq').append(
+                    `<tr nowrap bgcolor="#ff0000"><td class="dir">${
+                      pcounts1[k][0].acronym
+                    }(<span style="color:#5ebe64;font-weight:bold;">${
+                      pcounts1[k][0].low * 1 +
+                      pcounts1[k][0].medium * 5 +
+                      pcounts1[k][0].high * 10
+                    }</span>, <span style="color:#666">${
+                      pcounts1[k][0].total1
+                    }</span>)</td><td class="data">${
+                      pcounts1[k][0].low * 1 +
+                      pcounts1[k][0].medium * 5 +
+                      pcounts1[k][0].high * 10
+                    }</td><td class="data">${pcounts1[k][0].total1}</td></tr>`,
+                  );
+                }
+              });
+              $('#c-foot1').append(
+                "<td style='vertical-align: middle;font-size: 12px;' class='capitalize bold'>Grand Total</td>",
+              );
+              $('#c-foot1').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotallow1 == 0 ? '-' : grndtotallow1
+                }</td>`,
+              );
+              $('#c-foot1').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalmed1 == 0 ? '-' : grndtotalmed1
+                }</td>`,
+              );
+              $('#c-foot1').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalhigh1 == 0 ? '-' : grndtotalhigh1
+                }</td>`,
+              );
+              $('#c-foot1').append(
+                `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold">${
+                  maingrndtotal1 == 0 ? '-' : maingrndtotal1
+                }</td>`,
+              );
+            });
+          };
+          reader1.onerror = function (ex) {};
+          reader1.readAsBinaryString(file);
+        };
+      };
+      // document.getElementById('input').addEventListener('change', handleFileSelect, false);
+
+      function handleFileSelect1(evt) {
+        var files1 = evt.files;
+        var xl2json1 = new ExcelToJSON1();
+        xl2json1.parseExcel(files1[0]);
+        setTimeout(() => {
+          bubbleChart();
+          main_polar();
+          first_sub_findings();
+          loc_findings();
+          main_cat_weigh();
+          first_sub_weigh();
+          loc_weigh();
+          gaugeChart();
+          windRoseMain();
+          windRoseLoc();
+          windRoseSub();
+        }, 1500);
+      }
+    </script>
+
+    <!-- Location table script -->
+    <script>
+      var main2 = {};
+      var pcounts2 = {};
+      var potential2 = [];
+      var low2 = 0;
+      var med2 = 0;
+      var high2 = 0;
+      var grndtotallow2 = 0;
+      var grndtotalmed2 = 0;
+      var grndtotalhigh2 = 0;
+      var maingrndtotal2 = 0;
+      var ExcelToJSON2 = function () {
+        this.parseExcel = function (file) {
+          var reader2 = new FileReader();
+          reader2.onload = function (e) {
+            var data2 = e.target.result;
+            var workbook2 = XLSX.read(data2, {
+              type: 'binary',
+            });
+            workbook2.SheetNames.forEach(function (sheetName) {
+              var XL_row_object2 = XLSX.utils.sheet_to_row_object_array(
+                workbook2.Sheets[sheetName],
+              );
+              $.map(XL_row_object2, function (e) {
+                if (!main2.hasOwnProperty(e.Location)) {
+                  main2[e.Location] = [];
+                }
+                main2[e.Location].push([e.Criticality, e.Answer, e.locAcronym]);
+              });
+              $.each(main2, function (key, value) {
+                low2 = 0;
+                med2 = 0;
+                high2 = 0;
+                pcounts2[key] = [];
+                $.each(main2[key], function (k, v) {
+                  if (v[1] == -1) {
+                    if (v[0] == 'Low') low2++;
+                    if (v[0] == 'Medium') med2++;
+                    if (v[0] == 'High') high2++;
+                  }
+                });
+                grndtotallow2 += low2;
+                grndtotalmed2 += med2;
+                grndtotalhigh2 += high2;
+                total2 = low2 + med2 + high2;
+                maingrndtotal2 += total2;
+                pcounts2[key].push({
+                  low: low2,
+                  medium: med2,
+                  high: high2,
+                  total2: total2,
+                  acronym: value[0][2],
+                });
+                buble_loc_cat.push({
+                  y: low2 + med2 + high2,
+                  x: low2 * 1 + med2 * 5 + high2 * 10,
+                  name: value[0][2],
+                });
+
+                if (low2 != 0 || med2 != 0 || high2 != 0) {
+                  loc_findings_cat.push(key);
+                  loc_findings_count_low.push(low2);
+                  loc_findings_count_med.push(med2);
+                  loc_findings_count_high.push(high2);
+
+                  loc_weigh_count_low.push(low2 * 1);
+                  loc_weigh_count_med.push(med2 * 5);
+                  loc_weigh_count_high.push(high2 * 10);
+                }
+              });
+              $.map(XL_row_object2, function (e) {
+                if (!potential2.hasOwnProperty(e.Criticality)) {
+                  potential2.push(e.Criticality);
+                }
+              });
+              let usubj2 = potential2.filter(function (v, i, self) {
+                return i == self.indexOf(v);
+              });
+              $.each(pcounts2, function (k, v) {
+                $('#c-datas2').append('<tr>');
+                $('#c-datas2').append(
+                  `<td class="first_col"><div style="display:flex;justify-content:space-between;">${k} <span style="padding-right:15px;">${pcounts2[k][0].acronym}</span></div></td>`,
+                );
+                $('#c-datas2').append(
+                  `<td align='middle'>${
+                    pcounts2[k][0].low == 0 ? '-' : pcounts2[k][0].low
+                  }</td>`,
+                );
+                $('#c-datas2').append(
+                  `<td align='middle'>${
+                    pcounts2[k][0].medium == 0 ? '-' : pcounts2[k][0].medium
+                  }</td>`,
+                );
+                $('#c-datas2').append(
+                  `<td align='middle'>${
+                    pcounts2[k][0].high == 0 ? '-' : pcounts2[k][0].high
+                  }</td>`,
+                );
+                $('#c-datas2').append(
+                  `<td align='middle' class="bold">${
+                    pcounts2[k][0].total2 == 0 ? '-' : pcounts2[k][0].total2
+                  }</td>`,
+                );
+                $('#c-datas2').append('</tr>');
+
+                if (
+                  pcounts2[k][0].low * 1 +
+                    pcounts2[k][0].medium * 5 +
+                    pcounts2[k][0].high * 10 <=
+                  19
+                ) {
+                  $('#freq1').append(
+                    `<tr nowrap bgcolor="#008000"><td class="dir">${
+                      pcounts2[k][0].acronym
+                    }(<span style="color:#457B9D;font-weight:bold;">${
+                      pcounts2[k][0].low * 1 +
+                      pcounts2[k][0].medium * 5 +
+                      pcounts2[k][0].high * 10
+                    }</span>, <span style="color:#666">${
+                      pcounts2[k][0].total2
+                    }</span>)</td><td class="data">${
+                      pcounts2[k][0].low * 1 +
+                      pcounts2[k][0].medium * 5 +
+                      pcounts2[k][0].high * 10
+                    }</td><td class="data">${pcounts2[k][0].total2}</td></tr>`,
+                  );
+                } else if (
+                  pcounts2[k][0].low * 1 +
+                    pcounts2[k][0].medium * 5 +
+                    pcounts2[k][0].high * 10 >=
+                    20 &&
+                  pcounts2[k][0].low * 1 +
+                    pcounts2[k][0].medium * 5 +
+                    pcounts2[k][0].high * 10 <=
+                    49
+                ) {
+                  $('#freq1').append(
+                    `<tr nowrap bgcolor="#008000"><td class="dir">${
+                      pcounts2[k][0].acronym
+                    }(<span style="color:#457B9D;font-weight:bold;">${
+                      pcounts2[k][0].low * 1 +
+                      pcounts2[k][0].medium * 5 +
+                      pcounts2[k][0].high * 10
+                    }</span>, <span style="color:#666">${
+                      pcounts2[k][0].total2
+                    }</span>)</td><td class="data">${
+                      pcounts2[k][0].low * 1 +
+                      pcounts2[k][0].medium * 5 +
+                      pcounts2[k][0].high * 10
+                    }</td><td class="data">${pcounts2[k][0].total2}</td></tr>`,
+                  );
+                } else {
+                  $('#freq1').append(
+                    `<tr nowrap bgcolor="#008000"><td class="dir">${
+                      pcounts2[k][0].acronym
+                    }(<span style="color:#457B9D;font-weight:bold;">${
+                      pcounts2[k][0].low * 1 +
+                      pcounts2[k][0].medium * 5 +
+                      pcounts2[k][0].high * 10
+                    }</span>, <span style="color:#666">${
+                      pcounts2[k][0].total2
+                    }</span>)</td><td class="data">${
+                      pcounts2[k][0].low * 1 +
+                      pcounts2[k][0].medium * 5 +
+                      pcounts2[k][0].high * 10
+                    }</td><td class="data">${pcounts2[k][0].total2}</td></tr>`,
+                  );
+                }
+              });
+              $('#c-foot2').append(
+                "<td style='vertical-align: middle;font-size: 12px;' class='capitalize bold'>Grand Total</td>",
+              );
+              $('#c-foot2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotallow2 == 0 ? '-' : grndtotallow2
+                }</td>`,
+              );
+              $('#c-foot2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalmed2 == 0 ? '-' : grndtotalmed2
+                }</td>`,
+              );
+              $('#c-foot2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalhigh2 == 0 ? '-' : grndtotalhigh2
+                }</td>`,
+              );
+              $('#c-foot2').append(
+                `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold">${
+                  maingrndtotal2 == 0 ? '-' : maingrndtotal2
+                }</td>`,
+              );
+            });
+          };
+          reader2.onerror = function (ex) {};
+          reader2.readAsBinaryString(file);
+        };
+      };
+      // document.getElementById('input').addEventListener('change', handleFileSelect, false);
+
+      function handleFileSelect2(evt) {
+        var files2 = evt.files;
+        var xl2json2 = new ExcelToJSON2();
+        xl2json2.parseExcel(files2[0]);
+      }
+    </script>
+
+    <!-- Sub cateogry table script -->
+    <script>
+      var grndtotallow3 = 0;
+      var grndtotalmed3 = 0;
+      var grndtotalhigh3 = 0;
+      var grndweighted3 = 0;
+      var grandnormal3 = 0;
+      var grandfocus3 = 0;
+      var newmain3 = {};
+      var maingrndtotal3 = 0;
+      var reportmain = {};
+
+      var grndtotallow3Part2 = 0;
+      var grndtotalmed3Part2 = 0;
+      var grndtotalhigh3Part2 = 0;
+      var grndweighted3Part2 = 0;
+      var grandnormal3Part2 = 0;
+      var grandfocus3Part2 = 0;
+
+      var get_sub = {};
+      var ExcelToJSON3 = function () {
+        this.parseExcel = function (file) {
+          var reader3 = new FileReader();
+          reader3.onload = function (e) {
+            var data3 = e.target.result;
+            var workbook3 = XLSX.read(data3, {
+              type: 'binary',
+            });
+            workbook3.SheetNames.forEach(function (sheetName) {
+              var XL_row_object3 = XLSX.utils.sheet_to_row_object_array(
+                workbook3.Sheets[sheetName],
+              );
+
+              $.map(XL_row_object3, function (e) {
+                if (!newmain3.hasOwnProperty(e.mainCategory)) {
+                  newmain3[e.mainCategory] = [];
+                }
+
+                newmain3[e.mainCategory].push({
+                  subOne: e.subCategoryOne,
+                  pRisk: e.Criticality,
+                  subTeo: e.subCategoryTwo,
+                  ans: e.Answer,
+                  mAcronym: e.mainAcronym,
+                  sAcronym: e.subAcronym,
+                });
+              });
+              var colCount = 0;
+              $.each(newmain3, function (k, v) {
+                $('#c-datas3').append(
+                  `<tr><td class="first_col bold"><div style="display:flex;justify-content:space-between;">${k} <span style="padding-right:15px;">${v[0].mAcronym}</span></div></td><td></td><td></td><td></td><td></td><td></td><td class="focus-highlight"></td></tr>`,
+                );
+
+                if (colCount <= 3) {
+                  $('#c-datas3-part1').append(
+                    `<tr><td class="first_col bold"><div style="display:flex;justify-content:space-between;">${k} <span style="padding-right:15px;">${v[0].mAcronym}</span></div></td><td></td><td></td><td></td><td></td><td></td><td class="focus-highlight"></td></tr>`,
+                  );
+                }
+                if (colCount > 3) {
+                  $('#c-datas3-part2').append(
+                    `<tr><td class="first_col bold"><div style="display:flex;justify-content:space-between;">${k} <span style="padding-right:15px;">${v[0].mAcronym}</span></div></td><td></td><td></td><td></td><td></td><td></td><td class="focus-highlight"></td></tr>`,
+                  );
+                }
+
+                var finalsub3 = {};
+
+                $.each(newmain3[k], function (key, val) {
+                  if (!finalsub3.hasOwnProperty(val.subOne)) {
+                    finalsub3[val.subOne] = [];
+                  }
+
+                  finalsub3[val.subOne].push([
+                    val.pRisk,
+                    val.subTeo,
+                    val.ans,
+                    val.sAcronym,
+                  ]);
+                });
+                $.each(finalsub3, function (fk, fv) {
+                  var get_sub_low = 0;
+                  var finalLow3 = 0;
+                  var finalMed3 = 0;
+                  var finalhigh3 = 0;
+                  var finalnor3 = 0;
+                  var finalfoc3 = 0;
+
+                  $.each(finalsub3[fk], function (sfk, sfv) {
+                    if (sfv[0] == 'Low' && $.trim(sfv[2]) == '-1') {
+                      finalLow3++;
+                    }
+                    if (sfv[0] == 'Medium' && $.trim(sfv[2]) == '-1') {
+                      finalMed3++;
+                    }
+                    if (sfv[0] == 'High' && $.trim(sfv[2]) == '-1') {
+                      finalhigh3++;
+                    }
+                    if (sfv[1] == 'Normal' && $.trim(sfv[2]) == '-1') {
+                      finalnor3++;
+                    }
+                    if (sfv[1] == 'Focus' && $.trim(sfv[2]) == '-1') {
+                      finalfoc3++;
+                    }
+                    wScore = finalLow3 * 1 + finalMed3 * 5 + finalhigh3 * 10;
+                  });
+
+                  grndweighted3 += wScore;
+                  grandnormal3 += finalnor3;
+                  grandfocus3 += finalfoc3;
+                  grndtotallow3 += finalLow3;
+                  grndtotalmed3 += finalMed3;
+                  grndtotalhigh3 += finalhigh3;
+
+                  if (colCount > 3) {
+                    grndweighted3Part2 += wScore;
+                    grandnormal3Part2 += finalnor3;
+                    grandfocus3Part2 += finalfoc3;
+                    grndtotallow3Part2 += finalLow3;
+                    grndtotalmed3Part2 += finalMed3;
+                    grndtotalhigh3Part2 += finalhigh3;
+                  }
+
+                  buble_sub_cat.push({
+                    y: finalLow3 + finalMed3 + finalhigh3,
+                    x: finalLow3 * 1 + finalMed3 * 5 + finalhigh3 * 10,
+                    name: fv[0][3],
+                  });
+                  gauge_Data_label = grndweighted3;
+                  if (grndweighted3 <= 0) gauge_Data = 0;
+                  else if (grndweighted3 <= 19) gauge_Data = 15;
+                  else if (grndweighted3 >= 20 && grndweighted3 <= 49)
+                    gauge_Data = 40;
+                  else if (grndweighted3 >= 50) gauge_Data = 75;
+
+                  if (!get_sub.hasOwnProperty(fk)) {
+                    get_sub[fk] = [];
+                  }
+                  get_sub[fk].push({
+                    low: finalLow3,
+                    medium: finalMed3,
+                    high: finalhigh3,
+                    acronym: fv[0][3],
+                  });
+
+                  $('#finding_weighted_score').text(': ' + grndweighted3);
+
+                  if (grndweighted3 <= 19) {
+                    $('#finding_weighted_score').css('color', '#2eb24c');
+                  } else if (grndweighted3 >= 20 && grndweighted3 <= 49) {
+                    $('#finding_weighted_score').css('color', '#ff9f1c');
+                  } else {
+                    $('#finding_weighted_score').css('color', '#e63946');
+                  }
+
+                  $('#inspection_score').text(
+                    ': ' + (verified - grndweighted3),
+                  );
+                  $('#inspection_perf').text(
+                    ': ' +
+                      Math.round(
+                        ((verified - grndweighted3) / verified) * 100,
+                      ) +
+                      '%',
+                  );
+
+                  if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) <=
+                    50
+                  ) {
+                    $('#inspection_perf').css('color', '#e63946');
+                  } else if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) >=
+                      51 &&
+                    Math.round(((verified - grndweighted3) / verified) * 100) <=
+                      70
+                  ) {
+                    $('#inspection_perf').css('color', '#ff9f1c');
+                  } else if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) >=
+                      71 &&
+                    Math.round(((verified - grndweighted3) / verified) * 100) <=
+                      85
+                  ) {
+                    $('#inspection_perf').css('color', '#f8e71b');
+                  } else {
+                    $('#inspection_perf').css('color', '#2eb24c');
+                  }
+
+                  $('.cover-ship').css(
+                    'width',
+                    `${Math.round(
+                      ((verified - grndweighted3) / verified) * 100,
+                    )}%`,
+                  );
+                  $('#percent_val').text(
+                    Math.round(((verified - grndweighted3) / verified) * 100) +
+                      '%',
+                  );
+                  if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) >=
+                      0 &&
+                    Math.round(((verified - grndweighted3) / verified) * 100) <=
+                      50
+                  ) {
+                    $('.ship-img-wrap .svg .cover-ship svg path').css(
+                      'fill',
+                      '#e63946',
+                    );
+                    $('#percent_val').css('color', '#e63946');
+                  } else if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) >=
+                      51 &&
+                    Math.round(((verified - grndweighted3) / verified) * 100) <=
+                      70
+                  ) {
+                    $('.ship-img-wrap .svg .cover-ship svg path').css(
+                      'fill',
+                      '#ff9f1c',
+                    );
+                    $('#percent_val').css('color', '#ff9f1c');
+                  } else if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) >=
+                      71 &&
+                    Math.round(((verified - grndweighted3) / verified) * 100) <=
+                      85
+                  ) {
+                    $('.ship-img-wrap .svg .cover-ship svg path').css(
+                      'fill',
+                      '#f8e71b',
+                    );
+                    $('#percent_val').css('color', '#f8e71b');
+                  } else if (
+                    Math.round(((verified - grndweighted3) / verified) * 100) >=
+                    86
+                  ) {
+                    $('.ship-img-wrap .svg .cover-ship svg path').css(
+                      'fill',
+                      '#2eb24c',
+                    );
+                    $('#percent_val').css('color', '#2eb24c');
+                  }
+
+                  if (grndweighted3 >= 50) {
+                    $('#potential_risk').text(': High').css('color', '#e63946');
+                  } else if (grndweighted3 >= 20 && grndweighted3 <= 49) {
+                    $('#potential_risk')
+                      .text(': Medium')
+                      .css('color', '#ff9f1c');
+                  } else {
+                    $('#potential_risk').text(': Low').css('color', '#2eb24c');
+                  }
+
+                  if (wScore <= 19) {
+                    $('#c-datas3').append(
+                      `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                        fv[0][3]
+                      }</span></div></td><td align='middle'>${
+                        finalLow3 == 0 ? '-' : finalLow3
+                      }</td><td align='middle'>${
+                        finalMed3 == 0 ? '-' : finalMed3
+                      }</td><td align='middle'>${
+                        finalhigh3 == 0 ? '-' : finalhigh3
+                      }</td><td align='middle'>${
+                        wScore == 0
+                          ? '-'
+                          : '<span class="dot low"></span> -' + wScore
+                      }</td><td align='middle'>${
+                        finalnor3 == 0 ? '-' : finalnor3
+                      }</td><td class="${
+                        finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                      }" align='middle'>${
+                        finalfoc3 == 0 ? '-' : finalfoc3
+                      }</td></tr></tr>`,
+                    );
+                    if (colCount <= 3) {
+                      $('#c-datas3-part1').append(
+                        `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                          fv[0][3]
+                        }</span></div></td><td align='middle'>${
+                          finalLow3 == 0 ? '-' : finalLow3
+                        }</td><td align='middle'>${
+                          finalMed3 == 0 ? '-' : finalMed3
+                        }</td><td align='middle'>${
+                          finalhigh3 == 0 ? '-' : finalhigh3
+                        }</td><td align='middle'>${
+                          wScore == 0
+                            ? '-'
+                            : '<span class="dot low"></span> -' + wScore
+                        }</td><td align='middle'>${
+                          finalnor3 == 0 ? '-' : finalnor3
+                        }</td><td class="${
+                          finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                        }" align='middle'>${
+                          finalfoc3 == 0 ? '-' : finalfoc3
+                        }</td></tr>`,
+                      );
+                    }
+                    if (colCount > 3) {
+                      $('#c-datas3-part2').append(
+                        `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                          fv[0][3]
+                        }</span></div></td><td align='middle'>${
+                          finalLow3 == 0 ? '-' : finalLow3
+                        }</td><td align='middle'>${
+                          finalMed3 == 0 ? '-' : finalMed3
+                        }</td><td align='middle'>${
+                          finalhigh3 == 0 ? '-' : finalhigh3
+                        }</td><td align='middle'>${
+                          wScore == 0
+                            ? '-'
+                            : '<span class="dot low"></span> -' + wScore
+                        }</td><td align='middle'>${
+                          finalnor3 == 0 ? '-' : finalnor3
+                        }</td><td class="${
+                          finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                        }" align='middle'>${
+                          finalfoc3 == 0 ? '-' : finalfoc3
+                        }</td></tr>`,
+                      );
+                    }
+                  }
+                  if (wScore >= 20 && wScore <= 49) {
+                    $('#c-datas3').append(
+                      `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                        fv[0][3]
+                      }</span></div></td><td align='middle'>${
+                        finalLow3 == 0 ? '-' : finalLow3
+                      }</td><td align='middle'>${
+                        finalMed3 == 0 ? '-' : finalMed3
+                      }</td><td align='middle'>${
+                        finalhigh3 == 0 ? '-' : finalhigh3
+                      }</td><td align='middle'>${
+                        wScore == 0
+                          ? '-'
+                          : '<span class="dot medium"></span> -' + wScore
+                      }</td><td align='middle'>${
+                        finalnor3 == 0 ? '-' : finalnor3
+                      }</td><td class="${
+                        finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                      }" align='middle'>${
+                        finalfoc3 == 0 ? '-' : finalfoc3
+                      }</td></tr></tr>`,
+                    );
+                    if (colCount <= 3) {
+                      $('#c-datas3-part1').append(
+                        `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                          fv[0][3]
+                        }</span></div></td><td align='middle'>${
+                          finalLow3 == 0 ? '-' : finalLow3
+                        }</td><td align='middle'>${
+                          finalMed3 == 0 ? '-' : finalMed3
+                        }</td><td align='middle'>${
+                          finalhigh3 == 0 ? '-' : finalhigh3
+                        }</td><td align='middle'>${
+                          wScore == 0
+                            ? '-'
+                            : '<span class="dot medium"></span> -' + wScore
+                        }</td><td align='middle'>${
+                          finalnor3 == 0 ? '-' : finalnor3
+                        }</td><td class="${
+                          finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                        }" align='middle'>${
+                          finalfoc3 == 0 ? '-' : finalfoc3
+                        }</td></tr>`,
+                      );
+                    }
+                    if (colCount > 3) {
+                      $('#c-datas3-part2').append(
+                        `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                          fv[0][3]
+                        }</span></div></td><td align='middle'>${
+                          finalLow3 == 0 ? '-' : finalLow3
+                        }</td><td align='middle'>${
+                          finalMed3 == 0 ? '-' : finalMed3
+                        }</td><td align='middle'>${
+                          finalhigh3 == 0 ? '-' : finalhigh3
+                        }</td><td align='middle'>${
+                          wScore == 0
+                            ? '-'
+                            : '<span class="dot medium"></span> -' + wScore
+                        }</td><td align='middle'>${
+                          finalnor3 == 0 ? '-' : finalnor3
+                        }</td><td class="${
+                          finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                        }" align='middle'>${
+                          finalfoc3 == 0 ? '-' : finalfoc3
+                        }</td></tr>`,
+                      );
+                    }
+                  }
+                  if (wScore >= 50) {
+                    $('#c-datas3').append(
+                      `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                        fv[0][3]
+                      }</span></div></td><td align='middle'>${
+                        finalLow3 == 0 ? '-' : finalLow3
+                      }</td><td align='middle'>${
+                        finalMed3 == 0 ? '-' : finalMed3
+                      }</td><td align='middle'>${
+                        finalhigh3 == 0 ? '-' : finalhigh3
+                      }</td><td align='middle'>${
+                        wScore == 0
+                          ? '-'
+                          : '<span class="dot high"></span> ' - +wScore
+                      }</td><td align='middle'>${
+                        finalnor3 == 0 ? '-' : finalnor3
+                      }</td><td class="${
+                        finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                      }" align='middle'>${
+                        finalfoc3 == 0 ? '-' : finalfoc3
+                      }</td></tr></tr>`,
+                    );
+                    if (colCount <= 3) {
+                      $('#c-datas3-part1').append(
+                        `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                          fv[0][3]
+                        }</span></div></td><td align='middle'>${
+                          finalLow3 == 0 ? '-' : finalLow3
+                        }</td><td align='middle'>${
+                          finalMed3 == 0 ? '-' : finalMed3
+                        }</td><td align='middle'>${
+                          finalhigh3 == 0 ? '-' : finalhigh3
+                        }</td><td align='middle'>${
+                          wScore == 0
+                            ? '-'
+                            : '<span class="dot high"></span> -' + wScore
+                        }</td><td align='middle'>${
+                          finalnor3 == 0 ? '-' : finalnor3
+                        }</td><td class="${
+                          finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                        }" align='middle'>${
+                          finalfoc3 == 0 ? '-' : finalfoc3
+                        }</td></tr>`,
+                      );
+                    }
+                    if (colCount > 3) {
+                      $('#c-datas3-part2').append(
+                        `<tr><td class="first_col"><div style="display:flex;justify-content:space-between;">${fk} <span style="padding-right:15px;">${
+                          fv[0][3]
+                        }</span></div></td><td align='middle'>${
+                          finalLow3 == 0 ? '-' : finalLow3
+                        }</td><td align='middle'>${
+                          finalMed3 == 0 ? '-' : finalMed3
+                        }</td><td align='middle'>${
+                          finalhigh3 == 0 ? '-' : finalhigh3
+                        }</td><td align='middle'>${
+                          wScore == 0
+                            ? '-'
+                            : '<span class="dot high"></span> -' + wScore
+                        }</td><td align='middle'>${
+                          finalnor3 == 0 ? '-' : finalnor3
+                        }</td><td class="${
+                          finalfoc3 == 0 ? 'focus-highlight' : 'focus-high-dark'
+                        }" align='middle'>${
+                          finalfoc3 == 0 ? '-' : finalfoc3
+                        }</td></tr>`,
+                      );
+                    }
+                  }
+                });
+
+                if (colCount == 3) {
+                  $('#c-foot3-part1').append(
+                    "<td style='vertical-align: middle;font-size: 12px;' class='capitalize bold'>Page Total</td>",
+                  );
+                  $('#c-foot3-part1').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grndtotallow3 == 0 ? '-' : grndtotallow3
+                    }</td>`,
+                  );
+                  $('#c-foot3-part1').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grndtotalmed3 == 0 ? '-' : grndtotalmed3
+                    }</td>`,
+                  );
+                  $('#c-foot3-part1').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grndtotalhigh3 == 0 ? '-' : grndtotalhigh3
+                    }</td>`,
+                  );
+
+                  $('#c-foot3-part1').append(
+                    `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold">${
+                      grndweighted3 == 0 ? '-' : '-' + grndweighted3
+                    }</td>`,
+                  );
+
+                  $('#c-foot3-part1').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grandnormal3 == 0 ? '-' : grandnormal3
+                    }</td>`,
+                  );
+                  $('#c-foot3-part1').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold focus-highlight focus-footer">${
+                      grandfocus3 == 0 ? '-' : grandfocus3
+                    }</td>`,
+                  );
+                }
+                if (colCount == Object.keys(newmain3).length - 1) {
+                  $('#c-foot3-page-part2').append(
+                    "<td style='vertical-align: middle;font-size: 12px;' class='capitalize bold'>Page Total</td>",
+                  );
+                  $('#c-foot3-page-part2').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grndtotallow3Part2 == 0 ? '-' : grndtotallow3Part2
+                    }</td>`,
+                  );
+                  $('#c-foot3-page-part2').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grndtotalmed3Part2 == 0 ? '-' : grndtotalmed3Part2
+                    }</td>`,
+                  );
+                  $('#c-foot3-page-part2').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grndtotalhigh3Part2 == 0 ? '-' : grndtotalhigh3Part2
+                    }</td>`,
+                  );
+
+                  if (grndweighted3 == 0) {
+                    $('#c-foot3-page-part2').append(
+                      `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold">-</td>`,
+                    );
+                  } else if (grndweighted3 <= 19) {
+                    $('#c-foot3-page-part2').append(
+                      `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold">-${grndweighted3Part2}</td>`,
+                    );
+                  } else if (grndweighted3 >= 20 && grndweighted3 <= 49) {
+                    $('#c-foot3-page-part2').append(
+                      `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"> -${grndweighted3Part2}</td>`,
+                    );
+                  } else if (grndweighted3 >= 50) {
+                    $('#c-foot3-page-part2').append(
+                      `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"> -${grndweighted3Part2}</td>`,
+                    );
+                  }
+
+                  $('#c-foot3-page-part2').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                      grandnormal3Part2 == 0 ? '-' : grandnormal3Part2
+                    }</td>`,
+                  );
+                  $('#c-foot3-page-part2').append(
+                    `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold focus-highlight">${
+                      grandfocus3Part2 == 0 ? '-' : grandfocus3Part2
+                    }</td>`,
+                  );
+                }
+
+                colCount++;
+              });
+
+              $('#c-foot3').append(
+                "<td style='vertical-align: middle;font-size: 12px;' class='capitalize bold'>Grand Total</td>",
+              );
+              $('#c-foot3').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotallow3 == 0 ? '-' : grndtotallow3
+                }</td>`,
+              );
+              $('#c-foot3').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalmed3 == 0 ? '-' : grndtotalmed3
+                }</td>`,
+              );
+              $('#c-foot3').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalhigh3 == 0 ? '-' : grndtotalhigh3
+                }</td>`,
+              );
+
+              $('#c-foot3-part2').append(
+                "<td style='vertical-align: middle;font-size: 12px;' class='capitalize bold'>Grand Total</td>",
+              );
+              $('#c-foot3-part2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotallow3 == 0 ? '-' : grndtotallow3
+                }</td>`,
+              );
+              $('#c-foot3-part2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalmed3 == 0 ? '-' : grndtotalmed3
+                }</td>`,
+              );
+              $('#c-foot3-part2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grndtotalhigh3 == 0 ? '-' : grndtotalhigh3
+                }</td>`,
+              );
+
+              if (grndweighted3 == 0) {
+                $('#c-foot3').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class=""></span> - </td>`,
+                );
+                $('#c-foot3-part2').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class=""></span> - </td>`,
+                );
+              } else if (grndweighted3 <= 19) {
+                $('#c-foot3').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class="dot low"></span> -${grndweighted3}</td>`,
+                );
+                $('#c-foot3-part2').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class="dot low"></span> -${grndweighted3}</td>`,
+                );
+              } else if (grndweighted3 >= 20 && grndweighted3 <= 49) {
+                $('#c-foot3').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class="dot medium"></span> -${grndweighted3}</td>`,
+                );
+                $('#c-foot3-part2').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class="dot medium"></span> -${grndweighted3}</td>`,
+                );
+              } else {
+                $('#c-foot3').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class="dot high"></span> -${grndweighted3}</td>`,
+                );
+                $('#c-foot3-part2').append(
+                  `<td align='middle' style="vertical-align: middle;font-size:14px" class="bold"><span class="dot high"></span> -${grndweighted3}</td>`,
+                );
+              }
+
+              $('#c-foot3').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grandnormal3 == 0 ? '-' : grandnormal3
+                }</td>`,
+              );
+              $('#c-foot3').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold focus-highlight focus-footer">${
+                  grandfocus3 == 0 ? '-' : grandfocus3
+                }</td>`,
+              );
+
+              $('#c-foot3-part2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold">${
+                  grandnormal3 == 0 ? '-' : grandnormal3
+                }</td>`,
+              );
+              $('#c-foot3-part2').append(
+                `<td align='middle' style="vertical-align: middle;font-size: 12px;" class="bold focus-highlight focus-footer">${
+                  grandfocus3 == 0 ? '-' : grandfocus3
+                }</td>`,
+              );
+
+              $.each(get_sub, function (i, e) {
+                var sublow = 0;
+                var submed = 0;
+                var subhigh = 0;
+                $.each(get_sub[i], function (key, val) {
+                  sublow += val.low;
+                  submed += val.medium;
+                  subhigh += val.high;
+                });
+                if (sublow * 1 + submed * 5 + subhigh * 10 <= 19) {
+                  $('#freq2').append(
+                    `<tr nowrap bgcolor="#ffff00;opacity:1"><td align="middle" class="dir">${
+                      e[0].acronym
+                    }(<span style="color:#F7A45E;font-weight:bold;">${
+                      sublow * 1 + submed * 5 + subhigh * 10
+                    }</span>,<span color:#666>${
+                      sublow + submed + subhigh
+                    }</span>)</td><td class="data">${
+                      sublow * 1 + submed * 5 + subhigh * 10
+                    }</td><td align="middle" class="data">${
+                      sublow + submed + subhigh
+                    }</td></tr>`,
+                  );
+                } else if (
+                  sublow * 1 + submed * 5 + subhigh * 10 >= 20 &&
+                  sublow * 1 + submed * 5 + subhigh * 10 <= 49
+                ) {
+                  $('#freq2').append(
+                    `<tr nowrap bgcolor="#ffff00;opacity:1"><td align="middle" class="dir">${
+                      e[0].acronym
+                    }(<span style="color:#F7A45E;font-weight:bold;">${
+                      sublow * 1 + submed * 5 + subhigh * 10
+                    }</span>,<span color:#666>${
+                      sublow + submed + subhigh
+                    }</span>)</td><td class="data">${
+                      sublow * 1 + submed * 5 + subhigh * 10
+                    }</td><td align="middle" class="data">${
+                      sublow + submed + subhigh
+                    }</td></tr>`,
+                  );
+                } else {
+                  $('#freq2').append(
+                    `<tr nowrap bgcolor="#ffff00;opacity:1"><td align="middle" class="dir">${
+                      e[0].acronym
+                    }(<span style="color:#F7A45E;font-weight:bold;">${
+                      sublow * 1 + submed * 5 + subhigh * 10
+                    }</span>,<span color:#666>${
+                      sublow + submed + subhigh
+                    }</span>)</td><td class="data">${
+                      sublow * 1 + submed * 5 + subhigh * 10
+                    }</td><td align="middle" class="data">${
+                      sublow + submed + subhigh
+                    }</td></tr>`,
+                  );
+                }
+
+                if (sublow != 0 || submed != 0 || subhigh != 0) {
+                  sub_findings_cat.push(i);
+                  sub_findings_low.push(sublow);
+                  sub_findings_med.push(submed);
+                  sub_findings_high.push(subhigh);
+                  sub_weigh_low.push(sublow * 1);
+                  sub_weigh_med.push(submed * 5);
+                  sub_weigh_high.push(subhigh * 10);
+                }
+              });
+            });
+          };
+          reader3.onerror = function (ex) {};
+          reader3.readAsBinaryString(file);
+        };
+      };
+      // document.getElementById('input').addEventListener('change', handleFileSelect, false);
+
+      function handleFileSelect3(evt) {
+        var files3 = evt.files;
+        var xl2json3 = new ExcelToJSON3();
+        xl2json3.parseExcel(files3[0]);
+      }
+    </script>
+
+    <!-- Create pdf script -->
+    <script>
+      var doc = new jsPDF();
+      var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+          return true;
+        },
+      };
+      $('#submit1').click(function () {
+        doc.fromHTML($('#show_div').html(), 15, 15, {
+          width: 190,
+          elementHandlers: specialElementHandlers,
+        });
+        doc.save('sample-page.pdf');
+      });
+    </script>
+  </body>
+</html>

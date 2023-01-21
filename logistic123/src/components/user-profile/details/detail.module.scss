@@ -1,0 +1,61 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/variable.scss';
+
+.user {
+  height: 100%;
+  .wrapContainer {
+    min-height: calc(100vh - 56px);
+    height: fit-content;
+    background-color: $bg-color-container;
+    width: 100%;
+    border-left: 1px solid $gray_11;
+
+    .title {
+      font-weight: bold;
+      font-size: px-to-rem(20);
+      line-height: 150%;
+      margin: 8px 0px 30px;
+      color: $gray_3;
+    }
+
+    .buttonFilter {
+      width: 100px;
+      span {
+        font-weight: 500;
+        font-size: px-to-rem(14);
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.noDateWrapper {
+  width: 100%;
+  height: calc(100vh - 56px);
+  position: relative;
+  .loading {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.titleHeader {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+  width: 100%;
+  span {
+    font-size: 12px;
+    font-weight: 500;
+    color: $gray_3;
+  }
+  div {
+    color: $gray_3;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+}

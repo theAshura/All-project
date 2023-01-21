@@ -1,0 +1,13 @@
+@import 'assets/css/utilities/variable.scss';
+
+.info__container {
+  color: $gray_3;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  .info__label {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,109 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 0px;
+  border-radius: 5px;
+  .titleContainer {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .containerForm {
+    padding-bottom: 14px;
+    .buttonPort {
+      width: '100%';
+    }
+    .inputSelect {
+      margin-right: 20px;
+      height: 40px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+    .button {
+      font-weight: 500;
+      font-size: 14px;
+      .icButton {
+        padding-left: 9px;
+      }
+    }
+  }
+  .inputFile {
+    overflow: visible;
+    display: none;
+  }
+  .titleForm {
+    margin-bottom: unset;
+    font-size: 18px;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+.icButtonSend {
+  margin-left: 9px;
+}
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+.wrapperAction {
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  .moreAction {
+    margin: 5px 10px;
+  }
+}
+
+.dropdown_item_custom {
+  display: flex;
+  padding: 0 12.5px;
+  height: 36px;
+  width: 75px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: px-to-rem(13);
+  line-height: px-to-rem(20);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray_11;
+  }
+
+  &:hover {
+    background: $gray_11;
+  }
+}

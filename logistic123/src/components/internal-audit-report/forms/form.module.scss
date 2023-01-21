@@ -1,0 +1,654 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+@import '../../ui//button/button.scss';
+@import '../../common//modal-list/modal-list.module.scss';
+// @import '../../planning-and-request/forms/forms.module.scss';
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.groupBtns {
+  gap: 20px;
+}
+
+.modalGroupBtns {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+
+  .group-button_buttonSave__16b4m {
+    margin-left: 0;
+  }
+}
+
+.collapse {
+  padding: 20px;
+}
+
+.collapseAttachments {
+  padding: 0 20px;
+}
+
+.addBtn {
+  gap: 10px;
+  align-items: center;
+
+  img {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.backgroundWrapper {
+  // height: 76px;
+  // min-height: 76px;
+  max-height: 120px;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.titleModle {
+  font-weight: 600;
+  font-size: 18px;
+  color: $gray_3;
+}
+
+.deleteBtn {
+  height: 16px !important;
+  padding: 0 4px !important;
+  background-color: $white !important;
+  border: 1px solid $gray_9;
+  border-radius: 5px;
+}
+
+.dataWrapperEmpty {
+  min-height: 110px !important;
+
+  img {
+    top: 50% !important;
+  }
+
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+.textAreaTitle {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: $gray_11;
+}
+
+.inputFile {
+  overflow: visible;
+  display: none;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.datePickerWrapper {
+  min-width: 600;
+  gap: 20px;
+
+  .date {
+    width: 250px;
+    gap: 13px;
+  }
+}
+
+.titleForm {
+  font-size: $title_font_size;
+  margin: 0;
+  font-weight: 700;
+}
+
+.scrollModal {
+  height: 80vh;
+  overflow-y: scroll;
+  padding-bottom: 20px !important;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tableWrapper {
+  overflow: auto;
+  max-height: 427px;
+
+  .primary {
+    border-bottom: none !important;
+    border-top: 1px solid $gray_11 !important;
+  }
+
+  .primaryChild {
+    border-right: none !important;
+    overflow-wrap: nowrap !important;
+  }
+
+  .bRight {
+    border-right: 1px solid $gray_11 !important;
+  }
+
+  .bLeft {
+    &:first-child {
+      border-left: 1px solid $gray_11 !important;
+    }
+  }
+
+  .checkboxWrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+  }
+
+  th {
+    height: 36px;
+    padding: 0 16px !important;
+    background-color: $gray_12 !important;
+    border-bottom: 1px solid $gray_11 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 22px;
+    margin: 0px 12px;
+    color: $gray_3 !important;
+    border-style: none;
+    border-top: none;
+    border-right: 1px solid $gray_11;
+
+    &::before {
+      display: none;
+    }
+
+    &:first-child {
+      border-left: none;
+      border-bottom: none !important;
+    }
+
+    &:nth-child(2) {
+      border-bottom: none !important;
+    }
+
+    &:nth-child(3) {
+      border-bottom: none !important;
+    }
+
+    &:nth-child(4) {
+      border-bottom: none !important;
+    }
+
+    &:nth-child(5) {
+      border-bottom: none !important;
+    }
+
+    &:nth-child(6) {
+      border-bottom: none !important;
+    }
+
+    &:nth-child(7) {
+      border-bottom: none !important;
+    }
+
+    &:last-child {
+      // border-right: none;
+    }
+  }
+
+  .rowWrapper {
+    height: 36px !important;
+
+    td {
+      padding: 0 16px;
+      border-bottom: 1px solid $gray_11;
+      font-weight: 400 !important;
+    }
+
+    .auditColumns {
+      min-width: 250px;
+    }
+
+    .primaryType {
+      min-width: 190px;
+    }
+
+    .others {
+      min-width: 80px;
+    }
+  }
+
+  .ant-table-body {
+    overflow-y: auto !important;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.IHASListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .dropdown {
+    width: 347px;
+
+    .dropdownSelect {
+      width: 290px;
+    }
+  }
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 20px;
+  border-radius: 5px;
+
+  .tabsWrapper {
+    .tab {
+      font-size: 16px !important;
+    }
+  }
+
+  .containerForm {
+    padding-bottom: 24px;
+
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+
+    .labelSelect {
+      font-size: $title_font_size;
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+  }
+}
+
+.submitBtn {
+  // width: 160px;
+  // height: 48px !important;
+  @extend .button;
+  gap: 11px !important;
+  background-color: $green_1 !important;
+  font-size: px-to-rem(14) !important;
+
+  img {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  &:hover,
+  &:active {
+    background: $green_3;
+  }
+}
+
+.contentWrapper {
+  .labelModal {
+    color: $gray_3;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.auditReportModal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.internalAuditComments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modalWrapCustom {
+  width: 80vw !important;
+}
+
+.nonConformityModal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .firstRow {
+    row-gap: 1.25rem;
+    column-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+      flex: 0 1 calc(50% - 12px) !important;
+    }
+  }
+
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .thirdRow {
+    column-gap: 1.5rem;
+
+    .col {
+      flex: 0 1 calc(50% - 12px) !important;
+    }
+  }
+
+  .charactersLeft {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: $gray_5;
+  }
+}
+
+.internalAuditModal {
+  .container {
+    border-radius: 4px;
+    overflow: hidden;
+
+    .displayData {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: flex-start;
+
+      .title {
+        font-weight: bold;
+        font-size: $title_font_size;
+        line-height: 26px;
+        color: $gray_3;
+      }
+    }
+
+    .wrapperTable {
+      .tableHeader {
+        thead {
+          background: $bg-color1;
+          height: 36px;
+
+          th {
+            text-transform: capitalize;
+            height: 32px;
+          }
+        }
+
+        th:first-child {
+          padding: 0 20px;
+        }
+      }
+
+      .tableScroll {
+        max-height: 296px;
+        overflow: auto;
+        border: 1px solid $gray_11;
+        border-top: none;
+
+        border .table {
+          width: 100%;
+          border-bottom: 1px solid $gray_11;
+        }
+
+        td:first-child {
+          padding: 0 20px;
+        }
+
+        tbody {
+          tr {
+            height: 33px;
+            border-bottom: 1px solid $gray_11;
+
+            &:first-child {
+              height: 0;
+              border: none;
+            }
+
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 7px;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $blue_3;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb:active {
+          background: $blue_2;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 30px 0;
+      padding-bottom: 0;
+
+      .btn {
+        width: 160px;
+        font-size: px-to-rem(16);
+        font-weight: 500;
+
+        &:last-child {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.auditorNamesWrapper {
+  margin-right: 10px;
+  padding-right: 5px;
+  width: -moz-fit-content;
+  max-height: 64px;
+  overflow-y: auto;
+  line-height: 18px;
+
+  span {
+    // display: inline-block;
+    width: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.disabledSelect {
+  div {
+    background: $white !important;
+  }
+}
+
+.disabledInput {
+  color: $gray_3 !important;
+  background-color: $gray_11 !important;
+}
+
+@media (max-width: 966px) {
+  .datePickerWrapper {
+    width: auto;
+    gap: 10px;
+
+    .date {
+      width: auto;
+      gap: 7px;
+    }
+  }
+}
+
+.wrapSubHeader {
+  border-radius: 8px;
+
+  .customBtnCollapse {
+    background: $blue_3;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      animation: all 0.3s ease;
+    }
+
+    .routeCollapseImg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .subheaderTitle {
+    padding: 5px;
+    background: $blue_3;
+    color: $white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .collapseItem {
+    height: 0px;
+    overflow: hidden;
+
+    .addBtn {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .expandItem {
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+  }
+}
+
+.wrapSubHeaderWithCollapse {
+  border: solid 1px $bg-color-container;
+
+  .subheaderTitle {
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+.wrapCollapse {
+  min-height: 56px;
+  height: auto !important;
+}
+
+.inspectionType {
+  padding: 12px 8px;
+  background: $white;
+  border-radius: 4px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $blue_3;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 5px 10px;
+}
+.icAdd {
+  margin-left: 9px;
+}
+.inspectionHistoryTableWrapper {
+  padding: 0 6px;
+}

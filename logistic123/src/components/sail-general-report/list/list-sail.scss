@@ -1,0 +1,40 @@
+@import 'assets/css/utilities/variable.scss';
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt2 {
+  padding-top: 2px;
+}
+
+.wrapper_sail {
+  .ant-tabs-tab {
+    padding: 5px 0px;
+  }
+}
+
+.card-container {
+  padding: 7px 0 0 0;
+  background: $bg-color-container;
+  height: calc(100vh - 145px);
+  overflow: auto;
+}
+.card-container .ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before {
+  display: none;
+}
+.card-container .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar,
+.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar {
+  display: none;
+}
+.card-container .ant-tabs-tab {
+  padding: 5px 16px !important;
+}
+.card-container .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 4px;
+  background: $blue_9_2;
+}
+.card-container .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 26px;
+}

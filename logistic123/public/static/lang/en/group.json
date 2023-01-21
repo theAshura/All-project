@@ -1,0 +1,17 @@
+{
+  "group": "Group management",
+  "action": "Action",
+  "groupCode": "Group Code",
+  "groupName": "Group Name",
+  "description": "Description",
+  "edit": "Edit",
+  "delete": "Delete",
+  "search": "Search",
+  "group": "Group",
+  "placeHolder": {
+    "enterGroupName": "Enter group name",
+    "enterGroupCode": "Enter group code",
+    "enterDescription": "Enter description"
+  },
+  "thisFieldIsRequired": "This field is required"
+}

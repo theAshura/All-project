@@ -1,0 +1,49 @@
+@import '../../../assets/css//utilities/variable.scss';
+
+.step__item {
+  display: flex;
+  justify-content: flex-start;
+
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .label {
+    padding-left: 10px;
+    font-size: px-to-rem(14);
+    font-weight: 500;
+    text-align: start;
+  }
+  .active {
+    color: $blue_2 !important;
+  }
+  .error {
+    color: $red_3 !important;
+  }
+  .active--disabled {
+    color: $gray_3;
+  }
+  .disabled {
+    color: $gray_7;
+  }
+  .infoNormal {
+    color: $gray_5 !important;
+    font-weight: 700;
+  }
+  .icon-dot--blue {
+    margin-left: 8px;
+    margin-block: auto;
+  }
+  .active-view {
+    font-weight: bold;
+    font-size: px-to-rem(14);
+    line-height: 22px;
+    color: $blue_3;
+  }
+  .inactive-view {
+    font-weight: bold;
+    font-size: px-to-rem(14);
+    line-height: 22px;
+    color: $gray_3;
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@namo-workspace/ui/*": ["libs/ui/src/lib/mobile/*"],
+      "@namo-workspace/themes": ["libs/themes/src/index.ts"],
+      "@namo-workspace/environments": [
+        "libs/environments/src/lib/environment.rn.ts"
+      ],
+      "@namo-workspace/services": ["libs/services/src/index.ts"],
+      "@namo-workspace/utils": ["libs/utils/src/index.ts"],
+      "@namo-workspace/yupSchema/*": ["libs/utils/src/lib/yupSchema/*"],
+      "@namo-workspace/shared/*": ["libs/ui/src/lib/shared/*"],
+      "@images": ["apps/vmo-rental-mobile/src/assets/images/index.ts"],
+      "@assets": ["apps/vmo-rental-mobile/src/assets"],
+      "@constants/*": ["apps/vmo-rental-mobile/src/constants/*"],
+      "@containers/*": ["apps/vmo-rental-mobile/src/containers/*"],
+      "@context/*": ["apps/vmo-rental-mobile/src/context/*"],
+      "@models/*": ["apps/vmo-rental-mobile/src/models/*"],
+      "@routes/*": ["apps/vmo-rental-mobile/src/routes/*"],
+      "@screens/*": ["apps/vmo-rental-mobile/src/screens/*"],
+      "@services/*": ["apps/vmo-rental-mobile/src/services/*"],
+      "@type/*": ["apps/vmo-rental-mobile/src/type/*"]
+    }
+  },
+  "files": ["../../node_modules/@nrwl/react-native/typings/svg.d.ts"],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "exclude": ["node_modules"]
+}

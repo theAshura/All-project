@@ -1,0 +1,36 @@
+@import 'assets/css/utilities/variable.scss';
+.homepage-container {
+  .calendar-container {
+    padding: 10px 20px;
+    background-color: $white;
+    height: 300px;
+    border: 1px solid $gray_19;
+    border-radius: 4px;
+    .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+      height: 32px !important;
+    }
+    .ant-picker-calendar-header .ant-picker-calendar-mode-switch {
+      display: none;
+    }
+    .ant-picker-calendar {
+      margin-top: -35px;
+    }
+    .ant-picker-calendar-date-value {
+      height: 2px;
+    }
+    .ant-picker-calendar-date-content {
+      overflow: hidden;
+      ul {
+        padding-left: 0.5rem;
+      }
+    }
+    .ant-badge-status-blue {
+      @media (max-width: 1200px) {
+        margin-top: 15px;
+      }
+    }
+  }
+  .itemContainer {
+    padding: 10px;
+  }
+}

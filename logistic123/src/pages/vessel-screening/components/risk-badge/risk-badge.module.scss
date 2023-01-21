@@ -1,0 +1,61 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapBadge {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  color: $green_1;
+  @media (max-width: 1400px) {
+    font-size: 12px;
+  }
+  .badge {
+    height: 26px;
+    padding: 0px 8px;
+    font-size: 12px;
+    border: 1px solid $green_13;
+    border-radius: 4px;
+    background: $green_12;
+    margin-left: 7px;
+    @media (max-width: 1400px) {
+      font-size: 10px;
+    }
+  }
+  .rangeNumber {
+    min-width: 40px;
+    display: block;
+  }
+}
+.negligible {
+  color: $blue_3;
+  .badge {
+    background-color: $blue_10;
+    border: 1px solid $blue_3;
+  }
+}
+.low {
+  color: $green_1 !important;
+  .badge {
+    background-color: $green_12 !important;
+    border: 1px solid $green_1 !important;
+  }
+}
+.medium {
+  color: $yellow_13 !important;
+  .badge {
+    background-color: $yellow_12 !important;
+    border: 1px solid $yellow_13 !important;
+  }
+}
+.high {
+  color: $orange_3 !important;
+  .badge {
+    background-color: $orange_13 !important;
+    border: 1px solid $orange_3 !important;
+  }
+}
+.textContent {
+  color: $gray_5;
+  font-weight: normal;
+  font-size: 12.25px;
+}

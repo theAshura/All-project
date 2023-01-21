@@ -1,0 +1,99 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 20vh;
+}
+
+.contentClassName {
+  position: relative;
+  width: 600px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+  .guideImg {
+    width: 600px;
+    object-fit: cover;
+  }
+  .stepWrap {
+    width: 100%;
+    padding: 20px 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .description {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      color: $gray_3;
+      text-align: center;
+      width: 400px;
+      margin-bottom: 4px;
+    }
+    .subDescription {
+      margin-bottom: 4px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: $gray_5;
+      letter-spacing: 0.4px;
+      max-width: 378px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .link {
+      color: $primary;
+      margin-bottom: 4px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 502px;
+    }
+    .steps {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 16px;
+      .skip {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray_5;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .next {
+      }
+      .step {
+        width: 8px;
+        height: 8px;
+        margin: 4px;
+        background: #cce8f7;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .activeStep {
+        background: $primary;
+      }
+    }
+  }
+}
+.content {
+  position: relative;
+  .prevStepControl {
+    top: 124px;
+    left: 12px;
+    cursor: pointer;
+    position: absolute;
+  }
+  .nextStepControl {
+    top: 124px;
+    right: 12px;
+    cursor: pointer;
+    position: absolute;
+  }
+}

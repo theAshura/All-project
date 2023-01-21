@@ -1,0 +1,50 @@
+@import '../../../assets/css//utilities/variable.scss';
+
+.collapse-ui {
+  background-color: $white;
+  border-radius: 8px;
+  .bg-white {
+    background-color: $white;
+    color: $gray_3;
+    border-radius: 8px;
+  }
+
+  .bg-primary {
+    background-color: $blue_3 !important;
+    color: $white;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .btn {
+    border: unset;
+    height: 56px;
+    padding: 0px 24px;
+    p {
+      font-size: $title_font_size;
+    }
+
+    .btn-icon {
+      width: 20px;
+      height: 20px;
+
+      border-radius: 7px;
+    }
+    .bg__btn-ic--white {
+      background-color: white;
+    }
+    .bg__btn-ic--blue {
+      background-color: $blue_10;
+    }
+    .ic-btn {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: unset;
+      box-shadow: unset;
+    }
+  }
+}

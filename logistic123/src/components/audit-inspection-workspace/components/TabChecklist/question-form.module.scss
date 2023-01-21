@@ -1,0 +1,146 @@
+@import 'assets/css/utilities/variable.scss';
+
+.questionWrapper {
+  .questions {
+    font-size: 14px;
+    color: $gray_3;
+    font-weight: 600;
+  }
+
+  .inputSelect {
+    padding-top: 22px;
+  }
+
+  .updateByText {
+    color: $blue_3;
+    font-size: px-to-rem(14);
+    padding: 7px 0px;
+  }
+
+  .codeWrapper {
+    .code {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.4px;
+      font-weight: 400;
+      color: $gray_5;
+    }
+    .codeValue {
+      color: $blue_3;
+    }
+    .stick {
+      width: 1px;
+      height: 16px;
+      background-color: $gray_9;
+    }
+  }
+  .hint {
+    margin: 4px 0;
+    border-radius: 6px;
+    color: $blue_2;
+    font-size: 12px;
+    display: flex;
+    div {
+      padding: 4px 12px;
+      background-color: $blue_10;
+    }
+    .icon {
+      border-radius: 6px 0 0 6px;
+      .icHint {
+        margin-right: 4px;
+      }
+    }
+    .contentHint {
+      border-radius: 0 6px 6px 0;
+      word-break: break-all;
+    }
+
+    svg {
+      fill: $blue_3;
+      margin-top: -5px;
+      font-size: $title_font_size;
+      margin-right: 3px;
+    }
+  }
+
+  .inputFile {
+    overflow: visible;
+    display: none;
+  }
+
+  .radio {
+    font-weight: 500;
+    width: 18px;
+    height: 18px;
+  }
+  .errorMessage {
+    color: $red_3;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  .btn {
+    padding: 5px 20px !important;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+
+  .btnErrors {
+    background-color: $orange_3 !important;
+  }
+
+  .requiredImg {
+    width: 5px !important;
+    height: 5px !important;
+    margin-top: -12px;
+    margin-left: 2px;
+  }
+
+  .requiredWhite {
+    color: $white;
+    margin-top: -4px;
+    margin-left: 2px;
+  }
+  .infoCategory {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray_12;
+    border-radius: 50%;
+    &:hover {
+      background-color: $gray_11;
+    }
+  }
+
+  .btnEvidence {
+    padding: 5px 20px !important;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+    img {
+      width: 20px;
+      margin-right: 5px;
+      height: 20px;
+    }
+  }
+
+  input[type='radio']:disabled {
+    color: $blue_3;
+  }
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+.pl10 {
+  padding-left: 10px;
+}

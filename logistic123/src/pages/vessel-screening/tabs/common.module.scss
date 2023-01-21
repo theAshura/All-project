@@ -1,0 +1,96 @@
+@import 'assets/css/utilities/variable.scss';
+
+.header {
+  padding: 0px 0px 10px 0px;
+}
+
+.dataWrapper {
+  min-height: calc(100vh - 180px);
+  background-color: $white;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .noData {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+.card_container {
+  padding: 8px 0 0 0;
+  background: $bg-color-container;
+}
+
+.content_wrapper {
+  max-height: calc(100vh - 170px);
+  overflow: auto;
+}
+
+.innerWrap {
+  padding: 0 20px;
+}
+
+.contentWrap {
+  padding: 10px 20px 50px 20px;
+}
+
+.collapseHeader {
+  height: 32px !important;
+}
+
+.collapseTitle {
+  display: inline-block;
+  width: calc(100% - 120px) !important;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.reviewStatusBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.completed {
+  background-color: $green_12;
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+.open {
+  background-color: $white;
+  border: 1px solid $gray_9;
+  color: $gray_9;
+}
+.inprogress {
+  background-color: $blue_8;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+.pendingInfo {
+  background-color: $orange_13;
+  border: 1px solid $orange_3;
+  color: $orange_3;
+}
+.disapproved {
+  background-color: $red_8;
+  border: 1px solid $red_11;
+  color: $red_11;
+}
+
+.tableWrapper {
+  width: calc(100% - 392px);
+  margin-right: 20px;
+}
+
+.summaryWrapper {
+  width: 372px;
+}

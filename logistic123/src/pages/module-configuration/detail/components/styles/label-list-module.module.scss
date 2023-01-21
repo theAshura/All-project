@@ -1,0 +1,32 @@
+@import 'assets/css/utilities/variable.scss';
+
+.btnChart {
+  margin: 10px 8px;
+  border: none !important;
+  font-size: 12px !important;
+  height: 24px;
+  width: 60px;
+  border-radius: 4px !important;
+  padding-left: 12px;
+}
+
+.fontWeight600 {
+  font-weight: 600;
+}
+
+.labelSelectStyle {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: $gray_3;
+  margin-bottom: 2px;
+}
+
+.disableInput {
+  pointer-events: none;
+}
+
+.btnGroupContainer {
+  display: flex;
+  justify-content: flex-end;
+}

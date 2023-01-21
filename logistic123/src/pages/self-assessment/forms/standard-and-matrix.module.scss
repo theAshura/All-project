@@ -1,0 +1,167 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapHeader {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.headers {
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    line-height: 30px;
+  }
+}
+.headerBtn {
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+.modal {
+  height: auto;
+}
+.buttonWrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  .buttonTemplate {
+    font-size: px-to-rem(16);
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $gray_11;
+}
+
+.icButton {
+  padding-left: 9px;
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 8px 26px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .containerForm {
+    .separateRow {
+      margin-bottom: 10px;
+    }
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+    td {
+      cursor: initial;
+    }
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3;
+      font-weight: 400;
+    }
+  }
+  .labelForm {
+    padding: 0px 0px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 15px;
+      line-height: 26px;
+      color: $gray_3;
+      font-weight: 500;
+    }
+    .buttonAdd {
+      font-size: 14px;
+    }
+  }
+
+  .disabledSelect {
+    div {
+      background: $gray_11 !important;
+    }
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.datePickerWrapper {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.button {
+  margin-left: 5px;
+}
+
+.header {
+  font-size: $title_font_size;
+  margin-bottom: 10px;
+  line-height: 26px;
+  padding: 0px;
+  color: $gray_3;
+}
+
+.titleForm {
+  font-size: $title_font_size;
+  margin-bottom: 8px;
+}
+
+.standardInput {
+  width: 100%;
+  margin-right: 5px;
+}
+
+.standardWrap button {
+  margin-top: 25px;
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 33px;
+
+  img {
+    height: 106px;
+    width: 103px;
+  }
+}
+
+.disabledInput {
+  background: $gray_11 !important;
+
+  button {
+    background: $gray_11 !important;
+  }
+}
+
+.buttonCancel {
+  margin-right: 20px;
+}

@@ -1,0 +1,34 @@
+@media screen {
+  .page-break {
+    display: none;
+  }
+}
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  .page-break {
+    page-break-before: always;
+    padding-top: 5rem;
+  }
+  #main {
+    padding-top: 5.5rem;
+  }
+  #main .all_main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 0.4rem;
+  }
+  #main .forms_sec .audit-header {
+    position: fixed;
+    top: 0;
+    width: 92%;
+    margin-top: 3.3rem;
+  }
+  .footer-content {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+  }
+}

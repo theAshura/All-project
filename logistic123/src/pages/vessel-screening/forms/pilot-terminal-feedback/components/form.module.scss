@@ -1,0 +1,231 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 10px 26px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+
+  .containerForm {
+    .icButton {
+      margin-left: 10px;
+    }
+  }
+
+  .btnAttachment {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 19px;
+    text-decoration: underline;
+    &:hover {
+      background: none;
+      color: $blue_3;
+    }
+  }
+  .score {
+    border-radius: 4px;
+    background: $gray_12;
+    height: 32px;
+    border: 1px solid $gray_10;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.dataWrapperEmpty {
+  min-height: 180px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    top: 50% !important;
+    width: 110px;
+    height: 110px;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.btnAdd {
+  padding: 10.5px 20px !important;
+  min-width: 130px;
+  font-size: 14px !important;
+}
+
+.labelRisk {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 18px */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+
+  background: $gray_12;
+  border: 1px solid $gray_10;
+  color: $gray_10;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.negligible {
+  background-color: $blue_10;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12;
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+.medium {
+  background-color: $yellow_12;
+  border: 1px solid $yellow_13;
+  color: $yellow_13;
+}
+.high {
+  background-color: $orange_13;
+  border: 1px solid $orange_3;
+  color: $orange_3;
+}
+.labelHeader {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: $title_font_size;
+  line-height: 24px;
+}
+.titleForm {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.contentForm {
+  color: $gray_3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.labelForm {
+  color: $gray_3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  .required {
+    color: $red_3;
+    font-size: 13px;
+  }
+}
+.radioLabel {
+  padding-bottom: 0 !important;
+}
+.radio {
+  height: 32px !important;
+}
+
+.tableWrapper {
+  .checkboxWrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+  }
+  .underline {
+    cursor: pointer;
+    color: $blue_3;
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  th {
+    height: 32px;
+    padding: 0 10px !important;
+    background-color: $bg-color1 !important;
+    border-bottom: 1px solid $gray_10;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 22px !important;
+    margin: 0px 12px;
+    color: $gray_3;
+    border-style: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    /*max-width: 250px !important;*/
+    &::before {
+      display: none;
+    }
+  }
+  .rowWrapper {
+    height: 32px !important;
+    td {
+      padding: 0 10px;
+      border-bottom: 1px solid $gray_10;
+      font-weight: 500 !important;
+      font-size: 13px !important;
+      // max-width: 250px !important;
+    }
+    .actionContent {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      .imageWrapper {
+        background-color: $blue_2;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 15px;
+        }
+      }
+    }
+  }
+  div {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $gray_11;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+}
+
+.dataWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  img {
+    top: 50% !important;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}

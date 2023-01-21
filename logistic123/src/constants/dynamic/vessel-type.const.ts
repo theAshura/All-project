@@ -1,0 +1,35 @@
+export const VESSEL_TYPE_FIELDS_LIST = {
+  Action: 'Action',
+  'Vessel type code': 'Vessel type code',
+  'Vessel type name': 'Vessel type name',
+  'Vetting management risk': 'Vetting management risk',
+  Description: 'Description',
+  Status: 'Status',
+  'Created date': 'Created date',
+  'Created by user': 'Created by user',
+  'Updated date': 'Updated date',
+  'Updated by user': 'Updated by user',
+  'Created by company': 'Created by company',
+  'Vessel type': 'Vessel type',
+  'Create New': 'Create New',
+  'Delete?': 'Delete?',
+  'Vessel type information': 'Vessel type information',
+  'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.':
+    'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.',
+};
+
+export const VESSEL_TYPE_FIELDS_DETAILS = {
+  'Vessel type code': 'Vessel type code',
+  'Vessel type name': 'Vessel type name',
+  'Enter vessel type code': 'Enter vessel type code',
+  'Enter vessel type name': 'Enter vessel type name',
+  Icon: 'Icon',
+  'Vetting management risk': 'Vetting management risk',
+  'Please select': 'Please select',
+  Description: 'Description',
+  'Enter description': 'Enter description',
+  Status: 'Status',
+  Active: 'Active',
+  Inactive: 'Inactive',
+  'Vessel type information': 'Vessel type information',
+};

@@ -1,0 +1,95 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapRoleAndPermission {
+  min-height: calc(100vh - 210px);
+  height: calc(100vh - 170px);
+  position: relative;
+
+  .roleAndPermission {
+    font-size: px-to-rem(14);
+    .required {
+      font-size: 1rem;
+      color: $red_2;
+      padding-left: 14px;
+    }
+    .selectedRole {
+      padding: 0px 10px;
+      border: 3px dashed #eaeaea;
+      line-height: 22px;
+      color: $gray_5;
+      .titleSelectRole {
+        padding: 10px;
+        width: 120px;
+        min-width: 120px;
+        font-weight: 500;
+        font-size: px-to-rem(14);
+        line-height: 22px;
+        color: $gray_5;
+      }
+      .btnClearAll {
+        min-width: 80px;
+        img {
+          padding-left: 4px;
+        }
+      }
+      .icXResult {
+        margin-left: 5px;
+      }
+    }
+    .wrapRole {
+      // margin-top: 25px;
+      .titleRole {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $gray_5;
+        width: 135px;
+        min-width: 135px;
+      }
+      .icRequired {
+        right: 10px;
+        top: 4px;
+      }
+    }
+  }
+  .wrapBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    button {
+      width: max-content;
+    }
+  }
+}
+
+.wrap {
+  padding: 20px 30px 20px 10px;
+  position: relative;
+  .wrapSearch {
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 20px 15px 20px;
+    .btnSearch {
+      margin-left: 20px;
+      font-size: px-to-rem(16);
+      font-weight: 500;
+    }
+    .searchInput {
+      background-color: $white !important;
+      img {
+        width: 14px;
+        height: 14px;
+        margin-top: -4px;
+      }
+    }
+    .btnClear {
+      width: 85px;
+      margin-left: 7px;
+    }
+  }
+  .buttonAddRole {
+    position: absolute;
+    right: 30px;
+    top: -40px;
+  }
+}

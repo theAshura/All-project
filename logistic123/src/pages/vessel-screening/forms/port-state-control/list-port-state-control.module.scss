@@ -1,0 +1,78 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapper {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 40px;
+  background-color: $white;
+  border-radius: 4px;
+}
+
+.chartTitle {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: $title_font_size;
+  line-height: 24px;
+}
+
+.chartRiskLower {
+  border-top: 1px solid $gray_11;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.chartRisk {
+  color: $green_2;
+  font-weight: 700;
+}
+
+.iconDown {
+  width: 10px;
+  height: 10px;
+}
+
+.headerBtn {
+  position: relative;
+  top: -30px;
+  float: right;
+  right: 20px;
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+.datePickerReview {
+  padding: 0px 0px 10px 0px !important;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 240px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0px 6px 0px 0px !important;
+  }
+}
+
+.objectReview {
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6px;
+  }
+}
+
+.header {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: unset !important;
+
+  @media (min-width: 1600px) {
+    flex-direction: unset;
+    justify-content: unset !important;
+  }
+}

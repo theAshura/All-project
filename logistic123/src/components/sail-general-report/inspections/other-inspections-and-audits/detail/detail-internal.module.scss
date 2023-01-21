@@ -1,0 +1,41 @@
+@import 'assets/css/utilities/variable.scss';
+
+.internalInspectionDetailWrapper {
+  background-color: $bg-color-container;
+  font-weight: 600;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .headers {
+    padding-bottom: 20px;
+    .title {
+      color: $gray_3;
+      font-size: 1.1rem;
+      line-height: 30px;
+      padding-top: 8px;
+    }
+  }
+  .wrapperForm {
+    height: calc(100vh - 132px);
+    overflow: auto;
+  }
+  .buttonFilter {
+    width: 100px;
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+.refDetail {
+  margin-top: 5px;
+  text-align: right;
+  color: $gray_5;
+  font-size: 14px;
+  line-height: 22px;
+
+  span {
+    color: $gray_3;
+  }
+}

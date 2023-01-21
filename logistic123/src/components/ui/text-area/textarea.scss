@@ -1,0 +1,18 @@
+@import 'assets/css/utilities/variable.scss';
+
+.ant-input[disabled] {
+  color: rgba(0, 0, 0, 0.76);
+  background-color: $gray_11;
+}
+
+.value-couting {
+  position: absolute;
+  bottom: -15px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  color: $gray_7;
+  font-size: 9px;
+  letter-spacing: 0.4px;
+  z-index: 9;
+}

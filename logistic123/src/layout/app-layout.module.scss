@@ -1,0 +1,13 @@
+@import '../assets/css/utilities/variable.scss';
+
+.appLayout {
+  .appBody {
+    padding-top: 56px;
+    height: calc(100vh - 56px);
+    .appContainer {
+      width: calc(100% - 240px);
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+    }
+  }
+}

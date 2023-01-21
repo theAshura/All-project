@@ -1,0 +1,52 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.getAuditTimeTableById {
+  font-size: px-to-rem(14);
+  background-color: $bg-color-container;
+  font-weight: 600;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .wrap {
+    padding: 0px;
+  }
+  .wrapHeader {
+    background-color: $white;
+    padding: 9px 20px 0px 20px;
+    .sno {
+      .label {
+        color: $gray_5;
+      }
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: solid 1px $gray_7;
+    }
+    .historySteps {
+      width: 750px;
+      @media (max-width: 1400px) {
+        width: 690px;
+      }
+    }
+  }
+  .headers {
+    .title {
+      color: $gray_3;
+      font-size: $title_font_size;
+      line-height: 30px;
+      padding-top: 8px;
+    }
+  }
+  .wrapForm {
+    padding: 15px 20px 20px 20px;
+  }
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+}

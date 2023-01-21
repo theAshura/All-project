@@ -1,0 +1,48 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.dropdown-button {
+  .title-export {
+    font-size: px-to-rem(14);
+    color: $blue_2;
+    font-weight: 500;
+    padding-right: 10px;
+  }
+
+  button {
+    padding: 9px 28px;
+    height: 40px;
+    color: $blue_2;
+    background-color: $blue_9;
+    border: none;
+    border-radius: $button-radius;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $blue_9 !important;
+      color: $blue_2 !important;
+      box-shadow: unset;
+    }
+  }
+
+  .dropdown-menu {
+    overflow: hidden;
+    border-radius: $button-radius;
+    width: 180px;
+    min-width: 120px;
+    padding: 0;
+    margin-top: 5px;
+    border: 1px solid $gray_11;
+
+    button {
+      background-color: $white;
+      width: 180px;
+      border-radius: unset;
+      height: 40px;
+      color: $gray_3 !important;
+      border-bottom: 1px solid $gray_11;
+      &:hover {
+        background-color: $gray_11 !important ;
+      }
+    }
+  }
+}

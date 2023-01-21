@@ -1,0 +1,25 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.wrapper {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  .wrapperScroll {
+    height: calc(100vh - 108px);
+    overflow: auto;
+  }
+  .headers {
+    padding-bottom: 20px;
+    .title {
+      color: $gray_3;
+      font-size: px-to-rem(20);
+      line-height: 30px;
+    }
+  }
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}

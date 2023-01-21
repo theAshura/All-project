@@ -1,0 +1,123 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  .wrapper {
+    background-color: $white;
+    padding: 0px 20px 40px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 100%;
+  }
+}
+
+.chartTitle {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: $title_font_size;
+  line-height: 24px;
+}
+
+.chartRiskLower {
+  border-top: 1px solid $gray_11;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.chartRisk {
+  color: $green_2;
+  font-weight: 700;
+}
+
+.labelRisk {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 0px 8px;
+
+  background: $gray_12;
+  border: 1px solid $gray_10;
+  color: $gray_10;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.negligible {
+  background-color: $blue_10;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12;
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+.medium {
+  background-color: $yellow_12;
+  border: 1px solid $yellow_13;
+  color: $yellow_13;
+}
+.high {
+  background-color: $orange_13;
+  border: 1px solid $orange_3;
+  color: $orange_3;
+}
+.iconDown {
+  width: 10px;
+  height: 10px;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.headerBtn {
+  position: relative;
+  top: -30px;
+  float: right;
+  right: 20px;
+  .buttonFilter {
+    width: 100px;
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+.datePickerReview {
+  padding: 0px 0px 10px 0px !important;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 240px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0px 6px 0px 0px !important;
+  }
+}
+
+.objectReview {
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6px;
+  }
+}
+
+.header {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: unset !important;
+
+  @media (min-width: 1600px) {
+    flex-direction: unset;
+    justify-content: unset !important;
+  }
+}

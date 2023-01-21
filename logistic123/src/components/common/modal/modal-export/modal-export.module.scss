@@ -1,0 +1,38 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 20vh;
+}
+
+.contentClassName {
+  border-radius: 8px 8px 4px 4px;
+  border: none;
+  width: 395px;
+  filter: drop-shadow(0px 12px 20px rgba(0, 0, 0, 0.04));
+
+  .header {
+    background: $blue_3;
+    border-radius: 8px 8px 0px 0px;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: $title_font_size;
+    letter-spacing: 0.5px;
+    color: $white;
+  }
+  .content {
+    padding: 20px;
+    background: $white;
+    border-radius: 0px 0px 4px 4px;
+    .wrapInput {
+      margin-bottom: 20px;
+    }
+    .customBtn {
+      height: 48px !important;
+      width: 100% !important;
+    }
+    .buttonCancel {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import 'assets/css/utilities/variable.scss';
+
+.contentContainer {
+  padding: 20px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray_19;
+  border-radius: 4px;
+
+  .title {
+    font-size: 15px;
+    color: $gray_3;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+
+  .flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .barChartWrapper {
+    height: 500px;
+
+    canvas {
+      height: 430px !important;
+    }
+
+    .labelSection {
+      display: flex;
+      gap: 25px;
+      margin-bottom: 15px;
+      overflow: auto;
+      max-width: 100% !important;
+      height: 72px !important;
+      margin-bottom: 10px;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+        height: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $blue_3;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:active {
+        background: $blue_2;
+      }
+
+      .contentWrapper {
+        display: flex;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        color: $gray_5;
+        font-weight: 600;
+      }
+
+      .colorBox {
+        width: 12px;
+        min-width: 12px;
+        height: 12px;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.paddingNone {
+  padding: 0 !important;
+}
+
+.fullHeight {
+  height: 100% !important;
+}
+
+.maxHeight210 {
+  max-height: 210px !important;
+}
+
+.paddingTop0 {
+  padding-top: 0 !important;
+}
+
+.inspectionCasesPerType {
+  min-height: 600px;
+  justify-content: space-between !important;
+  flex-grow: 1;
+}
+
+.height578px {
+  height: 574px !important;
+
+  @media (max-width: 1081px) {
+    height: 618px !important;
+  }
+}
+
+.btnChart {
+  margin: 0 5px;
+  border: none !important;
+  font-size: 12px !important;
+  height: 24px;
+  width: 40px;
+  border-radius: 4px !important;
+}
+
+.noData {
+  height: 247px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noDataBarChart {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barChartContainer {
+  padding-top: 8px !important;
+}
+
+.height36px {
+  height: 36px;
+}
+
+.borderOnBottom {
+  border-radius: 4px;
+}

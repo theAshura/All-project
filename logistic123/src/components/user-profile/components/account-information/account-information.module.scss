@@ -1,0 +1,37 @@
+@import 'assets/css/utilities/variable.scss';
+
+.accountInformation {
+  border-radius: 4px;
+  .card {
+    .avatar {
+      width: 104px;
+      height: 104px;
+      border-radius: 100%;
+    }
+    .inputFile {
+      overflow: visible;
+      display: none;
+    }
+    .titleUploadFile {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 150%;
+      color: $gray_3;
+    }
+  }
+  .label {
+    font-size: 1rem;
+    font-weight: normal;
+    color: $gray_3_1;
+  }
+  .paddingTopItem {
+    padding-top: 20px;
+  }
+  .driver {
+    border-bottom: 1px solid $gray_11;
+  }
+}
+
+.wrapBtn {
+  margin: 0px 20px 10px 20px;
+}

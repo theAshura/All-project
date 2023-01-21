@@ -1,0 +1,153 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapHeader {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.headers {
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    line-height: 30px;
+  }
+}
+.headerBtn {
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+.modal {
+  height: auto;
+}
+.buttonWrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  .buttonTemplate {
+    font-size: px-to-rem(16);
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $gray_11;
+}
+
+.icButton {
+  padding-left: 9px;
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 0px 20px 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .btnAttachment {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    &:hover {
+      background: none;
+      color: $blue_3;
+    }
+  }
+  .containerForm {
+    .separateRow {
+      margin-bottom: 10px;
+    }
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+    td {
+      cursor: initial;
+    }
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3;
+      font-weight: 400;
+    }
+    .titleForm {
+      font-size: $title_font_size;
+      margin-bottom: 8px;
+    }
+  }
+  .labelForm {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 15px;
+      line-height: 26px;
+      color: $gray_3;
+      font-weight: 500;
+    }
+    .buttonAdd {
+      font-size: 14px;
+    }
+  }
+
+  .disabledSelect {
+    div {
+      background: $white !important;
+    }
+  }
+  .disabledInput {
+    color: $gray_3 !important;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}

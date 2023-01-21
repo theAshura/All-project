@@ -1,0 +1,18 @@
+{
+  "shoreDepartment": "Shore Department Management",
+  "txShoreDepartment": "Shore department information",
+  "shoreDepartmentCode": "Shore Department Code",
+  "shoreDepartmentCodeForm": "Shore department code",
+  "shoreDepartmentName": "Shore Department Name",
+  "shoreDepartmentNameForm": "Shore department name",
+  "codePlaceholder": "Enter shore department code",
+  "namePlaceholder": "Enter shore department name",
+  "descriptionPlaceholder": "Enter description",
+  "description": "Description",
+  "createdDate": "Created Date",
+  "createdUser": "Created by User",
+  "updatedDate": "Updated Date",
+  "updatedUser": "Updated by User",
+  "status": "Status",
+  "action": "Action"
+}

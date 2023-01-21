@@ -1,0 +1,45 @@
+export const VALUE_MANAGEMENT_FIELDS_LIST = {
+  Action: 'Action',
+  'Value code': 'Value code',
+  'Value number': 'Value number',
+  Description: 'Description',
+  Status: 'Status',
+  Active: 'Active',
+  Inactive: 'Inactive',
+  'Created date': 'Created date',
+  'Created by user': 'Created by user',
+  'Updated date': 'Updated date',
+  'Updated by user': 'Updated by user',
+  'Created by company': 'Created by company',
+  'Value Management': 'Value Management',
+  'Value information': 'Value information',
+  'Create New': 'Create New',
+  Cancel: 'Cancel',
+  Delete: 'Delete',
+  'Delete?': 'Delete?',
+  'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.':
+    'Are you sure you want to delete this record? This action cannot be undone and you will not be able to recover any data.',
+};
+
+export const VALUE_MANAGEMENT_FIELDS_DETAILS = {
+  'Value code': 'Value code',
+  'Value number': 'Value number',
+  Description: 'Description',
+  Status: 'Status',
+  Active: 'Active',
+  Inactive: 'Inactive',
+  Cancel: 'Cancel',
+  Save: 'Save',
+  'Save & New': 'Save & New',
+  'Value information': 'Value information',
+  'Enter value number': 'Enter value number',
+  'Enter value code': 'Enter value code',
+  'Enter description': 'Enter description',
+  'This field is required': 'This field is required',
+  'The value number is existed': 'The value number is existed',
+  'The value code is existed': 'The value code is existed',
+  'Value number must be smaller than 100':
+    'Value number must be smaller than 100',
+  'Value number must be greater than -100':
+    'Value number must be greater than -100',
+};

@@ -1,0 +1,173 @@
+@import 'assets/css/utilities/variable.scss';
+
+.card {
+  padding-bottom: 20px;
+
+  .avatar {
+    width: 104px;
+    height: 104px;
+    object-fit: fill;
+    border-radius: 100%;
+  }
+
+  .inputFile {
+    overflow: visible;
+    display: none;
+  }
+
+  .titleUploadFile {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+    color: $gray_3;
+    margin: 0 0 8px 0;
+  }
+}
+
+.pt24 {
+  padding-top: 20px;
+}
+
+.pb8 {
+  padding-bottom: 8px;
+}
+
+.noUnderLine {
+  border-bottom: unset !important;
+}
+
+.containerForm {
+  .titleContainer {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .subTitleContainer {
+    color: $gray_3;
+    font-size: px-to-rem(16);
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .inputSelect {
+    margin-right: 20px;
+    height: 40px;
+    background: $white;
+    box-sizing: border-box;
+    border-radius: $input-radius;
+  }
+
+  .ant-select-selection-placeholder {
+    padding: 7px;
+  }
+
+  .labelSelect {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+
+  .wrapCheckbox {
+    display: flex;
+    align-items: center;
+
+    .name {
+      margin-left: 0px;
+      font-size: px-to-rem(16);
+    }
+  }
+}
+
+.wrapCheckbox {
+  display: flex;
+  align-items: center;
+
+  .name {
+    margin-left: 0px;
+  }
+}
+
+.titleForm {
+  margin-bottom: unset;
+  font-size: 18px;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray_3_1;
+}
+
+.labelInput {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray_3;
+}
+
+.dimensionLabel {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mlNone {
+  margin-left: 0px;
+}
+
+.dotRequired {
+  color: $red_2;
+}
+
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}
+
+.GroupButton {
+  margin-right: 20px;
+}
+
+.imgError {
+  position: relative;
+  bottom: 15px;
+  color: $red_2;
+  padding-left: 14px;
+}
+
+.disabledInput {
+  color: $gray_3 !important;
+  background-color: $gray_11 !important;
+}
+
+.pendingInfoOverlay {
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 120px;
+}
+
+.infoText {
+  color: $gray_3;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.titleNote {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $gray_17;
+}

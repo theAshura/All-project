@@ -1,0 +1,9 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  background-color: $white;
+  padding: 8px;
+  .rowItem {
+    padding-bottom: 16px;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.wrapper {
+  background-color: $gray_16;
+
+  .content {
+    border: none;
+    box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    background-color: $white;
+    padding: 2px 30px 30px 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .container {
+      border-radius: 4px;
+      overflow: hidden;
+
+      .footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 0;
+        padding-bottom: 0;
+        .btn {
+          width: 160px;
+          font-size: px-to-rem(16);
+          font-weight: 500;
+
+          &:last-child {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

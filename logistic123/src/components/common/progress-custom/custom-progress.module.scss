@@ -1,0 +1,62 @@
+@import 'assets/css/utilities/variable.scss';
+
+.progress {
+  &Container {
+    height: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  &Bar {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  &Title {
+    &Container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+
+    &Dot {
+      width: 7px;
+      height: 7px;
+      margin-right: 6px;
+      border-radius: 50%;
+    }
+
+    &Left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 10px;
+      p {
+        font-weight: 600;
+        color: $gray_5;
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+    }
+    &Right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 12px;
+        font-weight: 600;
+        color: $gray_3;
+        margin-right: 7px;
+        margin-bottom: 0;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        color: $gray_6;
+      }
+    }
+  }
+}

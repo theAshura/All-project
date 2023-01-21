@@ -1,0 +1,127 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 10vh;
+  max-width: 730px;
+  // @media (max-width: 1400px) {
+  //   max-width: 800px;
+  // }
+}
+
+.contentClassName {
+  position: relative;
+  width: 730px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+
+  // @media (max-width: 1400px) {
+  //   width: 800px;
+  // }
+  .header {
+    background: $blue_3;
+    padding: 8px 20px;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .closeBtn {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    padding: 12px 20px;
+  }
+
+  .label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 22px;
+    margin-bottom: 2px;
+  }
+
+  .dotRequired {
+    color: $red_2;
+  }
+
+  .messageError {
+    padding: 0 14px;
+    font-size: 12.25px;
+    margin-top: 8px;
+    color: $red_2;
+  }
+
+  .disabledInput {
+    background-color: $gray_11;
+  }
+
+  .wrapCheckbox {
+    display: flex;
+    align-items: center;
+
+    .name {
+      margin-left: 0px;
+      font-size: px-to-rem(16);
+    }
+  }
+
+  .btnSubmit {
+    margin-left: 20px;
+  }
+
+  .serviceError {
+    position: relative;
+    top: -12px;
+  }
+}
+
+.footer {
+  padding: 20px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.formatDescriptionText {
+  color: $gray_7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  margin-left: 15px;
+}
+
+.inputFile {
+  overflow: visible;
+  display: none;
+}
+
+.fileName {
+  font-size: 14px;
+  font-weight: 400;
+  color: $gray_2;
+  letter-spacing: 0.4px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.iconStyles {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

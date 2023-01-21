@@ -1,0 +1,33 @@
+{
+  "txPort": "Port",
+  "txPortInfo": "Port information",
+  "txPortName": "Port Name",
+  "txPortNameForm": "Port name",
+  "txPortCode": "Port Code",
+  "txPortCodeForm": "Port code",
+  "txCountry": "Country",
+  "txTimezone": "Time zone",
+  "txPortType": "Port Type",
+  "txPortTypeForm": "Port type",
+  "txBunkeringPort": "Bunkering Port",
+  "txBunkeringPortForm": "Bunkering port",
+  "txEuropeFlag": "Europe Flag",
+  "txEuropeFlagForm": "Europe flag",
+  "txLatitude": "Latitude",
+  "txLongitude": "Longitude",
+  "txGMTOffset": "GMT Offset",
+  "txStatus": "Status",
+  "txCreatedBy": "Created by user",
+  "txCreatedDate": "Created Date",
+  "txUpdatedBy": "Updated by user",
+  "txUpdatedDate": "Updated Date",
+  "txSystem": "System",
+  "placeHolder": {
+    "txPortName": "Enter port name",
+    "txPortCode": "Enter port code"
+  },
+  "txPortCodeExist": "The port code is existed",
+  "txPortNameExist": "The port name is existed",
+  "txMinMaxLengthPortName": "Port name must be between 2 and 250 characters.",
+  "txMinMaxLengthPortCode": "Port code must be between 2 and 20 characters."
+}

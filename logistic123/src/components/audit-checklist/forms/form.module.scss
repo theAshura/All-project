@@ -1,0 +1,607 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+@import '../../ui/button/button.scss';
+
+@media (max-width: 1400px) {
+}
+
+.mb_16 {
+  margin-bottom: 16px !important;
+}
+
+.iconMaster {
+  padding: 2px;
+  margin-right: 4px;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.inputFile {
+  overflow: visible;
+  display: none;
+}
+
+.textLabel {
+  font-size: 14px;
+  color: $gray_3_1;
+  font-weight: 400;
+}
+
+.btnWrapper {
+  .btns {
+    display: flex;
+    width: max-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .btnOutline {
+    &:hover {
+      color: $blue_3;
+      background: darken($white, 10%);
+    }
+  }
+  .buttonAdd {
+    font-size: 14px;
+  }
+  .icButton {
+    margin-bottom: 3px;
+    margin-left: 9px;
+  }
+}
+
+.mb_4 {
+  margin-bottom: 4px !important;
+}
+
+.submitBtn {
+  @extend .button;
+
+  gap: 11px !important;
+  background-color: $green_1 !important;
+  margin-left: 20px !important;
+
+  img {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  &:hover,
+  &:active {
+    background: $green_3;
+  }
+}
+
+.submitsBtnDisable {
+  cursor: not-allowed;
+  background-color: #a0e3d2 !important;
+}
+
+.generalInfoFormContainer {
+  padding: 15px 20px !important;
+  max-height: calc(100vh - 156px);
+  overflow-y: auto;
+
+  .wrapperContainer {
+    background-color: $white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    .containerForm {
+      padding-bottom: 24px;
+
+      .noInput {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .text {
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+
+      .inputSelect {
+        margin-right: 20px;
+        background: $white;
+        box-sizing: border-box;
+        border-radius: $input-radius;
+      }
+
+      .ant-select-selection-placeholder {
+        padding: 7px;
+      }
+
+      .labelSelect {
+        font-size: 14px;
+        color: $gray_3_1;
+        font-weight: 400;
+      }
+
+      ::placeholder {
+        font-size: 14px !important;
+      }
+    }
+
+    .titleForm {
+      font-size: 18px;
+    }
+
+    .disabledSelect {
+      div {
+        background: $white !important;
+      }
+    }
+
+    .readOnly {
+      color: $gray_3 !important;
+    }
+
+    .disabledInput {
+      background-color: $gray_11;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+
+    .buttonCancel {
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      width: 160px;
+      height: 48px;
+    }
+
+    .buttonSave {
+      width: 160px;
+      height: 48px;
+      left: 180px;
+      top: 0px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      border-radius: 6px;
+      margin-left: 20px;
+    }
+  }
+
+  .resultBox {
+    min-height: 240px;
+  }
+}
+
+.wrapperQuestions {
+  overflow-x: hidden;
+
+  .wrapperQuestionsItem {
+    overflow-y: auto;
+
+    &.expandWrapper {
+      height: calc(100vh - 264px);
+      background-color: $bg-color-container;
+    }
+
+    &.collapseWrapper {
+      background-color: $white;
+      height: calc(100vh - 231px);
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $gray_11;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+
+  .questions {
+    transition: width 0.3s linear;
+    background-color: $white;
+    width: 190px;
+    min-width: 190px;
+
+    .btnWrapper {
+      padding: 4px 14px;
+      background-color: $gray_12;
+
+      .expandBtn {
+        @include reset-button;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .wrapTitleQuestion {
+      padding: 10px 14px 10px 20px;
+      border-bottom: 1px solid $gray_11;
+
+      .titleQuestion {
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray_3;
+        white-space: nowrap;
+      }
+
+      .titleQuestionExpands {
+        white-space: nowrap;
+        font-size: 11px;
+        line-height: 16px;
+        color: $gray_5;
+        margin: 0;
+      }
+
+      .titleViewFull {
+        font-size: 11px;
+        line-height: 16px;
+        color: $blue_3;
+        text-decoration: underline;
+        margin: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .expand {
+    width: 100%;
+    transition: width 0.3s linear;
+  }
+
+  .expandQuestion {
+    transition: width 0.3s linear;
+    width: 100%;
+  }
+
+  .collapseQuestion {
+    width: 0;
+  }
+
+  .questionForm {
+    max-height: calc(100vh - 156px);
+    overflow-y: auto;
+
+    .headerCollapse {
+      height: auto;
+      padding: 4px 20px;
+
+      p {
+        font-size: $title_font_size;
+        line-height: 24px;
+        font-weight: 700;
+      }
+    }
+
+    .wrapLabel {
+      .label {
+        font-size: px-to-rem(16);
+        color: $gray_3_1;
+        font-weight: 400;
+      }
+
+      img {
+        margin-bottom: 14px;
+      }
+    }
+
+    .collapseContainer {
+      position: relative;
+      padding: 10px 20px 20px;
+
+      .btnWrapper {
+        padding-top: 20px !important;
+      }
+
+      .hasRemark {
+        gap: 15px;
+        align-items: flex-start;
+      }
+
+      .hasRemarkLabel {
+        white-space: nowrap;
+      }
+
+      .allSpecific {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+        .options {
+          height: 16px;
+          width: 16px;
+        }
+      }
+
+      .answerArray {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .answer {
+          height: 18px;
+          width: 18px;
+          margin-right: 10px;
+        }
+
+        .answerLabel {
+          word-break: break-all;
+        }
+      }
+
+      .addFinding {
+        display: flex;
+
+        .text {
+          font-size: px-to-rem(14) !important;
+          font-weight: 700;
+        }
+
+        img {
+          height: 20px;
+          width: 20px;
+        }
+
+        gap: 12px;
+
+        &:hover {
+          color: $blue_3;
+          background: darken($white, 10%);
+        }
+      }
+
+      .loading {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 60px;
+        width: 60px;
+      }
+
+      .titleGroup {
+        color: $gray_3;
+        font-size: $title_font_size;
+        margin: 0;
+        margin-top: 10px;
+      }
+
+      .driver {
+        border-bottom: 1px solid #dee2e6;
+      }
+
+      .row {
+        margin: 0 -14px;
+
+        .col {
+          padding: 0 14px;
+        }
+      }
+    }
+  }
+  .collapseContainerBottomPadding {
+    padding-bottom: 40px !important;
+  }
+
+  ::placeholder {
+    font-size: 14px !important;
+  }
+
+  .questionForm > div {
+    margin-bottom: 20px;
+  }
+
+  .inputSelect {
+    margin-right: 20px;
+    background: $white;
+    box-sizing: border-box;
+    border-radius: $input-radius;
+  }
+
+  .ant-select-selection-placeholder {
+    padding: 7px;
+  }
+
+  .labelSelect {
+    font-size: 14px;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+
+  .titleForm {
+    font-size: 18px;
+  }
+
+  .disabledSelect {
+    div {
+      background: $gray_3 !important;
+    }
+  }
+
+  .disabledInput {
+    color: $gray_3 !important;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+.wrapTable {
+  .titleTable {
+    font-size: $title_font_size;
+    color: $gray_3;
+  }
+
+  .table {
+    overflow: hidden;
+
+    .rowTitle {
+      height: 37px !important;
+    }
+
+    .thread {
+      background-color: $bg-color1;
+
+      .headCol {
+        position: absolute;
+        left: 0;
+        min-width: 120px;
+        padding: 6px 30px;
+        top: auto;
+        background-color: $bg-color1;
+        margin-left: 0px !important;
+        height: 36px;
+      }
+
+      .title {
+        /*text-transform:capitalize;*/
+
+        .titleSort {
+          white-space: nowrap;
+        }
+
+        .icSortTable {
+          height: 20px;
+          width: 20px;
+          margin-left: 10px;
+        }
+
+        th {
+          min-width: 150px;
+          max-width: 240px;
+          font-weight: bold;
+          font-size: px-to-rem(14);
+          line-height: 22px;
+          margin: 0px 12px;
+          color: $gray_3;
+          border-style: none;
+          white-space: nowrap;
+        }
+
+        .headCol {
+          position: absolute;
+          left: 0;
+          min-width: 140px;
+          padding: 6px 30px;
+          top: auto;
+        }
+      }
+    }
+
+    tbody {
+      tr:last-child {
+        border-bottom: 1px solid #dee2e6;
+      }
+
+      tr {
+        td {
+          padding: 5px 16px;
+          vertical-align: middle;
+          max-width: 240px;
+
+          span {
+            color: $gray_5;
+            font-size: px-to-rem(14);
+            font-weight: 500;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            word-break: break-word;
+            white-space: normal;
+          }
+        }
+      }
+    }
+
+    .subAction {
+      .icAction {
+        .icImg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .shadow {
+      border-right: 1px solid $gray_10;
+      filter: drop-shadow(2px 0px 10px rgba(0, 0, 0, 0.1));
+    }
+
+    .subTitle {
+      padding: 7px 16px;
+    }
+  }
+}
+
+.noScroll {
+  overflow-y: hidden !important;
+}
+
+@media (max-width: 1416px) {
+  .wrapAddValue {
+    margin-top: 10px !important;
+  }
+}
+.errorMessage {
+  padding-top: 7px;
+  color: $red_3;
+}
+
+.header {
+  font-size: $title_font_size;
+  line-height: 26px;
+  color: $gray_3;
+}
+.wrapperContainerHeight {
+  height: 370px;
+}
+.infoRow {
+  margin-bottom: 20px !important;
+}

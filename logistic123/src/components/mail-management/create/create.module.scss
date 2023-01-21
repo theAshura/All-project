@@ -1,0 +1,8 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.content {
+  font-size: 14px;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+}

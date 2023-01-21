@@ -1,0 +1,390 @@
+@import 'assets/css/utilities/variable.scss';
+
+.rowFooter {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: right;
+
+  .buttonFooter {
+    margin-left: 8px;
+  }
+}
+
+.container__date-picker {
+  position: relative;
+
+  .ant-picker-large .ant-picker-input > input {
+    font-size: 14px !important;
+  }
+  .message-required {
+    color: $red_2;
+    padding-left: 14px;
+    font-size: 12.25px;
+    font-weight: 400 !important;
+  }
+
+  .label {
+    font-size: 14px;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+  .single_picker {
+    padding-left: 16px;
+  }
+
+  .date__picker {
+    border: 1px solid $gray_9;
+    box-sizing: border-box;
+    border-radius: $button-radius !important;
+    color: $gray_3;
+    height: 30px;
+    font-size: 14px;
+
+    &:focus {
+      border-color: none;
+      box-shadow: none;
+    }
+    &:not(input) {
+      border-color: none;
+      box-shadow: none;
+    }
+    .ant-picker-suffix {
+      color: $gray_7;
+    }
+    ::placeholder {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-selected {
+  background-color: $blue_3;
+  border-radius: $button-radius;
+}
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: none;
+}
+
+.ant-picker-header {
+  border-bottom: none;
+}
+.ant-picker-input > input[disabled] {
+  background: transparent !important;
+  color: unset;
+}
+.ant-picker.ant-picker-disabled {
+  background: $white;
+}
+.ant-picker-cell-in-view .ant-picker-cell-in-range {
+  background-color: $blue_3;
+  border-radius: 8px;
+}
+.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before {
+  background: none;
+}
+
+.ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-selected {
+  background-color: $blue_3;
+  border-radius: 8px 0px 0px 8px;
+}
+.ant-picker-cell.ant-picker-cell-start.ant-picker-cell-in-view.ant-picker-cell-range-end {
+  background-color: $blue_3;
+  border-radius: 0px 8px 8px 0px;
+}
+.ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-range-start {
+  background-color: $blue_3;
+  border-radius: 8px 0px 0px 8px;
+}
+.ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-range-end {
+  background-color: $blue_3;
+  border-radius: 0px 8px 8px 0px;
+}
+.ant-picker-cell-inner {
+  border-radius: 0.75rem;
+  background: none;
+}
+.ant-picker-cell-in-view {
+  &:hover {
+    background-color: $gray_21;
+    box-sizing: border-box;
+  }
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  // background-color: $gray_21;
+  border: unset;
+  background-color: unset;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today {
+  &:hover {
+    .ant-picker-cell-inner::before {
+      background-color: unset;
+      border: unset;
+    }
+  }
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today {
+  background-color: $gray_21;
+}
+.ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-today {
+  background-color: $gray_21;
+}
+.ant-picker-cell-today {
+  box-shadow: none;
+  border: none;
+}
+// .ant-picker-header-super-prev-btn,
+// .ant-picker-header-super-next-btn {
+//   display: none;
+// }
+.ant-picker-body {
+  height: -webkit-fill-available;
+}
+.ant-picker-content {
+  width: 100% !important;
+  height: 100%;
+}
+.ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner,
+.ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end)
+  .ant-picker-cell-inner {
+  background: none;
+}
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background: none;
+}
+
+.ant-picker-cell .ant-picker-cell-in-view {
+  &::after {
+    border: none;
+  }
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before {
+  background: none;
+}
+.ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+  background: none;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single).ant-picker-cell-range-hover-start::before {
+  background: none;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single).ant-picker-cell-range-hover-end::before {
+  background: none;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-range-hover::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end.ant-picker-cell-range-hover::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single).ant-picker-cell-range-hover-start::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single).ant-picker-cell-range-hover-end::before,
+.ant-picker-panel
+  > :not(.ant-picker-date-panel)
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+.ant-picker-panel
+  > :not(.ant-picker-date-panel)
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before {
+  background: none;
+}
+.ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+  .ant-picker-cell-inner::after,
+.ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+  .ant-picker-cell-inner::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: none;
+  transition: all 0.3s;
+  content: '';
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-in-range {
+  background-color: $blue_16;
+  color: $blue_3;
+}
+
+tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover:first-child::after,
+tr
+  > .ant-picker-cell-in-view.ant-picker-cell-range-hover-end:first-child::after,
+.ant-picker-cell-in-view.ant-picker-cell-start.ant-picker-cell-range-hover-edge-start.ant-picker-cell-range-hover-edge-start-near-range::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-edge-start:not(.ant-picker-cell-range-hover-edge-start-near-range)::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-start::after {
+  left: 6px;
+  border-left: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover:last-child::after,
+tr
+  > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::after,
+.ant-picker-cell-in-view.ant-picker-cell-end.ant-picker-cell-range-hover-edge-end.ant-picker-cell-range-hover-edge-end-near-range::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-edge-end:not(.ant-picker-cell-range-hover-edge-end-near-range)::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-end::after {
+  right: 6px;
+  border-right: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-start:not(.ant-picker-cell-in-range):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end)::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-end:not(.ant-picker-cell-in-range):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end)::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-start.ant-picker-cell-range-start-single::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-start.ant-picker-cell-range-start.ant-picker-cell-range-end.ant-picker-cell-range-end-near-hover::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-end.ant-picker-cell-range-start.ant-picker-cell-range-end.ant-picker-cell-range-start-near-hover::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-end.ant-picker-cell-range-end-single::after,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover:not(.ant-picker-cell-in-range)::after {
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+  height: 24px;
+  border-top: none;
+  border-bottom: none;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  content: '';
+}
+
+.ant-picker-cell-range-hover {
+  background-color: $blue_16;
+}
+
+.ant-picker-range-wrapper {
+  border-top: 2px solid $blue_3;
+  border-right: 2px solid $blue_3;
+  border-bottom: 2px solid $blue_3;
+}
+
+@media (max-width: 1400px) {
+  .date__picker {
+    height: 30px !important;
+  }
+}
+
+.show_footer {
+  .ant-picker-dropdown-range {
+    left: 165px !important;
+    top: 26px !important;
+    .ant-picker-range-arrow {
+      display: none;
+    }
+  }
+  .ranges_select {
+    position: absolute;
+    top: 34px;
+    border: 2px solid $blue_3;
+    border-right: none;
+    z-index: 1050;
+    width: 165px;
+    background-color: $white;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    // can use after
+
+    // &::after {
+    //   position: absolute;
+    //   top: -10px;
+    //   left: 115px;
+    //   width: 10px;
+    //   height: 10px;
+    //   border: 5px solid #f0f0f0;
+    //   border-color: #fff #fff transparent transparent;
+    //   content: '';
+    //   transform: rotate(-45deg);
+    // }
+    .range_list {
+      height: 267px;
+      overflow-y: auto;
+      border-bottom: 1px solid $gray_22;
+      font-weight: 600;
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $gray_11;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $blue_3;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:active {
+        background: $blue_2;
+      }
+    }
+
+    .range_item {
+      font-size: 14px;
+      color: $gray_5;
+      padding: 5px 20px;
+      cursor: pointer;
+    }
+    .active {
+      background-color: $gray_11;
+    }
+    .footer_range {
+      height: 48.5px;
+    }
+  }
+  .ant-picker-panel-container {
+    box-shadow: none;
+    border-left: none;
+    border-end-end-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+}
+
+.ant-picker-decade-panel .ant-picker-content,
+.ant-picker-year-panel .ant-picker-content,
+.ant-picker-quarter-panel .ant-picker-content,
+.ant-picker-month-panel .ant-picker-content {
+  height: 228px;
+}
+
+.modal-schedule {
+  .ant-picker-cell-in-view {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .ant-picker-cell-selected {
+    background-color: transparent !important;
+  }
+  .ant-picker-cell-today {
+    background-color: transparent !important;
+    .ant-picker-calendar-date-today {
+      border: none !important;
+      border-top: solid 2px $primary_6 !important;
+      background-color: $green_15 !important;
+      .ant-picker-calendar-date-value {
+        color: $primary_6;
+      }
+    }
+  }
+  .ant-picker-calendar-date-content {
+    .events {
+      background-color: transparent !important;
+      li {
+        background-color: transparent;
+        padding-left: 5px;
+        border-radius: 3px;
+        &:hover {
+          background-color: $blue_8;
+        }
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

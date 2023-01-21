@@ -1,0 +1,121 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.container {
+  background-color: $bg-color-container;
+  padding: 15px 20px;
+  min-height: 100vh;
+
+  .contentContainer {
+    padding: 10px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gray_19;
+    border-radius: 0px 0px 4px 4px;
+    height: 402px;
+
+    .titleContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  }
+  .contentContainerPadding {
+    padding: 0;
+  }
+
+  .h30rem {
+    height: 30rem !important;
+  }
+
+  .textTitle {
+    font-size: $title_font_size;
+    font-weight: 700px;
+    color: $gray_3;
+    line-height: 16px;
+  }
+
+  .subTitle {
+    color: $gray_3;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    line-height: 16px;
+  }
+
+  .issueContainer {
+    display: flex;
+    flex-direction: row;
+    padding-block: 1rem;
+
+    span {
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      text-decoration: underline;
+      color: $blue_3;
+      cursor: pointer;
+      margin-top: 9px;
+      user-select: none;
+    }
+
+    .left {
+      width: 75%;
+      color: $gray_5;
+      font-weight: 600;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      strong {
+        font-weight: 700;
+        color: $orange_3;
+      }
+    }
+  }
+
+  .borderBottom {
+    height: 2px;
+    width: 100%;
+    background-color: $bg-border;
+  }
+
+  .buttons {
+    margin-left: 5px;
+
+    button {
+      border: none !important;
+      font-size: 12px !important;
+      height: 24px;
+      width: 40px;
+      border-radius: 4px !important;
+    }
+  }
+
+  .barChartContainer {
+    margin-top: 10px;
+    position: 'relative';
+    width: 100%;
+    height: 420px;
+  }
+
+  .openIssueContent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+.customTableModalTitle {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold !important;
+}

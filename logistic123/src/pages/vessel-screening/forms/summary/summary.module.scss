@@ -1,0 +1,42 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  position: relative;
+  font-weight: 600;
+  min-height: calc(100vh - 140px);
+  padding: 4px 20px;
+  background-color: $bg-color-container;
+}
+
+.wrapDetailInfo {
+  background: $white;
+  margin-top: 24px;
+  padding: 10px;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    padding: 10px 20px;
+  }
+}
+
+.detail {
+  @media (min-width: 1440px) {
+    width: 750px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 1010px;
+  }
+}
+
+.summaryRemarks {
+  @media (min-width: 1440px) {
+    width: calc(100% - 750px);
+  }
+
+  @media (min-width: 1600px) {
+    width: calc(100% - 1010px);
+  }
+}

@@ -1,0 +1,34 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.textAreaQuestion {
+  border: 1px solid #bbbabf;
+  border-radius: 8px;
+  font-size: 14px;
+
+  &:focus {
+    border-color: $blue_14;
+    box-shadow: none;
+  }
+  &::placeholder {
+    font-size: 14px !important;
+    color: $gray_7;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}

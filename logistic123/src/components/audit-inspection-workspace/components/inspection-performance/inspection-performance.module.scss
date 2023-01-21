@@ -1,0 +1,123 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  height: 180px;
+  text-align: center;
+  padding-top: 5px;
+
+  .percent {
+    height: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.25px;
+    color: $gray_3;
+  }
+
+  .label {
+    height: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: $gray_5;
+  }
+
+  .wrap {
+    position: relative;
+    width: 228px;
+    height: 55px;
+    margin: 15px auto;
+  }
+
+  .score {
+    height: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: $gray_5;
+  }
+
+  .shipWrap {
+    position: absolute;
+    width: 226px;
+    height: 70px;
+    transform: translateY(calc(-50% + 20px));
+    display: flex;
+    align-items: center;
+    svg {
+      position: absolute;
+    }
+  }
+  .flexLabel {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ship {
+    width: 226px;
+    height: 70px;
+  }
+
+  .progress {
+    overflow-x: hidden;
+  }
+
+  .default {
+    fill: #e2e0df;
+    path {
+      fill: #e2e0df;
+    }
+  }
+
+  .progressLow {
+    fill: #e63946;
+    path {
+      fill: #e63946;
+    }
+  }
+
+  .progressMedium {
+    fill: #ff9f1c;
+    path {
+      fill: #ff9f1c;
+    }
+  }
+
+  .progressHigh {
+    fill: #f8e71b;
+    path {
+      fill: #f8e71b;
+    }
+  }
+
+  .progressMax {
+    fill: #2eb24c;
+    path {
+      fill: #2eb24c;
+    }
+  }
+  .wrapOffice {
+    position: relative;
+    width: 65px;
+    height: 55px;
+    margin: 15px auto;
+  }
+  .officeImg {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    transform: translateY(calc(-50% + 20px));
+  }
+
+  .office {
+    width: 65px;
+    height: 60px;
+  }
+  .activeBoat {
+    path {
+      fill: red;
+    }
+  }
+}

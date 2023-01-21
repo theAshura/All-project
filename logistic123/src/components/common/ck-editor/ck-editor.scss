@@ -1,0 +1,61 @@
+@import 'assets/css/utilities/variable.scss';
+
+.ck-dropdown__panel-visible {
+  max-height: 300px;
+  overflow: scroll;
+
+  li {
+    padding: 3px !important;
+    max-height: none;
+
+    .ck-button__label {
+      line-height: 0.7 !important;
+      max-height: none;
+    }
+  }
+}
+
+.ck .ck-editor__editable_inline {
+  overflow: inherit !important;
+}
+
+.ck-content .mention {
+  background: white !important;
+  color: $blue_3 !important;
+}
+
+.ck.ck-list__item .ck-button {
+  display: block !important;
+}
+
+.ck-rounded-corners .ck.ck-list {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.wrap-input-mention__ckeditor {
+  .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+  .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+    border-radius: 8px;
+  }
+
+  .ck-toolbar_grouping {
+    display: none !important;
+  }
+}

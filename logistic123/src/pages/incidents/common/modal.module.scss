@@ -1,0 +1,16 @@
+@import 'assets/css/utilities/variable.scss';
+
+.labelForm {
+  color: $gray_3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 0px;
+  .required {
+    color: $red_3;
+    font-size: 13px;
+  }
+}
+.radioLabel {
+  padding-bottom: 0 !important;
+}

@@ -1,0 +1,50 @@
+@import '../../../assets/css//utilities/variable.scss';
+
+.wrapperSearch {
+  display: inline-flex;
+  height: 30px;
+
+  .buttonSearch {
+    border: 0.063rem solid $blue_3;
+    box-sizing: border-box;
+    border-radius: 0 $button-radius $button-radius 0 !important;
+  }
+  .searchIcon {
+    border: 0.063rem solid $gray_11;
+    box-sizing: border-box;
+    border-radius: $button-radius !important;
+    background-color: $gray_12;
+    input {
+      background-color: $gray_12;
+    }
+    &:focus {
+      border-color: none;
+      box-shadow: none;
+    }
+    &:hover {
+      .ant-input-prefix {
+        color: $gray_3;
+      }
+    }
+    &:not(input) {
+      border-color: none;
+      box-shadow: none;
+    }
+    .ant-input-prefix {
+      color: $gray_5;
+    }
+  }
+  .searchButton {
+    border: 0.063rem solid $gray_11;
+    box-sizing: border-box;
+    border-radius: $button-radius 0 0 $button-radius !important;
+    &:focus {
+      border-color: none;
+      box-shadow: none;
+    }
+    &:not(input) {
+      border-color: none;
+      box-shadow: none;
+    }
+  }
+}

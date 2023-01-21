@@ -1,0 +1,157 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .headers {
+    padding: 10px 20px;
+    background-color: $white;
+
+    .title {
+      color: $gray_3;
+      font-size: px-to-rem(20);
+      line-height: 30px;
+      padding-top: 8px;
+    }
+    .refDetail {
+      text-align: right;
+      color: $gray_5;
+      font-size: 14px;
+      line-height: 22px;
+      span {
+        color: $gray_3;
+      }
+    }
+  }
+  .wrapperForm {
+    height: calc(100vh - 150px);
+    overflow: auto;
+  }
+}
+
+.wrapper {
+  background-color: $bg-color-container;
+  padding: 15px 20px 15px 20px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.wrapperAttachments {
+  background-color: $white;
+  padding: 0px 26px;
+  border-radius: 5px;
+}
+
+.chartTitle {
+  color: $gray_3;
+  font-weight: 700;
+  font-size: $title_font_size;
+  line-height: 24px;
+}
+
+.chartRiskLower {
+  border-top: 1px solid $gray_11;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.chartRisk {
+  color: $green_2;
+  font-weight: 700;
+}
+
+.labelRisk {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 0px 8px;
+
+  background: $gray_12;
+  border: 1px solid $gray_10;
+  color: $gray_10;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.negligible {
+  background-color: $blue_10;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12;
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+.medium {
+  background-color: $yellow_12;
+  border: 1px solid $yellow_13;
+  color: $yellow_13;
+}
+.high {
+  background-color: $orange_13;
+  border: 1px solid $orange_3;
+  color: $orange_3;
+}
+.iconDown {
+  width: 10px;
+  height: 10px;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.headerBtn {
+  position: relative;
+  top: -30px;
+  float: right;
+  right: 20px;
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+
+.buttonFilter {
+  width: 100px;
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 26px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+
+  .labelHeader {
+    color: $gray_3;
+    font-weight: 700;
+    font-size: $title_font_size;
+    line-height: 24px;
+  }
+}
+
+.refIDAndStatus {
+  color: $gray_5;
+  font-size: 14px;
+}
+
+.refId {
+  color: $gray_3;
+}

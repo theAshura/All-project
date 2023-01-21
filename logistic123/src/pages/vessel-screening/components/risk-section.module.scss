@@ -1,0 +1,74 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 26px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  .container {
+    min-width: 230px;
+  }
+  .labelHeader {
+    color: $gray_3;
+    font-weight: 700;
+    font-size: $title_font_size;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .labelRisk {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+
+    background: $gray_12;
+    border: 1px solid $gray_10;
+    color: $gray_10;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .title {
+    color: $gray_3;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  .labelRiskItem {
+    margin-bottom: -4px;
+  }
+  .negligible {
+    background-color: $blue_10;
+    border: 1px solid $blue_3;
+    color: $blue_3;
+  }
+
+  .low {
+    background-color: $green_12;
+    border: 1px solid $green_1;
+    color: $green_1;
+  }
+  .medium {
+    background-color: $yellow_12;
+    border: 1px solid $yellow_13;
+    color: $yellow_13;
+  }
+  .high {
+    background-color: $orange_13;
+    border: 1px solid $orange_3;
+    color: $orange_3;
+  }
+  .timeLoss {
+    font-size: 14px;
+    margin-top: -14px;
+  }
+  .requiredMessage {
+    padding: 0 14px 14 0;
+    font-size: 14px;
+    margin-top: 8px;
+    color: $red_2;
+  }
+}

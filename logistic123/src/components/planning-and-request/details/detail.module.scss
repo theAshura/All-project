@@ -1,0 +1,124 @@
+@import '../../../assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/';
+
+.editContainer {
+  font-size: px-to-rem(14);
+  font-weight: 600;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  padding-bottom: 50px;
+  margin-top: 15px;
+  .headerContainer {
+    background-color: $white;
+    margin: 0px;
+    .headers {
+      margin: 0px;
+      .title {
+        color: $gray_3;
+        font-size: $title_font_size;
+        line-height: 28px;
+      }
+    }
+    .chooseTemplate {
+      width: 170px;
+    }
+    .tabsWrapper {
+      gap: 32px;
+      border-bottom: 1px solid $gray_10;
+      .tabsButton {
+        @include reset-button;
+        color: $gray_7;
+        gap: 32px;
+      }
+      .tabsButtonActive {
+        color: $blue_3;
+        border-bottom: 2px solid $blue_3;
+        border-radius: 0;
+      }
+    }
+  }
+  .borderLeft {
+    padding-left: 10px;
+    border-left: 1px solid $gray_7;
+    height: 20px;
+  }
+  .wrapInfoHeader {
+    font-size: 14px;
+    color: $gray_5;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    .refTitle {
+      color: $gray_5;
+    }
+    .refValue {
+      color: $gray_3;
+      margin-right: 10px;
+    }
+    .globalStatus {
+      color: $blue_3;
+      padding-left: 3px;
+    }
+    .status {
+      padding-left: 10px;
+      padding-right: 10px;
+      border-left: 1px solid $gray_7;
+      display: flex;
+      align-items: center;
+      height: 20px;
+      .value {
+        .btnToggle {
+          background-color: transparent;
+          outline: none !important;
+          color: $blue_3;
+          text-decoration: underline;
+          border: none;
+          font-size: 14px;
+          box-shadow: none;
+          font-weight: 700;
+          padding: 0px 0px 0px 5px;
+        }
+        .menuWrapper {
+          box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.08);
+          border-radius: 8px;
+          padding: 20px;
+          min-width: 950px;
+          .headMenu {
+            padding-bottom: 17px;
+            color: $gray_3;
+            font-size: 14px;
+            font-weight: bold;
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .formContainer {
+    height: 100%;
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1400px) {
+}
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.customExportBtn {
+  background: $blue_9_2 !important;
+  border-radius: 6px;
+  color: $blue_2 !important;
+}
+.btnSendMail {
+  margin-left: 14px;
+  background: $blue_9_2 !important;
+  border-radius: 6px;
+  color: $blue_2 !important;
+}

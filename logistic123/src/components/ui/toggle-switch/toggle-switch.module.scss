@@ -1,0 +1,10 @@
+@import 'assets/css/utilities/variable.scss';
+
+.toggle-switch-wrapper {
+  gap: 10px;
+  .toggle-switch-label {
+    font-weight: 400;
+    font-size: 14px;
+    color: $gray_3;
+  }
+}

@@ -1,0 +1,31 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapModal {
+  margin-top: 20vh;
+}
+
+.contentClassName {
+  position: relative;
+  width: 591px;
+  background: $white;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  padding: 24px;
+  .header {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+  .buttonCancel {
+    margin-right: 20px;
+  }
+  .wrapContent {
+    .wrapInput {
+      margin-bottom: 16px;
+      .inputClassName {
+      }
+    }
+  }
+}

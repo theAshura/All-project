@@ -1,0 +1,68 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+@media (max-width: 1400px) {
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 20px 26px;
+  border-radius: 5px;
+  .containerForm {
+    padding-bottom: 24px;
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3_1;
+      font-weight: 400;
+    }
+  }
+  .titleForm {
+    font-size: 18px;
+  }
+  .disabledSelect {
+    div {
+      background: $white !important;
+    }
+  }
+  .disabledInput {
+    color: $gray_3 !important;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}

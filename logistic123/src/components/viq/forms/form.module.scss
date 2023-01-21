@@ -1,0 +1,29 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.requiredImg {
+  margin-top: -10px;
+}
+
+.buttonAdd {
+  font-size: 15px !important;
+}
+
+.divider {
+  height: 1px;
+  background: $gray_10;
+}
+
+.headerText {
+  font-size: 14px !important;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.messageError {
+  color: $red_2;
+  font-size: 12.25px;
+}

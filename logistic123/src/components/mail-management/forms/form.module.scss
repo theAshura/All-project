@@ -1,0 +1,51 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+.label {
+  margin-bottom: 10px;
+}
+.workingType {
+  margin-left: 10px;
+}
+
+.dotRequired {
+  color: $red_2;
+  padding-left: 3px;
+}
+
+.messageError {
+  padding: 0 14px;
+  font-size: 12.25px;
+  margin-top: 8px;
+  color: $red_2;
+}
+
+.wrapEmail {
+  .label {
+    width: 60px;
+  }
+  .rowWrap {
+    margin-bottom: 12px;
+    .label {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      // height: 100%;
+      .infoIcon {
+        margin-left: 4px;
+      }
+    }
+    .customInput {
+      width: 100%;
+    }
+  }
+}
+
+.wrapInfo {
+  background-color: $gray_11 !important;
+}

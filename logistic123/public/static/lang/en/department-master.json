@@ -1,0 +1,22 @@
+{
+  "txDepartmentMaster": "Department",
+  "txDMInformation": "Department information",
+  "txDepartmentCode": "Department code",
+  "txDepartmentName": "Department name",
+  "txRank": "Rank",
+  "txDescription": "Description",
+  "txCreatedDate": "Created Date",
+  "txCreatedBy": "Created by User",
+  "txUpdatedDate": "Updated Date",
+  "txUpdatedBy": "Updated by User",
+  "txPleaseSelect": "Please select",
+  "txStatus": "Status",
+  "txType": "Type",
+  "placeHolder": {
+    "txDepartmentCode": "Enter department code",
+    "txDepartmentName": "Enter department name",
+    "txDescription": "Enter description"
+  },
+  "departmentCodeIsExisted": "The department code is existed",
+  "departmentNameIsExisted": "The department name is existed"
+}

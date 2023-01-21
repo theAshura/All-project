@@ -1,0 +1,46 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapHeader {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+}
+
+.headers {
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    line-height: 30px;
+  }
+}
+
+.wrapContent {
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 156px);
+}
+
+@media (max-width: 1400px) {
+}
+
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sno {
+  color: $gray_3;
+}
+
+.dataWrapper {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .noData {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+.flex {
+  display: flex;
+}

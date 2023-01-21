@@ -1,0 +1,26 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.getDMSById {
+  font-size: px-to-rem(14);
+  background-color: $bg-color-container;
+  font-weight: 600;
+  min-height: calc(100vh - 56px);
+  position: relative;
+  .headers {
+    padding-bottom: 20px;
+    .title {
+      color: $gray_3;
+      font-size: px-to-rem(20);
+      line-height: 30px;
+      padding-top: 8px;
+    }
+  }
+  .buttonFilter {
+    width: 100px;
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}

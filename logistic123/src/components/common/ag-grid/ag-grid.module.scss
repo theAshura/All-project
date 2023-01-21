@@ -1,0 +1,25 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  font-size: px-to-rem(14);
+  position: relative;
+  font-weight: 600;
+
+  .header {
+    background-color: $white;
+
+    .title {
+      font-size: $title_font_size;
+      line-height: 26px;
+      color: $gray_3;
+      font-weight: 500;
+    }
+  }
+}
+
+.noDataImgAggrid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(40%, 5%);
+}

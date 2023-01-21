@@ -1,0 +1,71 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/mixin.scss';
+
+.wrapInput {
+  border: 1px solid $gray_9;
+  border-radius: 4px;
+  padding: 0px 6px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  width: 100%;
+  min-height: 30px;
+}
+
+.wrapAutoScalingInput {
+  position: relative;
+  min-height: 18px;
+  min-width: 20px;
+  border-radius: 4px;
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  span {
+    visibility: hidden;
+  }
+
+  input {
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    min-width: 20px;
+    min-height: 22.9px;
+    max-width: calc(100vw - 700px);
+  }
+}
+
+.customTag {
+  background: $white;
+  border: 1px solid $gray_10;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: $gray_5;
+  display: flex;
+  align-items: center;
+  margin: 3px 6px;
+  padding: 1px 8px;
+  min-height: 22.9px;
+  max-width: calc(100vw - 800px);
+  word-break: break-all;
+
+  .deleteBtn {
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+.emailInvalid {
+  background: $red_4;
+  border: 1px solid $red_4;
+  color: $white;
+}
+
+.disable {
+  cursor: not-allowed;
+}

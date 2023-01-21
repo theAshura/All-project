@@ -1,0 +1,21 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  .wrapper {
+    margin-bottom: 21px;
+    .name {
+      color: $gray_5;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      color: $white;
+      height: 32px;
+      padding: 0 10px;
+    }
+  }
+  .noData {
+    height: 107px;
+    width: 107px;
+  }
+}

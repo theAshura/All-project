@@ -1,0 +1,106 @@
+@import 'assets/css/utilities/variable.scss';
+
+.info {
+  .timeLineItems {
+    .timeLineItem {
+      .timeLineContent {
+        color: $gray_5;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+      }
+      .progress {
+        .timeLineStick {
+          flex-grow: 1;
+          height: 2px;
+          background-color: $gray_9;
+          &.active {
+            background-color: $orange_3;
+          }
+        }
+        .timeLineIcon {
+          width: 16px;
+          height: 16px;
+          background-color: $white;
+          display: flex;
+          border-radius: 100%;
+          border: 1px solid $gray_8;
+          &.active {
+            background-image: url('../../../assets/images/icon/icTickFull.svg');
+            border: 0;
+          }
+          &.error {
+            background-image: url('../../../assets/images/icon/icError.svg');
+            border: 0;
+          }
+          &.current {
+            border: 2px solid $blue_3;
+          }
+        }
+      }
+      &:last-child {
+        .timeLineStick {
+          display: none;
+        }
+      }
+      .infoWrapper {
+        color: $gray_5;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+
+        .circleBlue {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: $blue_3;
+        }
+        .name {
+          color: $gray_3;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.4px;
+        }
+        .description {
+          font-weight: 600;
+          color: $gray_5;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+  }
+}
+.wrapLineProgress {
+  width: 880px;
+}
+
+.blue_3 {
+  color: $blue_3 !important;
+}
+
+.green_1 {
+  color: $green_1 !important;
+}
+
+.yellow_2 {
+  color: $yellow_2 !important;
+}
+
+.red_3 {
+  color: $red_3 !important;
+}
+
+.green_3 {
+  color: $green_3 !important;
+}
+
+@media (max-width: 1200px) {
+  .info {
+    width: 650px !important;
+  }
+}

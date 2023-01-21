@@ -1,0 +1,12 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  .title {
+    font-weight: 600;
+    font-size: $title_font_size;
+    line-height: 150%;
+  }
+  .icButton {
+    margin-left: 10px;
+  }
+}

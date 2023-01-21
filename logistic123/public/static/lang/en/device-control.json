@@ -1,0 +1,15 @@
+{
+  "action": "Action",
+  "txDeviceControl": "Device Control Manager",
+  "txAppName": "App Name",
+  "txVesselName": "Vessel Name",
+  "txDeviceId": "Device ID",
+  "txDeviceType": "Device Type",
+  "txAppVersion": "App Version",
+  "txDeviceModel": "Device Model",
+  "txStatus": "Status",
+  "txDeviceStatus": "Device Status",
+  "txLastSyncDeviceTime": "Last sync Device Time",
+  "txLastSyncServerTime": "Last Sync Server Time",
+  "txCompanyName": "Company Name"
+}

@@ -1,0 +1,119 @@
+@import 'assets/css/utilities/variable.scss';
+
+.itemContainer {
+  border-bottom: 1px solid $gray_11;
+  padding: 20px;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .leftContent {
+    width: 96%;
+    text-align: start;
+
+    .name {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .content {
+      font-size: 14px;
+      color: $gray_5;
+      margin-bottom: 0;
+      @media (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+
+    .icDotBlue {
+      color: $blue_3;
+      margin: 0 5px;
+    }
+
+    .dash {
+      margin: 0px 3px;
+    }
+
+    .extraInfo {
+      font-size: 12px;
+    }
+
+    .recordName {
+      color: $blue_3;
+    }
+
+    .greaterThanSign {
+      font-size: 12px;
+      margin: 0px 6px;
+      position: relative;
+      bottom: 1px;
+    }
+  }
+
+  .rightContent {
+    .actions {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .date {
+      font-size: 12px;
+      color: $gray_6;
+    }
+  }
+
+  .wrapperAction {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .moreAction {
+      margin: 5px 10px;
+    }
+  }
+}
+
+.itemActive {
+  background-color: $purple_13;
+}
+
+.dropdown_wrapper {
+  padding: 0 !important;
+  border: 1px solid $gray_11 !important;
+  box-shadow: rgba(0, 0, 0, 0.04) !important;
+  border-radius: 4px !important;
+
+  .dropdown_item_custom {
+    display: flex;
+    padding: 0 12.5px;
+    height: 36px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: px-to-rem(13);
+    line-height: px-to-rem(20);
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray_11;
+    }
+
+    &:hover {
+      background: $gray_11;
+    }
+  }
+}
+
+.statusName {
+  text-transform: uppercase;
+}
+
+.fixWidth {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

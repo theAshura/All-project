@@ -1,0 +1,7 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  height: calc(100vh - 107px);
+  background-color: $bg-color-container;
+  padding: 20px;
+}

@@ -1,0 +1,84 @@
+@import 'assets/css/utilities/variable.scss';
+
+.container {
+  background-color: $white;
+  padding: 8px;
+  height: 290px;
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 1rem 10px;
+    letter-spacing: 0.5px;
+  }
+  .contentWrapper {
+    border: 1px solid $gray_11;
+    padding: 10px;
+    max-height: calc(100% - 50px);
+    min-height: 225px;
+    overflow: auto;
+    margin: 0 10px 10px 10px;
+    .leftContent {
+      width: 96%;
+      font-weight: 600;
+      .content {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: $gray_5;
+      }
+      .icDotBlue {
+        width: 8px;
+        height: 8px;
+        margin: 6px 3px;
+      }
+      .dash {
+        margin: 0px 3px;
+      }
+      .extraInfo {
+        font-size: 12px;
+        color: $gray_5;
+        .formatDate {
+          font-size: 12px;
+          color: $gray_5;
+          font-weight: 400 !important;
+        }
+      }
+    }
+    .rightContent {
+      .actions {
+        cursor: pointer;
+        position: relative;
+      }
+
+      .date {
+        font-size: 12px;
+        color: $gray_6;
+      }
+    }
+  }
+  .noData {
+    height: 110px;
+    width: 110px;
+    margin-top: 7%;
+  }
+}
+.dropdown_item_custom {
+  display: flex;
+  padding: 0 12.5px;
+  height: 36px;
+  width: 75px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: px-to-rem(13);
+  line-height: px-to-rem(20);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray_11;
+  }
+
+  &:hover {
+    background: $gray_11;
+  }
+}

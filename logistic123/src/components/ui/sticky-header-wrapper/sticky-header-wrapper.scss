@@ -1,0 +1,9 @@
+@import 'assets/css/utilities/variable.scss';
+
+.sticky__header__wrapper {
+  top: 0;
+  z-index: 15;
+  position: sticky;
+  position: -webkit-sticky;
+  border-bottom: 1px solid $gray_11;
+}

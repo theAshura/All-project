@@ -1,0 +1,16 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.portDetail {
+  font-size: 14px;
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

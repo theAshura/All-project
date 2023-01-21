@@ -1,0 +1,104 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  .wrapper {
+    background-color: $white;
+    padding: 0px 20px 40px;
+    margin-bottom: 10px;
+    // height: 100%;
+    border-radius: 5px;
+    .headerTitle {
+      font-weight: 700;
+      font-size: $title_font_size;
+      line-height: 24px;
+      color: $gray_3;
+    }
+  }
+
+  .btnAttachment {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    &:hover {
+      background: none;
+      color: $blue_3;
+    }
+  }
+  .icButton {
+    padding-left: 8px;
+  }
+}
+
+.labelRisk {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 0px 8px;
+
+  background: $gray_12;
+  border: 1px solid $gray_10;
+  color: $gray_10;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.negligible {
+  background-color: $blue_10;
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.low {
+  background-color: $green_12;
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+.medium {
+  background-color: $yellow_12;
+  border: 1px solid $yellow_13;
+  color: $yellow_13;
+}
+.high {
+  background-color: $orange_13;
+  border: 1px solid $orange_3;
+  color: $orange_3;
+}
+.iconDown {
+  width: 10px;
+  height: 10px;
+}
+
+.datePickerReview {
+  padding: 0px 0px 10px 0px !important;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 240px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0px 6px 0px 0px !important;
+  }
+}
+
+.objectReview {
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6px;
+  }
+}
+
+.header {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: unset !important;
+
+  @media (min-width: 1600px) {
+    flex-direction: unset;
+    justify-content: unset !important;
+  }
+}

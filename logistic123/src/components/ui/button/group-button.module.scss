@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .buttonSave {
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+
+  .buttonSubmit {
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 6px;
+    margin-left: 20px;
+    line-height: 0 !important;
+  }
+}

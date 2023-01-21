@@ -1,0 +1,10 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapper {
+  padding-bottom: 40px;
+  .title {
+    font-weight: 600;
+    font-size: $title_font_size;
+    color: $gray_3;
+  }
+}

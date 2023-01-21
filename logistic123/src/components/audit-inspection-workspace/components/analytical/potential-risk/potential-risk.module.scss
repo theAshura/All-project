@@ -1,0 +1,68 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: $gray_5;
+  }
+  .badges {
+    display: flex;
+    align-items: center;
+
+    .badge {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      .dotBlue {
+        width: 6px;
+        height: 6px;
+        background: $blue_11;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .dotGreen {
+        width: 6px;
+        height: 6px;
+        background: #30d158;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .dotOrange {
+        width: 6px;
+        height: 6px;
+        background: $orange_16;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .dotRed {
+        width: 6px;
+        height: 6px;
+        background: $red_11;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .label {
+        font-weight: 500;
+        font-size: 13px;
+        color: $gray_5;
+      }
+    }
+  }
+  .riskNumber {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .wrapGauge {
+    height: 70px;
+    max-width: 140px;
+  }
+}

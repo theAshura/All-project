@@ -1,0 +1,113 @@
+@import 'assets/css/utilities/variable.scss';
+
+.focused {
+  background: $blue_10 !important;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 18px;
+  color: $gray_7;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.itemQuestion {
+  max-height: 86px;
+  background: $white;
+  padding: 8px 12px 8px 20px;
+  border-bottom: 1px solid $gray_11;
+  cursor: pointer;
+
+  .wrapperInfo {
+    min-height: 24px;
+    .infoMaster {
+      display: inline-block;
+      border: 1px solid $gray_10;
+      display: inline-flex;
+      background-color: $white;
+      border-radius: 8px;
+      height: 27px;
+      span {
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .title {
+        color: $gray_5;
+        white-space: nowrap;
+      }
+      .content {
+        white-space: nowrap;
+        color: $gray_3;
+      }
+    }
+  }
+
+  .moreData {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid $gray_10;
+    background-color: $white;
+    border-radius: 8px;
+    height: 27px;
+    min-height: 27px;
+    font-size: 12px;
+    line-height: 18px;
+    color: $gray_3;
+  }
+  .title {
+    max-height: 22px;
+    display: flex;
+    justify-content: space-between;
+
+    .actions {
+      position: relative;
+
+      .moreAction {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .textTitle {
+      align-self: center;
+      max-height: 22px;
+      color: $gray_5;
+      font-style: normal;
+      line-height: 20px;
+      font-size: px-to-rem(14);
+      .required {
+        margin-top: -15px;
+        padding-left: 1px;
+      }
+    }
+
+    .wrapButton {
+      align-items: center;
+      max-height: 22px;
+    }
+  }
+
+  .wrapId {
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-size: px-to-rem(13);
+    color: $gray_5;
+  }
+
+  .wrapDescription {
+    font-weight: 400;
+    color: $gray_5;
+  }
+
+  &:hover {
+    background-color: $blue_10;
+  }
+}
+
+.stick {
+  width: 1px;
+  height: 12px;
+  background-color: $gray_7;
+}

@@ -1,0 +1,524 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.TabContainer {
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 180px);
+  padding: 5px 20px 15px 20px;
+  .labelSelect {
+    font-size: 1rem;
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+  .pdfWrapper {
+    .btn {
+      border-radius: 6px;
+    }
+    .dropdownClose {
+      background-color: $blue_9;
+      color: $blue_2;
+    }
+    .dropdownOpen {
+      background-color: $blue_2;
+    }
+    .icon {
+      svg {
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    position: relative;
+    .dropdown {
+      position: absolute;
+      background-color: $white;
+      width: 140px;
+      right: 0;
+      top: 33px;
+      border: 1px solid $gray_11;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 10;
+      .dropdownItem {
+        padding: 5px 12px;
+        border-bottom: 1px solid $gray_11;
+        &:hover {
+          background-color: $gray_12;
+        }
+        span {
+          color: $gray_5;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .noDataWrapper {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .noData {
+      height: 110px;
+      width: 110px;
+    }
+  }
+
+  .newButton {
+    height: 24px;
+    font-size: 14px;
+  }
+
+  .btnDown {
+    background-color: $blue_9;
+    color: $blue_3;
+    &:hover {
+      background-color: $blue_9;
+      opacity: 0.9;
+    }
+  }
+
+  .headerTitle {
+    color: $gray_3;
+    line-height: 24px;
+    font-size: $title_font_size;
+    font-weight: 600;
+  }
+
+  .tableWrapper {
+    .textContent {
+      color: $gray_5;
+      font-weight: 400;
+    }
+    .underline {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        color: $blue_3;
+      }
+    }
+    .checkboxWrapper {
+      display: flex;
+      justify-content: center;
+      margin-left: 8px;
+    }
+    th {
+      height: 36px;
+      padding: 0 20px;
+      background-color: $gray_12;
+      border-bottom: 1px solid $gray_10;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 22px;
+      margin: 0px 12px;
+      color: $gray_3;
+      border-style: none;
+      text-transform: capitalize;
+      &::before {
+        display: none;
+      }
+    }
+    .rowWrapper {
+      height: 26.5px !important;
+      td {
+        padding: 0 20px;
+        border-bottom: 1px solid $gray_10;
+      }
+      .actionContent {
+        display: flex;
+        .imageWrapper {
+          border-radius: 4px;
+          margin-right: 4px;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          img {
+            width: 15px;
+          }
+        }
+        .view {
+          background-color: $blue_2;
+        }
+        .edit {
+          background-color: $blue_3;
+        }
+      }
+    }
+  }
+  .table {
+    td {
+      color: $gray_5;
+      font-weight: 500;
+    }
+    td,
+    th {
+      &:first-child {
+        box-shadow: 0 0 5px $gray_3 !important;
+        clip-path: inset(0px -5px 0px 0px) !important;
+      }
+    }
+  }
+
+  .contentWrapperChecklist {
+    min-height: calc(100vh - 250px);
+    background-color: $white;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+
+  .contentWrapperRemark {
+    min-height: calc(100vh - 210px);
+    background-color: $white;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+
+  .contentWrapperSummary {
+    min-height: calc(100vh - 310px);
+    background-color: $white;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  .contentWrapper {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    .headerTitle {
+      color: $gray_3;
+      line-height: 24px;
+      font-size: $title_font_size;
+      font-weight: 600;
+    }
+
+    .tableWrapper {
+      .textContent {
+        color: $gray_5;
+        font-weight: 400;
+      }
+      .underline {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          color: $blue_3;
+        }
+      }
+      .checkboxWrapper {
+        display: flex;
+        justify-content: center;
+        margin-left: 8px;
+      }
+      th {
+        height: 36px;
+        padding: 0 20px;
+        background-color: $gray_12;
+        border-bottom: 1px solid $gray_10;
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 22px;
+        margin: 0px 12px;
+        color: $gray_3;
+        border-style: none;
+        text-transform: capitalize;
+        &::before {
+          display: none;
+        }
+      }
+      .rowWrapper {
+        height: 26.5px !important;
+        td {
+          padding: 0 20px;
+          border-bottom: 1px solid $gray_10;
+        }
+        .actionContent {
+          display: flex;
+          .imageWrapper {
+            border-radius: 4px;
+            margin-right: 4px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            img {
+              width: 15px;
+            }
+          }
+          .view {
+            background-color: $blue_2;
+          }
+          .edit {
+            background-color: $blue_3;
+          }
+        }
+      }
+    }
+    .table {
+      td {
+        color: $gray_5;
+        font-weight: 500;
+      }
+      td,
+      th {
+        &:first-child {
+          box-shadow: 0 0 5px $gray_3 !important;
+          clip-path: inset(0px -5px 0px 0px) !important;
+        }
+      }
+    }
+  }
+  .btn {
+    margin-left: 20px;
+  }
+  .footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    .textInformation {
+      padding-left: 20px;
+    }
+  }
+}
+.btnDetail {
+  margin-left: 14px;
+  background: $blue_9_2 !important;
+  border-radius: 6px;
+  color: $blue_2 !important;
+  outline: none;
+}
+.linkName {
+  color: $blue_3;
+  cursor: pointer;
+}
+
+.checklistContainer {
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 180px);
+  padding: 8px 20px;
+
+  .buttonExport {
+    background: $blue_9_2 !important;
+    border-radius: 6px;
+    color: $blue_2 !important;
+    &:hover {
+      color: $white;
+      background-color: $blue_3;
+    }
+  }
+  .btnFooter {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .btnCancel {
+    margin-right: 20px;
+    color: $gray_5;
+  }
+  .btnSubmit {
+    margin-left: 20px;
+    background-color: $green_1;
+  }
+  .contentChecklistWrapper {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 8px;
+
+    .tabName {
+      border-radius: 8px;
+      background-color: $blue_3;
+      color: $white;
+      line-height: 24px;
+      font-size: $title_font_size;
+    }
+
+    .tabTitle {
+      color: $gray_7;
+      line-height: 24px;
+      font-size: $title_font_size;
+    }
+    .activeTab {
+      color: $blue_3 !important;
+    }
+    .errorTab {
+      color: $red_3;
+    }
+    .headerTitle {
+      color: $gray_3;
+      line-height: 24px;
+      font-size: $title_font_size;
+      font-weight: 600;
+      @media (max-width: 1200px) {
+        min-width: 185px;
+      }
+    }
+    .textLabel {
+      color: $gray_3;
+      line-height: 22px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .textContent {
+      color: $gray_3;
+      line-height: 22px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .questionWrapper {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $gray_10;
+}
+
+.TextAreaWrapper {
+  .textAreaForm {
+    border: 1px solid $gray_9 !important;
+    border-radius: 8px !important;
+    font-size: $title_font_size;
+
+    &:focus {
+      border-color: $blue_14 !important;
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-size: $title_font_size;
+      color: $gray_7;
+    }
+  }
+}
+
+.textAreaForm {
+  &::-webkit-scrollbar-track {
+    // background-color: $gray_11;
+    box-shadow: inset 0 0 5px grey;
+
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+    border: 16px solid transparent;
+    border-right: 4px white grey;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.loadingWrapper {
+  min-height: calc(100vh - 178px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  .loading {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.green_2 {
+  color: $green_2 !important;
+}
+
+.blue_3 {
+  color: $blue_3 !important;
+}
+
+.orange_3 {
+  color: $orange_3 !important;
+}
+
+.text {
+  color: $gray_3;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+.wrapInfo {
+  margin-bottom: 8px;
+}
+.button {
+  display: flex;
+}
+
+.labelText {
+  padding-right: 8px;
+  color: $gray_3;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+.contentText {
+  color: $gray_3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.officeInfo {
+  min-height: 190.92px;
+}
+
+.scheduleInfo {
+  min-height: 317.88px;
+}
+
+.historyWrapper {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.headerInformation {
+  padding: 0 20px;
+  color: $gray_3;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  position: relative;
+  &:last-child {
+    &::after {
+      content: unset;
+    }
+  }
+  .linkName {
+    color: $blue_3;
+    cursor: pointer;
+  }
+  &::after {
+    content: '';
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    height: 16px;
+    background-color: $gray_9;
+  }
+  span {
+    padding-left: 0px;
+    color: $gray_3;
+    font-weight: 600;
+  }
+}
+
+.vesselInfoWrap {
+  margin-bottom: 12px;
+}
+.departmentWrap {
+  -webkit-line-clamp: 5 !important;
+}

@@ -1,0 +1,569 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapHeader {
+  padding: 9px 20px 0px 20px;
+  background-color: $white;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.headers {
+  .title {
+    color: $gray_3;
+    font-size: $title_font_size;
+    line-height: 30px;
+  }
+}
+.headerBtn {
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: px-to-rem(14);
+      line-height: 22px;
+    }
+  }
+}
+.modal {
+  height: auto;
+}
+.buttonWrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  .buttonTemplate {
+    font-size: px-to-rem(16);
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $gray_11;
+}
+
+.btnWrapper {
+  gap: 20px;
+  .btns {
+    display: flex;
+    width: max-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .btnOutline {
+    &:hover {
+      color: $blue_3;
+      background: darken($white, 10%);
+    }
+  }
+  .buttonAdd {
+    font-size: 14px;
+  }
+  .icButton {
+    margin-bottom: 3px;
+    margin-left: 9px;
+  }
+}
+
+.wrapperContainer {
+  background-color: $white;
+  padding: 8px 26px 40px 26px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .containerForm {
+    .separateRow {
+      margin-bottom: 10px;
+    }
+    .inputSelect {
+      margin-right: 20px;
+      background: $white;
+      box-sizing: border-box;
+      border-radius: $input-radius;
+    }
+    td {
+      cursor: initial;
+    }
+    .ant-select-selection-placeholder {
+      padding: 7px;
+    }
+    .labelSelect {
+      font-size: 1rem;
+      color: $gray_3;
+      font-weight: 400;
+    }
+    .titleForm {
+      font-size: $title_font_size;
+      margin-bottom: 8px;
+    }
+  }
+  .radioForm {
+    height: 28px !important;
+  }
+  .radioLabel {
+    padding-bottom: 0 !important;
+  }
+  .labelForm {
+    padding: 0px 0px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: $title_font_size;
+      line-height: 26px;
+      color: $gray_3;
+      font-weight: 500;
+    }
+  }
+
+  .disabledSelect {
+    div {
+      background: $white !important;
+    }
+  }
+  .disabledInput {
+    color: $gray_3 !important;
+  }
+}
+.wrapLabel {
+  padding-left: 0px;
+  .label {
+    font-size: px-to-rem(16);
+    color: $gray_3_1;
+    font-weight: 400;
+  }
+}
+.scrollY {
+  overflow-y: auto !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+// import excel
+
+.containerFormImportExcel {
+  .titleContainer {
+    color: $gray_3;
+    font-size: $title_font_size;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+  .buttonLoadSheet {
+    margin-right: 10px;
+  }
+  .buttonReset,
+  .buttonLoadSheet {
+    width: max-content;
+    height: 30px;
+    padding: 10px 14px;
+  }
+  button {
+    font-weight: 500;
+    font-size: px-to-rem(14);
+    .icButton {
+      padding-left: 9px;
+    }
+  }
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.mb_10 {
+  margin-bottom: 10px;
+}
+.mt_20 {
+  margin-top: 20px;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+.mr_20 {
+  margin-right: 20px;
+}
+.ml_20 {
+  margin-block-start: 20px;
+}
+.labelInput {
+  font-weight: 600 !important;
+}
+.charaterLeft {
+  padding: 0 16px 0 0;
+  text-align: right;
+  margin: 8px 0 0 0;
+}
+.buttonExcludeUpload {
+  width: max-content;
+  height: 30px !important;
+  padding: 10px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.inputFile {
+  overflow: visible;
+  display: none;
+}
+.showFileUploaded {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 18px;
+  border: 1px solid $gray_10;
+  box-sizing: border-box;
+  border-radius: 8px;
+  justify-content: space-between;
+  button {
+    border: none;
+    background-color: white;
+  }
+  span {
+    display: inline-block;
+    margin-left: 8px;
+    color: $gray_5;
+    font-weight: 600;
+    font-size: 13px;
+  }
+}
+
+.buttonSave {
+  width: max-content;
+  height: 30px !important;
+  padding: 10px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-right: 0;
+}
+.inputNumber {
+  width: 100%;
+  height: 40px;
+  background: $white;
+  box-sizing: border-box;
+  border: 1px solid $gray_9;
+  border-radius: $input-radius;
+  display: flex;
+  align-items: center;
+}
+.noDataExcel {
+  width: 100%;
+  height: 205px;
+  display: flex;
+  color: $gray_7;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $gray_10;
+}
+.divider {
+  margin: 8px 0;
+  height: 1px;
+  width: 100%;
+  background-color: $gray_11;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  .buttonCancel {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 160px;
+    height: 48px;
+  }
+  .buttonSave {
+    width: 160px;
+    height: 48px;
+    left: 180px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+.icButtonSend {
+  margin-left: 9px;
+}
+.wrapContentModalScroll {
+  min-height: auto;
+  height: auto;
+  max-height: 400px;
+  padding-right: 10px;
+  margin: 10px 0 0 0;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $blue_2;
+  }
+}
+.wrapContentModalScrollImportExcel {
+  min-height: auto;
+  height: auto;
+  max-height: 400px;
+  padding-right: 10px;
+  margin: 20px 0 0 0;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $blue_2;
+  }
+}
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+.disabledInput {
+  color: $gray_3 !important;
+  background-color: $gray_11 !important;
+}
+.tableFindingDetails {
+  margin: 10px 0 0 0;
+  table {
+    width: 100%;
+    tr {
+      th {
+        color: $gray_3;
+        font-weight: 700;
+        margin: 0px 12px;
+        font-size: 0.875rem;
+        padding: 7px 16px;
+        background-color: $bg-color1;
+      }
+      td {
+        color: $gray_3;
+        margin: 0px 12px;
+        font-size: 0.875rem;
+        padding: 10px 16px;
+      }
+    }
+  }
+}
+
+.tableWrapper {
+  .textContent {
+    color: $gray_5;
+    font-weight: 400;
+  }
+  .underline {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      color: $blue_3;
+    }
+  }
+  .checkboxWrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+  }
+  th {
+    height: 36px;
+    padding: 0 20px !important;
+    background-color: $gray_12;
+    border-bottom: 1px solid $gray_10;
+    white-space: nowrap;
+    font-weight: 600 !important;
+    font-size: 0.875rem;
+    line-height: 22px;
+    margin: 0px 12px;
+    color: $gray_3;
+    border-style: none;
+    text-transform: capitalize;
+    &::before {
+      display: none;
+    }
+  }
+  .rowWrapper {
+    height: 36px !important;
+    td {
+      padding: 0 20px;
+      border-bottom: 1px solid $gray_10;
+    }
+    .actionContent {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      .imageWrapper {
+        background-color: $blue_2;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 15px;
+        }
+      }
+    }
+  }
+  .ant-table-body {
+    margin-bottom: 16px;
+  }
+  div {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+}
+.msgRequired {
+  color: $red_3;
+  padding: 8px 0 0 8px;
+}
+.titleForm {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.dataWrapperEmpty {
+  min-height: 110px !important;
+  img {
+    top: 50% !important;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+.tableWrapperEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  img {
+    top: 50% !important;
+  }
+  img {
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+.cardContainer {
+  padding: 10px 20px;
+  margin: 15px 0 0 0;
+  border-radius: 5px;
+  .titleForm {
+    margin: 0 0 10px 0;
+  }
+}
+
+.toggleSwitch {
+  padding-top: 36px;
+}
+
+.wrapExcelIndexAction {
+  .datInfo {
+    margin-right: 20px;
+    min-width: 15px;
+  }
+  .dropdownBtn {
+    background-color: transparent !important;
+    border: transparent;
+    outline: none !important;
+  }
+  .removeBtn {
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .wrapMenu {
+    min-width: 60px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+.wrapTextOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  white-space: normal;
+}

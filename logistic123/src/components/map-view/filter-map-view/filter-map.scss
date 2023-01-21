@@ -1,0 +1,28 @@
+@import 'assets/css/utilities/variable.scss';
+
+.ant-tabs-nav {
+  padding: 0px 20px;
+}
+.date__picker {
+  border: 1px solid $gray_9;
+  box-sizing: border-box;
+  border-radius: $button-radius !important;
+  color: $gray_3;
+  height: 30px;
+  font-size: 14px;
+
+  &:focus {
+    border-color: none;
+    box-shadow: none;
+  }
+  &:not(input) {
+    border-color: none;
+    box-shadow: none;
+  }
+  .ant-picker-suffix {
+    color: $gray_7;
+  }
+  ::placeholder {
+    font-size: 14px !important;
+  }
+}

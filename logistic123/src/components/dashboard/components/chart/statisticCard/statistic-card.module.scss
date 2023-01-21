@@ -1,0 +1,90 @@
+@import '../../../../../assets/css/utilities/variable.scss';
+
+.statistic {
+  &Container {
+    padding-inline: 20px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $gray_19;
+    border-radius: 6px;
+    background-color: $white;
+  }
+  &ContainerBottom {
+    padding-inline: 20px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $gray_19;
+    border-radius: 6px;
+    background-color: $white;
+    margin-bottom: 20px;
+  }
+  &IconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iconBubble {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &ContentContainer {
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: 0.25px;
+      color: $blue_2;
+      margin-bottom: 10px;
+      @media (max-width: 1200px) {
+        font-size: 28px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
+    }
+
+    .body {
+      font-weight: 600;
+      font-size: 13px;
+      color: $gray_5;
+      margin-bottom: 6px;
+      @media (max-width: 1024px) {
+        font-size: 11px;
+      }
+    }
+
+    .viewMore {
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      text-decoration: underline;
+      color: $blue_3;
+      cursor: pointer;
+      user-select: none;
+    }
+    .titleBody {
+      color: $gray_2;
+      font-weight: 600;
+    }
+    .subTitle {
+      color: $gray_5;
+      font-size: 13px;
+      font-weight: 600;
+      @media (max-width: 1024px) {
+        font-size: 11px;
+      }
+    }
+  }
+}

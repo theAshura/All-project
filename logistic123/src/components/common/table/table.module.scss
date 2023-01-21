@@ -1,0 +1,268 @@
+@import 'assets/css/utilities/variable.scss';
+
+.fullHeight {
+  height: 100% !important;
+  overflow-x: unset !important;
+}
+
+.scrollVertical {
+  max-height: 575px;
+  overflow-y: auto;
+}
+
+.scrollVerticalAttachment {
+  max-height: 172px;
+  overflow-y: auto;
+}
+
+.wrapContainer {
+  position: relative;
+  margin-bottom: 1rem;
+  .boxShadowAction {
+    box-shadow: 0 0 5px $gray_3 !important;
+    clip-path: inset(0px -5px 0px 0px) !important;
+    z-index: 2;
+  }
+
+  .wrapTable {
+    overflow-x: auto;
+    overflow-y: visible;
+    .table {
+      overflow: hidden;
+      margin-bottom: 0px;
+      // .rowTitle {
+      //   height: 31px !important;
+      // }
+      .thread {
+        background-color: $bg-color1;
+        .headColLabel {
+          position: absolute;
+          left: 0;
+          padding: 6px 20px;
+          top: auto;
+          background-color: $bg-color1;
+          margin-left: 0px !important;
+          height: 36px;
+          z-index: 2;
+          border-bottom: 1px solid $gray_11;
+        }
+
+        .title {
+          .titleSort {
+            cursor: pointer;
+            white-space: nowrap;
+          }
+          .isAction {
+            width: 100px !important;
+          }
+
+          .icSortTable {
+            height: 20px;
+            width: 20px;
+            margin-left: 10px;
+          }
+          th:first-child {
+            padding-left: 20px;
+          }
+          th {
+            max-width: 240px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            margin: 0px 12px;
+            color: $gray_3;
+            border-style: none;
+            white-space: nowrap;
+          }
+
+          .headCol {
+            position: absolute;
+            left: 0;
+            padding: 6px 0 6px 20px;
+            top: auto;
+            z-index: 2;
+            background-color: $white;
+          }
+        }
+      }
+
+      tbody {
+        tr:last-child {
+          border-bottom: 1px solid #dee2e6;
+        }
+        tr {
+          cursor: pointer;
+          border-bottom: 1px solid #dee2e6;
+          .headCol {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            background-color: $white;
+            padding: 3px 0 3px 20px;
+            top: auto;
+            // height: 32px;
+          }
+          &:first-child {
+            .headCol {
+              border-top: none;
+            }
+          }
+
+          td {
+            padding: 3px 0 3px 16px;
+            vertical-align: middle;
+            max-width: 240px;
+            span {
+              color: $gray_5;
+              font-size: 14px !important;
+              font-weight: 400;
+              line-height: 22px !important;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: block;
+            }
+          }
+        }
+      }
+
+      .subAction {
+        min-height: 22px;
+        .icAction {
+          .icImg {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      .shadow {
+        border-right: 1px solid $gray_10;
+        filter: drop-shadow(2px 0px 10px rgba(0, 0, 0, 0.1));
+      }
+
+      .subTitle {
+        padding: 7px 16px;
+        vertical-align: middle;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $gray_11;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background: $blue_2;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $gray_11;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue_3;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $blue_2;
+  }
+}
+
+.dataWapper {
+  min-height: calc(100vh - 300px);
+  object-fit: contain;
+  .loading {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: calc(50% + 36px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .noData {
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: calc(50% + 36px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.blue_3 {
+  color: $blue_3 !important;
+}
+
+.red_3 {
+  color: $red_3 !important;
+}
+
+.orange_3 {
+  color: $orange_3 !important;
+}
+
+.red_6 {
+  color: $red_6 !important;
+}
+
+.green_1 {
+  color: $green_1 !important;
+}
+
+.green_2 {
+  color: $green_2 !important;
+}
+
+.yellow_2 {
+  color: $yellow_2 !important;
+}
+
+.emptySpace {
+  height: 24px;
+  width: 24px;
+  margin: 0 0 0 4px;
+}
+
+.btnActionRow {
+  background-color: $white;
+  border-radius: $button-radius;
+  font-weight: 600;
+  padding: 0px 10px;
+  min-width: 70px;
+  height: 20px;
+}
+
+.btnOutlinePrimary {
+  border: 1px solid $blue_3;
+  color: $blue_3;
+}
+
+.btnOutlineGreen {
+  border: 1px solid $green_1;
+  color: $green_1;
+}
+.btnNone {
+  visibility: hidden;
+}

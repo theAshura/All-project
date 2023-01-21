@@ -1,0 +1,23 @@
+@import 'assets/css/utilities/variable.scss';
+
+.header {
+  padding: 0px 0px 10px 0px !important;
+}
+
+.dataWrapper {
+  min-height: calc(100vh - 180px);
+  background-color: $white;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .noData {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+.card_container {
+  padding: 8px 0 0 0;
+  background: $bg-color-container;
+}

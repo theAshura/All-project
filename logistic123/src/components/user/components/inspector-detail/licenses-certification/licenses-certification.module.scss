@@ -1,0 +1,54 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  background: $white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+  .header {
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: $title_font_size;
+      line-height: 150%;
+      color: $gray_3;
+    }
+    .btnAdd {
+      min-width: 120px;
+      .addIc {
+        margin-left: 9px;
+      }
+    }
+  }
+  .wrapperList {
+    padding: 0 25px;
+    padding-top: 20px;
+  }
+}
+
+.wrapModal {
+  margin-top: 20vh;
+  max-width: 800px;
+}
+.content {
+  .label {
+    font-size: 14px !important;
+    color: $gray_3_1;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  .labelCheckbox {
+    font-size: 14px !important;
+  }
+  .verifiedBy {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: $blue_3;
+  }
+}
+
+iframe {
+  z-index: 0 !important;
+  display: none;
+}

@@ -1,0 +1,27 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapper {
+  font-size: 14px;
+  font-weight: 600;
+
+  .icButton {
+    padding-left: 9px;
+  }
+
+  .subAction {
+    .icAction {
+      .icEdit {
+        width: 15px;
+        height: 15px;
+      }
+
+      .icRemove {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .pb40 {
+    padding-bottom: 40px;
+  }
+}

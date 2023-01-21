@@ -1,0 +1,54 @@
+@import 'assets/css/utilities/variable.scss';
+@import 'assets/css/utilities/functions.scss';
+
+.info {
+  .titleStatus {
+    color: $gray_5;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .content {
+    .header {
+      margin: 0 -14px;
+      .title {
+        color: $gray_3;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .btn {
+    color: $blue_3;
+    padding: 10px 0;
+  }
+
+  .blue_3 {
+    color: $blue_3 !important;
+  }
+
+  .red_3 {
+    color: $red_3 !important;
+  }
+
+  .orange_3 {
+    color: $orange_3 !important;
+  }
+
+  .red_6 {
+    color: $red_6 !important;
+  }
+
+  .green_1 {
+    color: $green_1 !important;
+  }
+
+  .green_2 {
+    color: $green_2 !important;
+  }
+  .yellow_2 {
+    color: $yellow_2 !important;
+  }
+}

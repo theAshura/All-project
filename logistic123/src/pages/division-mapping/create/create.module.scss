@@ -1,0 +1,17 @@
+@import 'assets/css/utilities/variable.scss';
+
+.detail {
+  font-size: 14px;
+  background-color: $bg-color-container;
+  font-weight: 600;
+  position: relative;
+  min-height: calc(100vh - 56px);
+
+  .buttonFilter {
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

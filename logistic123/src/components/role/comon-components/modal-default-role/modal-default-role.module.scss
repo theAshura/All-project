@@ -1,0 +1,59 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  .header {
+    .title {
+      font-size: $title_font_size;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .searchInput {
+      background-color: $gray_12 !important;
+      height: 30px !important;
+      img {
+        margin-top: -4px;
+        height: 13px;
+        cursor: pointer;
+      }
+    }
+  }
+  .content {
+    margin: 13px 0px 20px 0px;
+    max-height: 340px;
+    overflow: auto;
+    color: $gray_3;
+    &::-webkit-scrollbar {
+      width: 4px !important;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px $gray_11 !important;
+      border-radius: 10px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue_3 !important;
+      border-radius: 10px !important;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $blue_2 !important;
+    }
+    .lineRole {
+      padding: 7px 0px;
+      &:hover {
+        cursor: pointer;
+        background: $gray_11;
+      }
+
+      .name {
+        font-size: 14px;
+      }
+    }
+  }
+  .footer {
+    .cancelBtn {
+      margin-right: 20px;
+    }
+  }
+}

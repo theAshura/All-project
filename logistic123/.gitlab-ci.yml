@@ -1,0 +1,82 @@
+stages:
+  - build
+
+.before_script_template: &before_script_template
+  before_script:
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/dev" ]; then ENV="dev"; fi
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/staging" ]; then ENV="staging"; fi
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/uat" ]; then ENV="uat"; fi
+    - if [ "$CI_COMMIT_BRANCH" == "master" ]; then ENV="production"; fi
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/dev" ]; then
+      echo ${ENV_DEV} | base64 -d >> .env;
+      fi
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/staging" ]; then
+      echo ${ENV_STAGING} | base64 -d >> .env;
+      fi
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/uat" ]; then
+      echo ${ENV_UAT} | base64 -d >> .env;
+      fi
+    - if [ "$CI_COMMIT_BRANCH" == "master" ]; then
+      echo ${ENV_PRODUCTION} | base64 -d >> .env;
+      fi
+
+.script_template: &script_template
+  script:
+    # const
+    - APPLICATION=$CI_PROJECT_NAME
+    - VERSION=$ENV-$(git rev-parse --short HEAD)
+    - IMAGE_FIX=$DOCKER_REGISTRY_HOST/$APPLICATION:$ENV
+    - IMAGE_BACKUP=$DOCKER_REGISTRY_HOST/$APPLICATION:$VERSION
+
+    # lint & pre-build
+    - npm i -g npm-cli-login
+    - npm config set "@bryntum:registry=https://npm.bryntum.com"
+    - npm-cli-login -u ${NPM_USER} -p ${NPM_PASSWORD} -e ${NPM_EMAIL} -r ${NPM_REGISTRY}
+    - yarn
+    - yarn lint
+
+    # build
+    - yarn build:$ENV
+
+    # pre pull image => reused layer-cache (because install package very slow)
+    - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $DOCKER_REGISTRY_HOST
+    - docker pull $IMAGE_FIX
+
+    # build docker
+    - docker build --cache-from=$IMAGE_FIX -t $IMAGE_FIX -f .docker/$ENV.dockerfile .
+    - docker tag $IMAGE_FIX $IMAGE_BACKUP
+    - docker push $IMAGE_FIX
+    - docker push $IMAGE_BACKUP
+
+.rules_template: &rules_template
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "deployment/dev"
+        || $CI_COMMIT_BRANCH == "deployment/staging"
+        || $CI_COMMIT_BRANCH == "deployment/uat"
+        || $CI_COMMIT_BRANCH == "master"'
+      when: on_success
+    - if: '$CI_COMMIT_BRANCH != "deployment/dev"
+        || $CI_COMMIT_BRANCH != "deployment/staging"
+        || $CI_COMMIT_BRANCH == "deployment/uat"
+        || $CI_COMMIT_BRANCH != "master"'
+      when: never
+
+deploy-service:
+  stage: build
+  tags:
+    - svm-runner
+  image:
+    name: quay.io/vmoteam/ci-node:v14-gitops
+  services:
+    - docker:stable-dind
+  variables:
+    # common variable
+    DOCKER_HOST: tcp://localhost:2375
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ''
+  <<: *before_script_template
+  <<: *script_template
+  <<: *rules_template
+  artifacts:
+    paths:
+      - dist

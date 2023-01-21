@@ -1,0 +1,25 @@
+@import 'assets/css/utilities/variable.scss';
+
+.titleForm {
+  color: $gray_3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $title_font_size;
+  line-height: 150%;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray_3;
+}
+
+.dotRequired {
+  color: $red_2;
+}
+
+.disabledInput {
+  background-color: $gray_11;
+}

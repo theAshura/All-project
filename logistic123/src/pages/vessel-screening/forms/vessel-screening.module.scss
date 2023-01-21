@@ -1,0 +1,52 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrapperContainer {
+  background-color: $bg-color-container;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: calc(100vh - 109px);
+}
+
+.titleForm {
+  font-size: $title_font_size;
+  margin-bottom: 8px;
+  color: $gray_3;
+}
+
+.disabledInput {
+  color: $gray_3 !important;
+}
+
+.container {
+  background-color: $white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.loading {
+  margin-top: 17%;
+  height: 60px;
+  width: 60px;
+}
+
+.groupButtons {
+  background-color: $bg-color-container;
+  width: 100%;
+  padding: 0px 40px 20px 40px;
+}
+
+.labelTotalQuantity {
+  padding-left: 0px;
+}
+
+.inputCenter {
+  display: grid;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.inputEnd {
+  display: grid;
+  width: 100%;
+  margin-top: 16px;
+}

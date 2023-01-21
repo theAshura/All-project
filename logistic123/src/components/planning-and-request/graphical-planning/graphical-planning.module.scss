@@ -1,0 +1,44 @@
+@import 'assets/css/utilities/variable.scss';
+
+.wrap {
+  padding: 15px 20px;
+  background-color: $white;
+  border-radius: 4px;
+  .wrapBadges {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    .icon {
+      box-sizing: content-box;
+      padding-right: 11px;
+      padding-left: 11px;
+      border-right: solid 1px $gray_7;
+      width: 24px;
+      color: #a5a3a9;
+      cursor: pointer;
+      path {
+        fill: #a5a3a9;
+      }
+      &:last-child {
+        padding-right: 0px;
+        border-right: none;
+      }
+    }
+    .iconVessel {
+      path {
+        stroke: #a5a3a9;
+        fill: #fff;
+      }
+    }
+    .activeIcon {
+      path {
+        fill: $blue_3;
+      }
+    }
+    .activeIconVessel {
+      path {
+        stroke: $blue_3;
+      }
+    }
+  }
+}

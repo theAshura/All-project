@@ -1,0 +1,11 @@
+@import 'assets/css/utilities/variable.scss';
+
+.listContainer {
+  font-size: px-to-rem(14);
+  position: relative;
+  font-weight: 600;
+
+  .icButton {
+    padding-left: 9px;
+  }
+}

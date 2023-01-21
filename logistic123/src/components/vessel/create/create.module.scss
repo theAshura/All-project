@@ -1,0 +1,16 @@
+@import '../../../assets/css/utilities/variable.scss';
+
+.vesselCreate {
+  padding-bottom: 30px;
+  font-size: px-to-rem(14);
+  background-color: $bg-color-container;
+  min-height: calc(100vh - 56px);
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+}
+.layout {
+  width: 100%;
+  margin-bottom: 20px;
+}
