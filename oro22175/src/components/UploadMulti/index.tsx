@@ -1,0 +1,181 @@
+/* eslint-disable indent */
+import { CloseCircleOutlined, UploadOutlined } from "@ant-design/icons";
+import { Button, message, Spin } from "antd";
+import React, { FC, useCallback, useMemo, useRef } from "react";
+import classes from "./upload-multi.module.scss";
+import cloneDeep from "lodash/cloneDeep";
+import { FileUploads } from "api/upload-file/upload-file.interface";
+
+interface Props {
+  fileLists: FileUploads[];
+  onChange: (fileLists: FileUploads[]) => void;
+  type?: string;
+  accept?: string;
+  maxCount?: number;
+  maxSize?: number;
+  buttonUploadText?: string;
+  disabled?: boolean;
+  loading?: boolean;
+}
+
+const UploadMulti: FC<Props> = ({
+  fileLists,
+  onChange,
+  type,
+  accept,
+  maxCount,
+  maxSize,
+  buttonUploadText,
+  disabled,
+  loading,
+}) => {
+  const inputPhotoRef = useRef<HTMLInputElement>(null);
+  //filter list isDeleted = true
+  const fileListHasIndex = useMemo(() => {
+    return fileLists?.map((it, index) => {
+      return {
+        ...it,
+        index,
+      };
+    });
+  }, [fileLists]);
+  const fileListActives = useMemo(() => {
+    return fileListHasIndex?.filter((it) => !it.isDeleted);
+  }, [fileListHasIndex]);
+
+  const handleSelectImage = (e: any) => {
+    const files: File[] = e.dataTransfer
+      ? e.dataTransfer.files
+      : e.target.files;
+    let fileResults: FileUploads[] = [];
+    let fileErrors: string[] = [];
+
+    for (const file of files) {
+      if (
+        accept &&
+        accept
+          ?.split(",")
+          .map((item) => item?.trim())
+          .indexOf(file.type) === -1
+      ) {
+        return message.error("Wrong file format");
+      }
+    }
+    if (maxCount && fileListActives?.length + files?.length > maxCount) {
+      return message.error(`You can only upload ${maxCount} files`);
+    }
+
+    for (const item of files) {
+      if (maxSize && item.size > maxSize) {
+        fileErrors = [...fileErrors, ...[item.name]];
+      } else {
+        fileResults = [
+          ...fileResults,
+          ...[{ name: item.name, originalFile: item }],
+        ];
+      }
+    }
+    if (fileErrors.length) {
+      return message.error(`${fileErrors.join(", ")} size too large`);
+    }
+
+    if (fileResults.length) {
+      onChange([...fileLists, ...fileResults]);
+    }
+  };
+
+  const handleDeleteItem = useCallback(
+    (index: number) => {
+      if (typeof index === "number") {
+        const findIndexDeleted = fileListHasIndex.findIndex(
+          (it) => it.index === index
+        );
+        const cloneFileListActives = cloneDeep(fileLists);
+        cloneFileListActives[findIndexDeleted].isDeleted = true;
+        onChange(cloneFileListActives);
+      }
+    },
+    [fileListHasIndex, fileLists, onChange]
+  );
+
+  const renderListFiles = useMemo(() => {
+    return fileListActives?.length
+      ? fileListActives
+          ?.filter((it) => !it.isDeleted)
+          ?.map((it) => {
+            return (
+              <div key={it.index} className={classes.item}>
+                <CloseCircleOutlined
+                  className={`${classes.itemIcon} ${
+                    disabled ? classes.disabled : ""
+                  }`}
+                  disabled={disabled}
+                  onClick={() => !disabled && handleDeleteItem(it?.index)}
+                />
+                <a className={classes.text} onDoubleClick={() => onPreview(it)}>
+                  {it.name || it.fileName}
+                </a>
+              </div>
+            );
+          })
+      : null;
+  }, [disabled, fileListActives, handleDeleteItem]);
+
+  const onPreview = (file: FileUploads) => {
+    if (file.originalFile) {
+      file?.originalFile?.arrayBuffer().then((arrayBuffer) => {
+        const blob = new Blob([new Uint8Array(arrayBuffer)], {
+          type: file?.originalFile?.type,
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        document.body.appendChild(a);
+        a.href = url;
+        a.target = "_blank";
+        a.click();
+      });
+    } else {
+      const a = document.createElement("a");
+      document.body.appendChild(a);
+      a.href = `${process.env.REACT_APP_API}/uploads/${file?._id}`;
+      a.target = "_blank";
+      a.click();
+    }
+  };
+
+  return (
+    <>
+      <input
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept={accept}
+        hidden
+        ref={inputPhotoRef}
+        multiple
+        onChange={(event) => {
+          handleSelectImage(event);
+          event.currentTarget.value = "";
+        }}
+      />
+      <Button
+        className="button"
+        type="primary"
+        onClick={() => inputPhotoRef.current?.click()}
+        icon={<UploadOutlined />}
+        disabled={maxCount === fileListActives?.length || disabled}
+      >
+        {buttonUploadText || "Upload Files"}
+      </Button>
+      <div className={classes.listUploads}>
+        {loading ? (
+          <Spin />
+        ) : (
+          fileListActives && fileListActives.length > 0 && renderListFiles
+        )}
+      </div>
+    </>
+  );
+};
+
+export default UploadMulti;

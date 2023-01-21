@@ -1,0 +1,51 @@
+@import "src/assets/css/variable";
+
+.listUploads {
+  margin: 40px 0;
+
+  .item {
+    padding: 20px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .itemFile {
+      display: flex;
+      align-items: center;
+    }
+    .itemIcon {
+      margin-right: 20px;
+      svg {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        color: $danger;
+      }
+
+      &.disabled {
+        svg {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .customSelect {
+      min-width: 200px;
+      max-width: 200px;
+      @media (max-width: 767px) {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.titleFileUpload {
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
+}

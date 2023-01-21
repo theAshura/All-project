@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  app:
+    image: registry.git.vmo.dev/c2/oro22175-oro-ecommerce/oro22175-admin:$ENV
+    volumes:
+      - ./:/var/app
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

@@ -1,0 +1,96 @@
+# Config cache
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - deploy
+
+.before_script_template: &before_script_template
+  before_script:
+    - apk update && apk add openssh-client bash
+    - if [ "$CI_COMMIT_BRANCH" == "deployment/dev" ]; then ENV="dev"; fi
+
+.rules_template: &rules_template
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "deployment/dev"'
+      when: on_success
+    - if: '$CI_COMMIT_BRANCH != "deployment/dev"'
+      when: never
+
+.caching_template: &caching_template
+  cache:
+    key:
+      files:
+        - package.json
+    paths:
+      - node_modules/
+    # https://docs.gitlab.com/ee/ci/yaml/#cachepolicy
+    policy: pull-push
+
+.script_template: &script_template
+  script:
+    # Define const variables
+    - APPLICATION=$CI_PROJECT_NAME
+    # - IMAGE_FIX=$CI_REGISTRY/$APPLICATION:$ENV
+    - IMAGE_FIX=$CI_REGISTRY_IMAGE:$ENV
+    - IMAGE_BACKUP=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    # Pre-build
+    - npm install --global yarn
+    - yarn
+    - CI=false yarn build:$ENV
+    # Docker login
+    - docker version
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    # Build docker image and push to registry
+    - docker pull $IMAGE_FIX || true
+    - docker build --cache-from $IMAGE_FIX -t $IMAGE_FIX -f .docker/$ENV.dockerfile .
+    - docker tag $IMAGE_FIX $IMAGE_BACKUP
+    - docker push $IMAGE_FIX
+    - docker push $IMAGE_BACKUP
+    # Ssh to server and pull docker image to run
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null;
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -H $SSH_SERVER_IP >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - >
+      ssh $SSH_USER@$SSH_SERVER_IP
+      "docker login -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD} ${CI_REGISTRY};
+      cd ${PATH_TO_PROJECT}/oro-admin-${ENV};
+      docker-compose down;
+      docker pull ${CI_REGISTRY_IMAGE}:${ENV};
+      ENV=${ENV} docker-compose up -d;
+      docker image prune -f;"
+
+# Run job lint
+# lint:
+#   image: node:16.16.0
+#   stage: lint
+#   tags:
+#     - vops-runner
+#   <<: *rules_template
+#   script:
+#     - yarn
+#     - yarn lint
+
+# Run job build
+build:
+  stage: deploy
+  tags:
+    - vops-runner
+  image:
+    name: quay.io/vmoteam/ci-node:v16-gitops
+  services:
+    - docker:stable-dind
+  variables:
+    # common variable
+    DOCKER_HOST: tcp://localhost:2375
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  <<: *before_script_template
+  <<: *script_template
+  <<: *caching_template
+  <<: *rules_template
+# Run job deploy
+

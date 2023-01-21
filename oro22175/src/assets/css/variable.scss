@@ -1,0 +1,21 @@
+$primary: #4cb3e4;
+$primary_hover: #5dcae4;
+$black: #1b2028;
+$green: #4ce489;
+$grey: #6e7785;
+$little-grey: #e5e6e9;
+$light-grey: #f3f3f5;
+$lighter-grey: #dddee1;
+$lightest-grey: #828d9b;
+$light-black: #2f3642;
+$white: #fff;
+$light: #e8ebef;
+$warning: #ef9f72;
+$danger: #ee5c5e;
+$disabled: #c8cacd;
+$text-black: #2f3642;
+$input-placeholder: #6e7785;
+
+@function px-to-rem($px) {
+  @return ($px/16) + rem;
+}

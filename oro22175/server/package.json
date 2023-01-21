@@ -1,0 +1,23 @@
+{
+  "name": "bbb-v2",
+  "version": "1.0.0",
+  "description": "config server bbb-v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "manh.nguyen@vmodev.com",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.2",
+    "cors": "^2.8.5",
+    "ejs": "3.0.1",
+    "express": "4.17.1",
+    "helmet": "^3.22.0",
+    "query-string": "^6.8.3"
+  }
+}

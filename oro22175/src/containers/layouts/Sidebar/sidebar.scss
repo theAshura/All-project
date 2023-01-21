@@ -1,0 +1,29 @@
+.customSidebar {
+  background: #fff !important;
+  border-radius: 0 !important;
+  display: block;
+  flex: 0 0 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  width: 250px !important;
+  position: fixed !important;
+  height: 100vh !important;
+
+  .ant-layout-sider-children {
+    div {
+      width: 250px !important;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.sidebarFixtop {
+  padding-right: 250px;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}

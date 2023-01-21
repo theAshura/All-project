@@ -1,0 +1,29 @@
+.mb10 {
+  margin-bottom: 1rem;
+}
+.mr10 {
+  margin-right: 1rem;
+}
+
+.selectW10 {
+  width: 10rem;
+}
+
+.floatR {
+  float: right;
+}
+.activeSelected {
+  .select {
+    .ant-select-selector {
+      color: green !important;
+    }
+  }
+}
+.columnName {
+  max-width: 500px;
+  width: 100%;
+}
+
+.customSelectSearch {
+  min-width: 200px;
+}
